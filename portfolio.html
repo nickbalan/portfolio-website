@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Character set is UTF-8 (Unicode Standard) -->
+	<meta charset="utf-8">
+	<!-- Add the viewport tag -->
+	<meta name="wiewport" content="width=device-width, initial-scale=1">
+	<!-- The title on the browser tab -->
+	<title>Portfolio</title>
+	<!-- The favicon on the browser tab -->
+	<link rel="shortcut icon" href="img/favicon.png" alt="Favicon" type="image/png"/>
+	<!-- CSS Reset. Link to external CND normalize.min.css file-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<!-- Link Google fonts -->
+	<link rel="stylesheet" type="text/css" href="css/Benne_Regular.ttf">
+	<link rel="stylesheet" type="text/css" href="css/Oxygen_Regular.ttf"> 
+	<!-- Link my custom CSS style sheets file -->
+	<link rel="stylesheet" type="text/css" href="css/styles.production.css">
+</head>
+<body>
+	<!-- Header with logo and the main navigation. Add class. -->
+	<header class="page-header">
+		<!-- Personal logo of Nicolae Balan -->
+		<img src="img/Nicolae_Balan_logo.png" alt="Personal logo of Nicolae Balan, a text logo in uppercase that consists of my name" class="page-header__item">
+		<!-- The navigation container <div> -->
+		<nav class="main-navigation page-header__item">
+			<!-- Appling Block Element Modifier (BEM) to the navigation block-->
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<!-- The navigation Home link -->
+					<a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+				</li>
+				<li role="presentation">
+					<!-- The navigation Portfolio link -->
+					<a href="portfolio.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Portfolio</a>
+				</li>
+				<li role="presentation">
+					<!-- The navigation About me link -->
+					<a href="about_me.html" role="menuitem" class="navigation-list__item">About me</a>
+				</li>
+				<li role="presentation">
+					<!-- The navigation Contact link -->
+					<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h1>Portfolio</h1>
+		<div class="grid">
+			<!-- Grid items will live here -->
+			<!-- Child Grid container 1 -->
+			<div class="grid__item">
+				<h2>Project 1 - Mobile web app</h2>
+				<p>
+					Short description of the project 1.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button_basic">
+					<a href="#">Check out my project 1</a>
+				</button>
+			</div>
+			<!-- Child Grid container 2 -->
+			<div class="grid__item">
+				<h2>Project 2 - Mobile web app</h2>
+				<p>
+					Short description of the project 2.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button">
+					<a href="#">Check out my project 2</a>
+				</button>
+			</div>
+			<!-- Child Grid container 3 -->
+			<div class="grid__item">
+				<h2>Project 3 - Mobile web app</h2>
+				<p>
+					Short description of the project 3.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button">
+					<a href="#">Check out my project 3</a>
+				</button>
+			</div>
+			<!-- Child Grid container 4 -->
+			<div class="grid__item">
+				<h2>Project 4 - Mobile web app</h2>
+				<p>
+					Short description of the project 4.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button">
+					<a href="#">Check out my project 4</a>
+				</button>
+			</div>
+			<!-- Child Grid container 5 -->
+			<div class="grid__item">
+				<h2>Project 5 - Mobile web app</h2>
+				<p>
+					Short description of the project 5.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button">
+					<a href="#">Check out my project 5</a>
+				</button>
+			</div>
+			<!-- Child Grid container 6 -->
+			<div class="grid__item">
+				<h2>Project 6 - Mobile web app</h2>
+				<p>
+					Short description of the project 6.
+				</p>
+				<!-- Add a call-to-action buttons with no decoration link -->
+				<button type="button" class="button">
+					<a href="#">Check out my project 6</a>
+				</button>
+			</div>
+		</div>
+	</section>
+	<footer class="page_footer">
+		<p>Find me on</p>
+		<!-- Set the Flexbox layout -->
+		<div class="social_media">
+			<!-- Github logo with link -->
+			<a href="https://github.com/" target="_blank" class="social_media__link">
+				<img src="img/github_icon.svg" alt="Github logo" width="30px" height="30px">
+			</a>
+			<!-- Twitter logo with link -->
+			<a href="https://twitter.com" target="_blank" class="social_media__link">
+				<img src="img/twitter_icon.svg" alt="Twitter logo" width="30px" height="30px">
+			</a>
+			<!-- Linkedin logo-->
+			<a href="https://www.linkedin.com/" target="_blank" class="social_media__link">
+				<img src="img/linkedin_icon.svg" alt="Linkedin logo" width="30px" height="30px">
+			</a>
+			<!-- Facebook logo -->
+			<a href="https://www.facebook.com/" target="_blank" class="social_media__link">
+				<img src="img/facebook_icon.svg" alt="Facebook logo" width="30px" height="30px">
+			</a>
+		</div>
+	</footer>
+	<!-- Add tota11y -->
+	<script src="js/tota11y.min.js"></script>
+</body>
+</html>
