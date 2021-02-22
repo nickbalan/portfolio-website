@@ -148,8 +148,22 @@ button:focus,
 
 /* The second button */
 .button_secondary {
+	/* Overwrites browser defaults and reset the border */
+	/* Resets the border */
+	border: none;
+	display: inline-block;
 	background-color: #e0b354;
 	color: #004000;
+	text-decoration: none;
+	/* adds spacing to the button */
+	padding: 10px;
+	border-radius: 3px;
+	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+	border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
+	/* Sets transition-duration and transition-property */
+	-webkit-transition: 0.2s opacity;
+	-o-transition: 0.2s opacity;
+	transition: 0.2s opacity;
 }
 
 /* Sets the Profile Portrait*/ 
