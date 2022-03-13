@@ -34,5 +34,5 @@ Check out the [Simple Portfolio website](https://nickbalan.github.io/portfolio-w
 
 ## Simple Portfolio website screenshot
 
-![Livescreen](src/img/Livescreen/Portfolio_website_1.JPG)
+![Livescreen](img/Livescreen/Portfolio_website_1.JPG)
 
