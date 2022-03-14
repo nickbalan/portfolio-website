@@ -141,7 +141,6 @@ button:focus,
 
 /* Sets the Profile Portrait*/ 
  .profile__portrait {
-	float: left;
 	width: 250px;
 	margin-right: 40px;
 	/* add rounded corners */

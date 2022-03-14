@@ -27,3 +27,13 @@ separate contact page.
 - The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions as well as on IE11
 - The website must work on all screen sizes (including mobile and tablet) between 1920px and 320px in width
 - The website must work with keyboard, mouse, and touch inputs. 
+
+## Link to live hosted MyFlix Angular Client
+
+Check out the [Simple Portfolio website](https://nickbalan.github.io/portfolio-website/) page.
+
+## Simple Portfolio website screenshot
+
+![Livescreen](img/Livescreen/Portfolio_website_1.JPG)
+![Livescreen](img/Livescreen/Portfolio_website_2.JPG)
+
