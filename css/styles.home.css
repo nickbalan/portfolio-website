@@ -1,0 +1,11 @@
+/* Sets the Profile Portrait*/
+.profile__portrait {
+  width: 250px;
+  margin-right: 40px;
+  /* add rounded corners */
+  border-radius: 10%;
+}
+
+.profile__portrait:hover {
+  border: 1px solid rgb(255, 254, 254);
+}
