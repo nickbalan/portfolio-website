@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+.project-screen {
+  height: 200px;
+  width: auto;
+  align-items: baseline;
+}
+
+.grid__item {
+  padding: 5px;
+}
+
+.grid__item:hover {
+  border: 1px solid rgb(255, 254, 254);
+  padding: 10px;
+}
+
+.button {
+  padding: 10px;
+}

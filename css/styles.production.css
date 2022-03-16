@@ -17,71 +17,71 @@ Active link color / dark-grey: #2b2b2b;
 
 /* Sets variables */
 :root {
-	/* Primary link color var */
-	/* Visited link color var*/
-	/* Primary Background Color var*/
-	/* Secondary Foreground Color */
-	/* Button Secondary Color var*/
-	/* Active link color var*/
-	/* Basic font weight var*/
-	/* Headings font weight var*/
-	/* Fallback font family var*/
-	/* h1, h2, h3 font family var*/
-	/* The font-size var */
-	/* The line-height var */
-	/* Grid background color var */
+  /* Primary link color var */
+  /* Visited link color var*/
+  /* Primary Background Color var*/
+  /* Secondary Foreground Color */
+  /* Button Secondary Color var*/
+  /* Active link color var*/
+  /* Basic font weight var*/
+  /* Headings font weight var*/
+  /* Fallback font family var*/
+  /* h1, h2, h3 font family var*/
+  /* The font-size var */
+  /* The line-height var */
+  /* Grid background color var */
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	/* Sets the font to Lato and the fallback font sans-serif*/
-	font-family: 'Lato', sans-serif;
-	/* Sets the font to embed the regular (400) version */
-	font-weight: 400px;
-	/* Sets the font size to specific size*/
-	font-size: 16px;
-	/* Sets the line-height to specific line-height*/
-	line-height: 1.6;
+  /* Sets the font to Lato and the fallback font sans-serif*/
+  font-family: "Lato", sans-serif;
+  /* Sets the font to embed the regular (400) version */
+  font-weight: 400px;
+  /* Sets the font size to specific size*/
+  font-size: 16px;
+  /* Sets the line-height to specific line-height*/
+  line-height: 1.6;
 }
 
 h1 {
-	/* Sets the fonts size to specific size*/
-	font-size: 30px;
-	font-weight: 700px;
-	font-family: 'Benne';
+  /* Sets the fonts size to specific size*/
+  font-size: 30px;
+  font-weight: 700px;
+  font-family: "Benne";
 }
 
 h2 {
-	/* Sets the fonts size to specific size*/
-	font-size: 24px;
-	font-weight: 700px;
-	font-family: 'Oxygen';
+  /* Sets the fonts size to specific size*/
+  font-size: 24px;
+  font-weight: 700px;
+  font-family: "Oxygen";
 }
 
 h3 {
-	/* Sets the fonts size to specific size*/
-	font-size: 18px;
-	font-weight: 700px;
-	font-family: 'Oxygen';
+  /* Sets the fonts size to specific size*/
+  font-size: 18px;
+  font-weight: 700px;
+  font-family: "Oxygen";
 }
 
 /* Primary link color */
 a {
-	color: #004000;
+  color: #004000;
 }
 
 /* Visited link color */
 a:visited {
-	color: #57400F;
+  color: #57400f;
 }
 
 /* Selected link color */
 a:active {
-	color: #2b2b2b;
+  color: #2b2b2b;
 }
 
 /* No underlinig when hovering over a link */
@@ -89,103 +89,107 @@ a:hover,
 a:focus,
 /* No decoration for social media links */
 .social_media__link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* General settings for Buttons */
 button {
-	/* Overwrites browser defaults and reset the border */
-	/* Resets the border */
-	border: none;
-	display: inline-block;
-	/* Takes the font from the outer container */
-	font-family: inherit;
-	/* Styles the backgound color, font color, and text decoration () */
-	background-color: #F7E1BB;
-	color: #000000;
-	text-decoration: none;
-	/* adds spacing to the button */
-	padding: 10px;
-	border-radius: 3px;
-	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-	border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
-	/* Sets transition-duration and transition-property */
-	-webkit-transition: 0.2s opacity;
-	-o-transition: 0.2s opacity;
-	transition: 0.2s opacity;
+  /* Overwrites browser defaults and reset the border */
+  /* Resets the border */
+  border: none;
+  display: inline-block;
+  /* Takes the font from the outer container */
+  font-family: inherit;
+  /* Styles the backgound color, font color, and text decoration () */
+  background-color: #f7e1bb;
+  color: #000000;
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
+  /* Sets transition-duration and transition-property */
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 .button {
-	/* Overwrites browser defaults and reset the border */
-	/* Resets the border */
-	border: none;
-	display: inline-block;
-	/* Takes the font from the outer container */
-	font-family: inherit;
-	/* Styles the backgound color, font color, and text decoration () */
-	background-color: #F7E1BB;
-	color: #000000;
-	text-decoration: none;
-	/* adds spacing to the button */
-	padding: 10px;
-	border-radius: 3px;
-	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-	border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
-	/* Sets transition-duration and transition-property */
-	-webkit-transition: 0.2s opacity;
-	-o-transition: 0.2s opacity;
-	transition: 0.2s opacity;
+  /* Overwrites browser defaults and reset the border */
+  /* Resets the border */
+  border: none;
+  display: inline-block;
+  /* Takes the font from the outer container */
+  font-family: inherit;
+  /* Styles the backgound color, font color, and text decoration () */
+  background-color: #f7e1bb;
+  color: #000000;
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
+  /* Sets transition-duration and transition-property */
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-	/* the mouse appear as a hand when hovering over the button */
-	cursor: pointer;
-	/* reduces the opacity of the button to 80% */
-	opacity: 0.8;
+  /* the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 /* The second button */
 .button_secondary {
-	/* Overwrites browser defaults and reset the border */
-	/* Resets the border */
-	border: none;
-	display: inline-block;
-	background-color: #e0b354;
-	color: #004000;
-	text-decoration: none;
-	/* adds spacing to the button */
-	padding: 10px;
-	border-radius: 3px;
-	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-	border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
-	/* Sets transition-duration and transition-property */
-	-webkit-transition: 0.2s opacity;
-	-o-transition: 0.2s opacity;
-	transition: 0.2s opacity;
+  /* Overwrites browser defaults and reset the border */
+  /* Resets the border */
+  border: none;
+  display: inline-block;
+  background-color: #e0b354;
+  color: #004000;
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
+  /* Sets transition-duration and transition-property */
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
-/* Sets the Profile Portrait*/ 
- .profile__portrait {
-	float: center;
-	width: 250px;
-	margin-right: 40px;
-	/* add rounded corners */
-	border-radius: 50%;
+/* Sets the Profile Portrait*/
+.profile__portrait {
+  float: center;
+  width: 250px;
+  margin-right: 40px;
+  /* add rounded corners */
+  border-radius: 10%;
+}
+
+.profile__portrait:hover {
+  border: 1px solid rgb(255, 254, 254);
 }
 
 /* Sets the Flexbox layout for Footer*/
 .page_footer {
-	clear: both;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	text-align: center;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* Sets the page <div> */
@@ -193,205 +197,205 @@ button:focus,
 .about_me,
 .contact_me,
 .contact_form {
-	max-width: 700px;
-	margin: 0 auto;
-	/* Sets Flex properties: flex-grow: 1, flex-shrink: 1, flex-basis: 100px*/
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 100px;
-	        flex: 1 1 100px;
+  max-width: 700px;
+  margin: 0 auto;
+  /* Sets Flex properties: flex-grow: 1, flex-shrink: 1, flex-basis: 100px*/
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
 }
 
 /* Sets the default width of the element via box-sizing property and border-box value  */
 * {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Sets Flexbox for header parent container */
 .page-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
-	padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Put the img item around the center */
 .page-header img {
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /* Sets Flexbox for header child container */
 .page-header__item {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 200px;
-	        flex: 0 1 200px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 /* Targeting the last child of the two flexbox child items */
 .page-header__item:last-child {
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	text-align: right;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* Get rid of the dots from the navigation unordered list */
 .navigation-list {
-	list-style-type: none;
+  list-style-type: none;
 }
 /* This will align in a row (inline-block) and give it some space in-between */
 .navigation-list li {
-	display: inline-block;
-	margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 /* no decoration for active links */
 .navigation-list li .navigation-list__item--active {
-	text-decoration: none;
-	}
+  text-decoration: none;
+}
 
-/* Make an actual grid container. Grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */ 
+/* Make an actual grid container. Grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
 .grid {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 /* The grid items a background color */
 .grid__item {
-	background-color: #f9f9f9;
-	width: auto;
-	min-height: auto;
-	margin: 0;
+  background-color: #f9f9f9;
+  width: auto;
+  min-height: auto;
+  margin: 0;
 }
 
 /* You first target the last grid__item with the pseudo-selector :last-child; */
 .grid_item:last-child {
-	-ms-grid-column: 3;
-	grid-column: 3 / 3;
-	-ms-grid-row: 1;
-	-ms-grid-row-span: 2;
-	grid-row: 1 / 3;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
 }
 
 /* Media queries which defines the rule that should be applied up to screen size 500px (0px -> 500px) */
 @media all and (max-width: 500px) {
-	.grid {
-		-ms-grid-columns: 1fr;
-		grid-template-columns: 1fr;
-	}
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* go from a 3-column grid to a 2-column grid when the screen’s width is greater than 500px but less than 750px. 500px -> 750px */
 @media all and (max-width: 500px) and (max-width: 750px) {
-	.grid {
-		-ms-grid-columns: 1fr 20px 1fr;
-		grid-template-columns: 1fr 1fr;
-	}
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Shared code. Total combined width range: 0px → 750px; */
 @media all and (max-width: 750px) {
-	.grid {
-		grid-gap: 10px;
-	}
-	.grid_item:last-child {
-		grid-column: auto / auto;
-		grid-row: auto / auto;
-	}
-	h1 {
-		font-size: 22px;
-	}
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid_item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
 }
-
 
 /* The selector witch sets rule-set for 'color-change' animation */
 @-webkit-keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
 }
 @keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
 }
 
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function */
 .sun {
-	-webkit-animation: 4s color-change infinite alternate linear;
-	        animation: 4s color-change infinite alternate linear;
+  -webkit-animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* the 'cloud-front' will move from (0, 50px) to (200px, 50px). x - horizontal value, y - vertical value */
 @-webkit-keyframes cloud-move {
-	from {
-		-webkit-transform: translate(0, 50px);
-		        transform: translate(0, 50px);
-	}
-	to {
-		-webkit-transform: translate(200px, 50px);
-		        transform: translate(200px, 50px);
-	}
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 @keyframes cloud-move {
-	from {
-		-webkit-transform: translate(0, 50px);
-		        transform: translate(0, 50px);
-	}
-	to {
-		-webkit-transform: translate(200px, 50px);
-		        transform: translate(200px, 50px);
-	}
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
 .cloud-front {
-	-webkit-animation: 30s cloud-move infinite alternate linear;
-	        animation: 30s cloud-move infinite alternate linear;
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 /* the 'cloud-back' will move from (446px, 48px) to (100px, 48px). x - horizontal value, y - vertical value */
 @-webkit-keyframes cloud-move-reverse {
-	from {
-		-webkit-transform: translate(446px, 48px);
-		        transform: translate(446px, 48px);
-	}
-	to {
-		-webkit-transform: translate(100px, 48px);
-		        transform: translate(100px, 48px);
-	}
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
 }
 @keyframes cloud-move-reverse {
-	from {
-		-webkit-transform: translate(446px, 48px);
-		        transform: translate(446px, 48px);
-	}
-	to {
-		-webkit-transform: translate(100px, 48px);
-		        transform: translate(100px, 48px);
-	}
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
 }
 
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
 .cloud-back {
-	-webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-	        animation: 34s cloud-move-reverse infinite alternate linear;
-	}
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
