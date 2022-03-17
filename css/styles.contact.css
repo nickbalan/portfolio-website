@@ -1,0 +1,15 @@
+.logo_icon {
+  width: 10vh;
+  display: pointer;
+  align-items: left;
+}
+
+.page-header {
+  align-items: center;
+}
+
+.main-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
