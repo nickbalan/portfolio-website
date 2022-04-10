@@ -42,6 +42,7 @@ Active link color / dark-grey: #2b2b2b;
   --grid-bkground-color: #f9f9f9;
 }
 
+/* Sets the default width of the element via box-sizing property and border-box value  */
 * {
   box-sizing: border-box;
 }
@@ -55,6 +56,12 @@ body {
   font-size: var(--basic-font-size);
   /* Sets the line-height to specific line-height*/
   line-height: var(--basic-line-height);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 h1 {
@@ -114,8 +121,10 @@ button,
   background-color: var(--bkground-color);
   color: var(--sec-bkground-color);
   text-decoration: none;
+  text-align: center;
   /* adds spacing to the button */
   padding: 10px;
+  margin: 5px 0;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
@@ -139,14 +148,25 @@ button:focus,
   color: var(--primary-color);
 }
 
+/* Sets responsive logo */
+.logo_icon {
+  width: 10vh;
+  display: pointer;
+  align-items: left;
+}
+
 /* Sets the Profile Portrait*/
 .profile__portrait {
   width: 250px;
-  margin-right: 40px;
   /* add rounded corners */
   border-radius: 10%;
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Profile Image Animation */
 .profile__portrait:hover {
   border: 1px solid rgb(255, 254, 254);
 }
@@ -157,9 +177,11 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 10px;
 }
 
 /* Sets the page <div> */
+.berlin_svg,
 .profile,
 .about_me,
 .contact_me,
@@ -170,15 +192,14 @@ button:focus,
   flex: 1 1 100px;
 }
 
-/* Sets the default width of the element via box-sizing property and border-box value  */
-* {
-  box-sizing: border-box;
-}
-
 /* Sets Flexbox for header parent container */
 .page-header {
   display: flex;
   width: 100%;
+  text-align: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
 }
 
@@ -198,19 +219,46 @@ button:focus,
   text-align: right;
 }
 
+/* Sets the main navigation */
+.main-navigation {
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Sets the navigation links */
+.navigation-list a {
+  float: left;
+  padding: 12px;
+  color: #008b00;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center;
+}
+
+/* Sets the navigation links hover */
+.navigation-list a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 /* Get rid of the dots from the navigation unordered list */
 .navigation-list {
   list-style-type: none;
-}
-/* This will align in a row (inline-block) and give it some space in-between */
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
 }
 
 /* no decoration for active links */
 .navigation-list li .navigation-list__item--active {
   text-decoration: none;
+}
+
+/* Sets the title grid */
+.grid_title {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 /* Make an actual grid container. Grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
@@ -235,31 +283,24 @@ button:focus,
   grid-row: 1 / 3;
 }
 
-/* Media queries which defines the rule that should be applied up to screen size 500px (0px -> 500px) */
-@media all and (max-width: 500px) {
+/* Sets responsive media queries for small screens */
+@media (max-width: 700px) {
   .grid {
-    grid-template-columns: 1fr;
+    width: 100%;
+    display: block;
   }
-}
-
-/* go from a 3-column grid to a 2-column grid when the screen’s width is greater than 500px but less than 750px. 500px -> 750px */
-@media all and (max-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  .navigation-list {
+    flex-direction: column;
   }
-}
-
-/* Shared code. Total combined width range: 0px → 750px; */
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+  .navigation-list a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  .grid_item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
+  .navigation-list a:hover {
+    background-color: #ddd;
+    color: black;
   }
 }
 
