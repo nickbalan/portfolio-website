@@ -1,0 +1,43 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Sets the percentage of 95% for skills and languages bars */
+.percentage_95 {
+  width: 95%;
+}
+
+/* Sets the percentage of 90% for skills and languages bars */
+.percentage_90 {
+  width: 90%;
+}
+
+/* Sets the percentage of 85% for skills and languages bars */
+.percentage_85 {
+  width: 85%;
+}
+
+/* Sets new button style */
+.cv-button {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Sets new unordered list circle style */
+ul.circle {
+  list-style-type: circle;
+}
+
+/* Sets new unordered list square style */
+ul.square {
+  list-style-type: square;
+}

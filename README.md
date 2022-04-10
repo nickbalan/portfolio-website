@@ -1,11 +1,10 @@
 # Simple Portfolio website
 
 ## Objective 
-To build a simple responsive website using HTML and CSS that will showcase your professional portfolio, which will include the projects you’ll build throughout your Full-Stack Web Development Program, to your professional network and 
-potential employers.
+To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program.
 
 ## User Goals 
-Your users should be able to view your professional portfolio website and navigate between web pages on both mobile and desktop. 
+As a user, I should be able to view the professional portfolio website and navigate between web pages on both mobile and desktop devices. 
 
 ## Key Features 
 - A homepage with a short introduction and link(s) to work examples 
@@ -17,8 +16,7 @@ separate contact page.
 ## Technical Requirements 
 - The website must consist of at least 3 interconnected HTML pages 
 - The website must use one external CSS-file in which all styles are defined 
-- The website must use either CSS variables or a CSS preprocessor  
-- You shall not include any external CSS libraries that you didn’t write yourself 
+- The website must use either CSS variables or a CSS preprocessor
 - The website’s code must be hosted in a Git repository on GitHub
 - The website can be deployed on a server. (While we strongly recommend doing so, this isn’t mandatory, and you can remove your website from the free test server after you’ve completed the project) 
 - All your code must be valid
