@@ -13,7 +13,7 @@ To build a simple responsive website using just HTML and CSS that showcases my p
 - Where? — Potential employers might look at the website from their offices while networking contacts might access it from their mobile phones (e.g., after meeting me).
 - Why? — For my potential employers, clients, or collaborators to learn more about my professional experience and relevant skills and how to reach me. The website will also demonstrate my HTML and CSS front-end development skills to employers.
 
-## User Goals 
+## User Stories 
 As a user, I should be able to view the professional portfolio website and navigate between web pages on both mobile and desktop devices. 
 
 ## Key Features 
