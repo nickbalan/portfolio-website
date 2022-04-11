@@ -1,37 +1,46 @@
-# Simple Portfolio website
+# Simple Portfolio Website
 
 ## Objective 
-To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program.
+To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program, to my professional network and potential employers.
+
+## My Role
+- Full-Stack Web Developer
+
+## The 5 W's
+- Who? — My professional network and potential employers. The website is for anyone interested in my professional work and who might want to contact me about it.
+- What? — A responsive portfolio website built just with HTML and CSS.
+- When? — The website might be visited when a potential employer checks out my previous experience or after I've met a professional contact. They would want to see what I'm up to nowadays.
+- Where? — Potential employers might look at the website from their offices while networking contacts might access it from their mobile phones (e.g., after meeting me).
+- Why? — For my potential employers, clients, or collaborators to learn more about my professional experience and relevant skills and how to reach me. The website will also demonstrate my HTML and CSS front-end development skills to employers.
 
 ## User Goals 
 As a user, I should be able to view the professional portfolio website and navigate between web pages on both mobile and desktop devices. 
 
 ## Key Features 
-- A homepage with a short introduction and link(s) to work examples 
-- An about page with key information about you as an individual, your relevant skills, and the tools or programming language(s) you use 
-- A section with your work examples — either as part of your homepage (e.g., in a grid) or on a separate work page 
-- A contact section — either as a section on each page (e.g., in the footer) or in a 
-separate contact page.
+- A homepage/landing page with a short introduction and link(s) to work examples 
+- An about page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
+- A section with my work examples that is part of my homepage (e.g., in a grid) or on a separate work page 
+- A contact section — either as a section on each page (e.g., in the footer) or a separate contact page.
 
 ## Technical Requirements 
 - The website must consist of at least 3 interconnected HTML pages 
 - The website must use one external CSS-file in which all styles are defined 
 - The website must use either CSS variables or a CSS preprocessor
 - The website’s code must be hosted in a Git repository on GitHub
-- The website can be deployed on a server. (While we strongly recommend doing so, this isn’t mandatory, and you can remove your website from the free test server after you’ve completed the project) 
-- All your code must be valid
-- Your HTML files must pass validation on the [Markup Validation Service](https://validator.w3.org/) 
-- All colors used need to pass the [AA Accessibility Guidelines](https://contrastchecker.com/)
+- The website can be deployed on a server 
+- All the code must be valid
+  - The HTML files must pass validation on the [Markup Validation Service](https://validator.w3.org/) 
+  - All colors used need to pass the [AA Accessibility Guidelines](https://contrastchecker.com/)
 - The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions as well as on IE11
 - The website must work on all screen sizes (including mobile and tablet) between 1920px and 320px in width
 - The website must work with keyboard, mouse, and touch inputs. 
 
-## Link to live hosted MyFlix Angular Client
+## Link to live hosted Simple Portfolio Website
+Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
 
-Check out the [Simple Portfolio website](https://nickbalan.github.io/portfolio-website/) page.
-
-## Simple Portfolio website screenshot
+## Simple Portfolio Website screenshots
 
 ![Livescreen](img/Livescreen/Portfolio_website_Home_page.JPG)
 ![Livescreen](img/Livescreen/Portfolio_website_Portfolio_page.JPG)
+![Livescreen](img/Livescreen/Portfolio_website_Contact_page.JPG)
 
