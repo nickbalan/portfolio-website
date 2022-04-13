@@ -1,4 +1,4 @@
-# Simple Portfolio Website
+# Simple Portfolio Website. Technical Case Study
 
 ## Objective 
 To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program, to my professional network and potential employers.
@@ -16,24 +16,24 @@ To build a simple responsive website using just HTML and CSS that showcases my p
 ## User Stories 
 As a user, I should be able to view the professional portfolio website and navigate between web pages on both mobile and desktop devices. 
 
-## Key Features 
-- A homepage/landing page with a short introduction and link(s) to work examples 
-- An about page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
-- A section with my work examples that is part of my homepage (e.g., in a grid) or on a separate work page 
-- A contact section — either as a section on each page (e.g., in the footer) or a separate contact page.
-
-## Technical Requirements 
-- The website must consist of at least 3 interconnected HTML pages 
-- The website must use one external CSS-file in which all styles are defined 
+## Technical Requirements & Solutions 
+- The website must consist of at least three interconnected HTML pages 
+- The website must use at least one CSS file in which all styles are defined 
 - The website must use either CSS variables or a CSS preprocessor
 - The website’s code must be hosted in a Git repository on GitHub
-- The website can be deployed on a server 
+- The website must be deployed on a server like GitHub Pages
 - All the code must be valid
   - The HTML files must pass validation on the [Markup Validation Service](https://validator.w3.org/) 
   - All colors used need to pass the [AA Accessibility Guidelines](https://contrastchecker.com/)
 - The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions as well as on IE11
 - The website must work on all screen sizes (including mobile and tablet) between 1920px and 320px in width
 - The website must work with keyboard, mouse, and touch inputs. 
+
+## Key Features 
+- A homepage/landing page with a short introduction and link(s) to work examples 
+- An about page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
+- A section with my work examples that is part of my homepage (e.g., in a grid) or on a separate work page 
+- A contact section — either as a section on each page (e.g., in the footer) or a separate contact page.
 
 ## Link to live hosted Simple Portfolio Website
 Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
