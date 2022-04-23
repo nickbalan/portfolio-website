@@ -3,6 +3,12 @@
 ## Objective 
 To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program, to my professional network and potential employers.
 
+## Context
+For a professional web developer is essential to have a designated place to present the work and demonstrate relevant skills such as problem-solving or practical knowledge in a programming language.
+
+## Project Owner and Acknowledgement
+- CareerFoundry
+
 ## My Role
 - Full-Stack Web Developer
 
