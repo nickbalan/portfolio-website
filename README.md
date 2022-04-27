@@ -41,12 +41,13 @@ As a user, I should be able to view the professional portfolio website and navig
 ## Technical Improvements & Solutions 
 - The portofolio page must use W3Schools CSS
 - The homepage/landing/blog must use Tailwind CSS
+- 
 
 ## Key Features 
 - A homepage/landing/blog page with a short introduction and link(s) to work examples 
 - An about me page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
-- A portfolio page with my project examples (e.g., in a grid) 
-- A contact section — as a section on each page (e.g., in the footer) and a contact page.
+- A portfolio page with my project examples in a grid 
+- A contact section — as a section on each page in the footer and a contact page.
 
 ## Link to live hosted Simple Portfolio Website
 Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
