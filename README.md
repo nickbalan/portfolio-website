@@ -6,8 +6,11 @@ To build a simple responsive website using just HTML and CSS that showcases my p
 ## Context
 For a professional web developer is essential to have a designated place to present the work and demonstrate relevant skills such as problem-solving or practical knowledge in a programming language.
 
-## Project Owner and Acknowledgement
-- CareerFoundry
+## Project Deliverables Acknowledgement
+- CareerFoundry (25.02.2021 - 17.03.2022)
+
+## Project Improvement Strategies
+- Nick Balan (18.03.2022 - Current)
 
 ## My Role
 - Full-Stack Web Developer
@@ -33,13 +36,17 @@ As a user, I should be able to view the professional portfolio website and navig
   - All colors used need to pass the [AA Accessibility Guidelines](https://contrastchecker.com/)
 - The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions as well as on IE11
 - The website must work on all screen sizes (including mobile and tablet) between 1920px and 320px in width
-- The website must work with keyboard, mouse, and touch inputs. 
+- The website must work with keyboard, mouse, and touch inputs.
+
+## Technical Improvements & Solutions 
+- The portofolio page must use W3Schools CSS
+- The homepage/landing/blog must use Tailwind CSS
 
 ## Key Features 
-- A homepage/landing page with a short introduction and link(s) to work examples 
-- An about page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
-- A section with my work examples that is part of my homepage (e.g., in a grid) or on a separate work page 
-- A contact section — either as a section on each page (e.g., in the footer) or a separate contact page.
+- A homepage/landing/blog page with a short introduction and link(s) to work examples 
+- An about me page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used 
+- A portfolio page with my project examples (e.g., in a grid) 
+- A contact section — as a section on each page (e.g., in the footer) and a contact page.
 
 ## Link to live hosted Simple Portfolio Website
 Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
