@@ -41,7 +41,7 @@ As a user, I should be able to view the professional portfolio website and navig
 ## Technical Improvements & Solutions 
 - The portofolio page must use W3Schools CSS
 - The homepage/landing/blog must use Tailwind CSS
-- 
+- The homepage/landing/blog must use PostCSS
 
 ## Key Features 
 - A homepage/landing/blog page with a short introduction and link(s) to work examples 

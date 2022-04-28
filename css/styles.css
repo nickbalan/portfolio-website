@@ -8,7 +8,7 @@ Visited link color / secondary-color: #57400F;
 Active link color / dark-grey: #2b2b2b;
 */
 
-/* Add the Tailwind directives */
+/* Add the Tailwindcss directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
