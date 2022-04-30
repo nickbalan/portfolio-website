@@ -523,9 +523,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.grid {
+/* .grid {
   display: grid;
-}
+} */
 
 .hidden {
   display: none;
