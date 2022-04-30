@@ -29,6 +29,8 @@
     />
     <!-- Link my custom CSS style sheets file -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/about-me.production.css" />
+    <link rel="stylesheet" type="text/css" href="public/output.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -39,45 +41,48 @@
 
   <body>
     <!-- Header with logo and the main navigation. Add class. -->
-    <header class="page-header">
-      <!-- Personal logo of Nick Balan -->
-      <a href="index.html">
-        <img
-          src="img/Nick_Balan_logo.png"
-          alt="Personal logo of Nick Balan, a text logo in uppercase that consists of my name"
-          class="logo_icon"
-        />
-      </a>
-      <!-- The navigation container <div> -->
-      <nav class="main-navigation page-header__item">
-        <!-- Applying Block Element Modifier (BEM) to the navigation block-->
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <!-- Navigate to About Me page -->
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >About Me</a
-            >
-          </li>
-          <li role="presentation">
-            <!-- Navigate to Portfolio page -->
-            <a
-              href="portfolio.html"
-              role="menuitem"
-              class="navigation-list__item"
-              >Portfolio</a
-            >
-          </li>
-          <li role="presentation">
-            <!-- Navigate to Contact page -->
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header>
+      <!-- The navigation container -->
+        <div class="navMenu">
+          <nav class="bg-white shadow-lg">
+            <div class="max-w-6xl mx-auto px-4">
+              <div class="flex sm:justify-between">
+                <div class="flex space-x-7">
+                   <!-- Personal logo of Nick Balan -->
+                  <div>
+                    <a href="index.html" class="flex items-center py-4 px-2">
+                      <img
+                        src="img/Nick_Balan_logo.png"
+                        class="h-20 w-20 mr-2"
+                        alt="Personal logo of Nick Balan, a text logo in uppercase that consists of my name"
+                      />
+                    </a>
+                  </div>
+                  <!-- Navigate to About Me page -->
+                  <div class="hidden md:flex items-center space-x-4">
+                    <a
+                      href="index.html"
+                      class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
+                      >About Me</a
+                    >
+                    <!-- Navigate to My Portfolio page -->
+                    <a
+                      href="portfolio.html"
+                      class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      >My Portfolio</a
+                    >
+                    <!-- Navigate to Contact Me page -->
+                    <a
+                      href="contact.html"
+                      class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      >Contact Me</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
     </header>
 
     <!-- Page Container -->
@@ -441,6 +446,7 @@
                   Express; Höfner Transport GmbH; Panalpina Welttransport GmbH;
                   Amm GmbH & Co KG Spedition</b
                 >
+                (several temporary employment agencies)
               </h5>
               <h6 class="w3-text-gray">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2016 -

@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "npx tailwindcss -i ./css/input.css -o ./public/output.css --watch",
     "dev": "postcss css/styles.production.css -o public/styles.production.css",
     "prod": "cross-env NODE_ENV=production postcss css/styles.production.css -o public/styles.production.css"
   },
