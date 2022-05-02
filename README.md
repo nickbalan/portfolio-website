@@ -39,8 +39,8 @@ As a user, I should be able to view the professional portfolio website and navig
 - The website must work with keyboard, mouse, and touch inputs.
 
 ## Technical Improvements & Solutions 
-- The portofolio page must use W3Schools CSS
-- The Navigation Menu and the Footer Menu must use Tailwind CSS and PostCSS
+- The about page must use W3Schools CSS
+- The Navigation Menu and the Footer must use Tailwind CSS and PostCSS
 
 ## Key Features 
 - A homepage/landing/blog page with a short introduction and link(s) to work examples 
