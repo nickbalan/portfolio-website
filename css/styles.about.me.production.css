@@ -41,3 +41,10 @@ ul.circle {
 ul.square {
   list-style-type: square;
 }
+
+/* Sets the Social Media icons */
+.social_media {
+  grid-gap: 20px;
+  padding: 20px;
+  display: inline-flex;
+}
