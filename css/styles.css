@@ -8,6 +8,11 @@ Visited link color / secondary-color: #57400F;
 Active link color / dark-grey: #2b2b2b;
 */
 
+/* Add the Tailwindcss directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Sets variables */
 :root {
   /* Primary link color var */
@@ -161,7 +166,7 @@ button:focus,
   /* add rounded corners */
   border-radius: 10%;
   display: block;
-  padding: 10px;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }

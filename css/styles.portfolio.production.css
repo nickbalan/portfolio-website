@@ -16,7 +16,7 @@ h3 {
 }
 
 /* Sets new section style */
-section {
+section, footer {
   max-width: 1400px;
   display: block;
   margin-left: auto;
@@ -84,3 +84,10 @@ section {
   cursor: pointer;
   width: 100%;
 } 
+
+/* Sets the Social Media icons */
+.social_media {
+  grid-gap: 20px;
+  padding: 20px;
+  display: inline-flex;
+}
