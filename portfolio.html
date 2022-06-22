@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="stylesheet" type="text/css" href="css/styles.portfolio.production.css">
     <link rel="stylesheet" type="text/css" href="public/tailwind.css" />
+    <!-- Link to external CND -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 </head>
 
@@ -30,7 +31,7 @@
     <!-- Header with logo and the main navigation. Add class. -->
     <header>
         <!-- The navigation container -->
-          <div class="navMenu">
+        <div class="navMenu">
             <nav class="bg-white shadow-lg">
               <div class="max-w-6xl mx-auto px-4">
                 <div class="flex sm:justify-between">
@@ -69,8 +70,18 @@
                 </div>
               </div>
             </nav>
-          </div>
-      </header>
+        </div>
+    </header>
+    <!-- Added the Scroll To Top Button -->
+    <button 
+      onclick="topFunction()" 
+      id="scrollBtn" 
+      title="Go to top"
+      type="button"
+    >
+      <span class="arrowUp"></span>
+      <b><br>Top</b>
+    </button>
     <section>
         <!-- The Grid Title -->
         <div class="grid_title">
@@ -338,8 +349,9 @@
             />
           </a>
         </div>
-      </footer>
-      <!-- Footer end -->
+    </footer>
+    <!-- Added the Scroll To Top Button functions -->
+    <script src="js/scrollBtn.js"></script>
     <!-- Add tota11y -->
     <script src="js/tota11y.min.js"></script>
 </body>

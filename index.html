@@ -35,6 +35,7 @@
       type="text/css"
       href="css/styles.about.me.production.css"
     />
+    <!-- Link to external CND -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
 
@@ -83,7 +84,16 @@
         </nav>
       </div>
     </header>
-
+    <!-- Added the Scroll To Top Button -->
+    <button 
+      onclick="topFunction()" 
+      id="scrollBtn" 
+      title="Go to top"
+      type="button"
+    >
+      <span class="arrowUp"></span>
+      <b><br>Top</b>
+    </button>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top w3-width" style="max-width: 1400px">
       <!-- The Grid -->
@@ -610,7 +620,8 @@
         </a>
       </div>
     </footer>
-    <!-- Footer end -->
+    <!-- Added the Scroll To Top Button functions -->
+    <script src="js/scrollBtn.js"></script>
     <!-- Add tota11y -->
     <script src="js/tota11y.min.js"></script>
   </body>
