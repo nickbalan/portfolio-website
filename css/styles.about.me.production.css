@@ -7,7 +7,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Sets the percentage of 95% for skills and languages bars */
@@ -42,9 +42,39 @@ ul.square {
   list-style-type: square;
 }
 
-/* Sets the Social Media icons */
+/* Sets the Social Media icons style */
 .social_media {
   grid-gap: 20px;
   padding: 20px;
   display: inline-flex;
+}
+
+/* Sets the Scroll To Top Button style */
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scrollBtn:hover {
+  background-color: #008e00;
+}
+
+.arrowUp {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
