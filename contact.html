@@ -24,6 +24,7 @@
     />
     <!-- Link the custom CSS files -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.contact.production.css" />
     <link rel="stylesheet" type="text/css" href="public/tailwind.css" />
     <!-- Link the Contact Form CSS files -->
     <link
@@ -41,6 +42,8 @@
       rel="stylesheet"
       href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.33807"
     />
+    <!-- Link to external CND -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
 
   <body>
@@ -89,6 +92,16 @@
       </div>
     </header>
     <div>
+      <!-- Added the Scroll To Top Button -->
+      <button
+        onclick="topFunction()"
+        id="scrollBtn"
+        title="Go to top"
+        type="button"
+      >
+        <span class="arrowUp"></span>
+        <b><br />Top</b>
+      </button>
       <!-- <form action="#" method="post" class="contact_form">
       <h1>Contact me</h1> -->
       <!-- Add a basic form in Contact-->
@@ -401,7 +414,8 @@
     </script>
     <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.33807"></script>
     <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.33807"></script>
-
+    <!-- Added the Scroll To Top Button functions -->
+    <script src="js/scrollBtn.js"></script>
     <!-- Add tota11y -->
     <script src="js/tota11y.min.js"></script>
   </body>
