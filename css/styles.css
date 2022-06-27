@@ -153,11 +153,9 @@ button:focus,
   color: var(--primary-color);
 }
 
-/* Sets responsive logo */
-.logo_icon {
-  width: 10vh;
-  display: pointer;
-  align-items: left;
+/* Sets logo */
+.logo {
+  max-width: 150px;
 }
 
 /* Sets the Profile Portrait*/
