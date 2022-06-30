@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Link my custom CSS style sheets file -->
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="stylesheet" type="text/css" href="css/styles.portfolio.production.css">
@@ -67,10 +72,55 @@
                         >Contact Me</a
                       >
                     </div>
-                  </div>
+                    <!-- Responsive Mobile Navbar -->
+                    <div class="flex items-center py-5 px-5 w3-display-topright">
+                        <div class="w3-bar w3-white w3-card" id="myNavbar">
+                            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                            <a
+                                href="javascript:void(0)"
+                                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                                onclick="w3_open()"
+                            >
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
               </div>
             </nav>
+            <!-- Sidebar on small screens when clicking the menu icon -->
+            <nav
+            class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-medium w3-hide-large"
+            style="display: none; right: 0"
+            id="mySidebar"
+            id="rightMenu"
+            >
+            <a
+              href="javascript:void(0)"
+              onclick="w3_close()"
+              class="w3-bar-item w3-button w3-large w3-padding-16"
+            >
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <a
+              href="index.html"
+              onclick="w3_close()"
+              class="w3-bar-item w3-button"
+              >About Me</a
+            >
+            <a
+              href="portfolio.html"
+              onclick="w3_close()"
+              class="w3-bar-item w3-button"
+              >My Portfolio</a
+            >
+            <a
+              href="contact.html"
+              onclick="w3_close()"
+              class="w3-bar-item w3-button"
+              >Contact Me</a
+            >
+          </nav>
         </div>
     </header>
     <!-- Added the Scroll To Top Button -->
@@ -353,6 +403,8 @@
     </footer>
     <!-- Added the Scroll To Top Button functions -->
     <script src="js/scrollBtn.js"></script>
+    <!-- Added the mobile Navbar functions -->
+    <script src="js/mobileNavbar.js"></script>
     <!-- Add tota11y -->
     <script src="js/tota11y.min.js"></script>
 </body>
