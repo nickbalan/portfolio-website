@@ -41,7 +41,8 @@ As a user, I should be able to view the professional portfolio website and navig
 ## Technical Improvements & Solutions 
 - The About Me page must also use W3Schools CSS
 - The Navigation Menu and the Footer on each page must use Tailwind CSS and PostCSS
-- All the pages must have a Scroll To Top Button.
+- All the pages must have a Scroll To Top Button
+- All the pages must have a Responsive Mobile Navbar.
 
 ## Key Features 
 - A homepage/landing/blog page with a short introduction and link(s) to work examples 
