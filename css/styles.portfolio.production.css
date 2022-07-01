@@ -32,6 +32,7 @@ footer {
   align-items: baseline;
   border: 1px solid #ccc;
   margin-right: 10px;
+  cursor:zoom-in;
 }
 
 /* Sets project image hover */
