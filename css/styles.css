@@ -236,7 +236,7 @@ button:focus,
   color: #008b00;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; 
+  width: 25%;
   text-align: center;
 }
 
@@ -284,6 +284,16 @@ button:focus,
 .grid_item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
+}
+
+/* Sets responsive media queries for desktop screens */
+@media only screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
 }
 
 /* Sets responsive media queries for small screens */

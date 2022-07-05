@@ -40,7 +40,7 @@ Active link color / dark-grey: #2b2b2b;
 /* Sets the default width of the element via box-sizing property and border-box value  */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -173,8 +173,8 @@ button:focus,
   width: 10vh;
   display: pointer;
   -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
 }
 
 /* Sets the Profile Portrait*/
@@ -201,8 +201,8 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding: 10px;
 }
@@ -217,8 +217,8 @@ button:focus,
   margin: 0 auto;
   /* Sets Flex properties: flex-grow: 1, flex-shrink: 1, flex-basis: 100px*/
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100px;
-          flex: 1 1 100px;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
 }
 
 /* Sets Flexbox for header parent container */
@@ -237,22 +237,22 @@ button:focus,
 /* Put the img item around the center */
 .page-header img {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /* Sets Flexbox for header child container */
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 /* Targeting the last child of the two flexbox child items */
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -270,7 +270,7 @@ button:focus,
   color: #008b00;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; 
+  width: 25%;
   text-align: center;
 }
 
@@ -305,7 +305,7 @@ button:focus,
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
 }
@@ -327,6 +327,18 @@ button:focus,
   grid-row: 1 / 3;
 }
 
+/* Sets responsive media queries for desktop screens */
+@media only screen and (min-width: 1024px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
 /* Sets responsive media queries for small screens */
 @media (max-width: 700px) {
   .grid {
@@ -336,8 +348,8 @@ button:focus,
   .navigation-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .navigation-list a {
     float: none;
@@ -378,63 +390,63 @@ button:focus,
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function */
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* the 'cloud-front' will move from (0, 50px) to (200px, 50px). x - horizontal value, y - vertical value */
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 /* the 'cloud-back' will move from (446px, 48px) to (100px, 48px). x - horizontal value, y - vertical value */
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 /* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .w3-bar .w3-button {
