@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-/* Sets new h3 color */
+/* Sets h3 styles */
 h3 {
   color: #737373;
 }
 
-/* Sets new section style */
+/* Sets section styles */
 section {
   max-width: 1400px;
   display: block;
@@ -15,7 +15,7 @@ section {
   margin-right: auto;
 }
 
-/* Sets project images style from the grid */
+/* Sets Project images styles */
 .project-screen {
   width: 100%;
   align-items: baseline;
@@ -23,17 +23,17 @@ section {
   margin-right: 10px;
 }
 
-/* Sets project image hover */
+/* Sets Project image hover styles */
 .project-screen:hover {
   border: 1px solid #777;
 }
 
-/* Sets new container style */
+/* Sets Container styles */
 .container {
   padding: 0 16px;
 }
 
-/* Sets new grid style */
+/* Sets Grid styles */
 .grid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -42,20 +42,20 @@ section {
   padding: 0 8px;
 }
 
-/* Sets new grid item style */
+/* Sets Grid item styles */
 .grid__item {
   padding: 10px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
 
-/* Sets grid item hover */
+/* Sets Grid item hover styles */
 .grid__item:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Sets portrait image style */
+/* Sets Portrait image styles */
 .portrait_img {
   display: block;
   margin-left: auto;
@@ -63,9 +63,9 @@ section {
   width: 30%;
 }
 
-/* Sets new button style */
+/* Sets Button styles */
 .button {
   outline: 0;
   cursor: pointer;
   width: 100%;
-} 
+}
