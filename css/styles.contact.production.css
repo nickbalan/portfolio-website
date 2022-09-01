@@ -1,4 +1,4 @@
-/* Sets the Scroll To Top Button style */
+/* Sets Scroll To Top Button styles */
 #scrollBtn {
   display: none;
   position: fixed;
@@ -15,10 +15,12 @@
   border-radius: 4px;
 }
 
+/* Sets Button hover styles for the Scroll To Top Button */
 #scrollBtn:hover {
   background-color: #008e00;
 }
 
+/* Sets Arrow Up Button styles for the Scroll To Top Button */
 .arrowUp {
   border: solid;
   border-width: 0 3px 3px 0;

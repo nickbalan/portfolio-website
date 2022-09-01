@@ -2,34 +2,34 @@
   box-sizing: border-box;
 }
 
-/* Sets the percentage of 95% for skills and languages bars */
+/* Sets Percentage of 95% for skills and languages bars styles */
 .percentage_95 {
   width: 95%;
 }
 
-/* Sets the percentage of 90% for skills and languages bars */
+/* Sets Percentage of 90% for skills and languages bars styles */
 .percentage_90 {
   width: 90%;
 }
 
-/* Sets the percentage of 85% for skills and languages bars */
+/* Sets Percentage of 85% for skills and languages bars styles */
 .percentage_85 {
   width: 85%;
 }
 
-/* Sets new button style */
+/* Sets Button styles */
 .cv-button {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* Sets new unordered list circle style */
+/* Sets Unordered list circle styles */
 ul.circle {
   list-style-type: circle;
 }
 
-/* Sets new unordered list square style */
+/* Sets Unordered list square styles */
 ul.square {
   list-style-type: square;
 }
