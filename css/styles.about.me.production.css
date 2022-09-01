@@ -10,46 +10,46 @@
   box-sizing: border-box;
 }
 
-/* Sets the percentage of 95% for skills and languages bars */
+/* Sets Percentage of 95% for skills and languages bars styles */
 .percentage_95 {
   width: 95%;
 }
 
-/* Sets the percentage of 90% for skills and languages bars */
+/* Sets Percentage of 90% for skills and languages bars styles */
 .percentage_90 {
   width: 90%;
 }
 
-/* Sets the percentage of 85% for skills and languages bars */
+/* Sets Percentage of 85% for skills and languages bars styles */
 .percentage_85 {
   width: 85%;
 }
 
-/* Sets new button style */
+/* Sets Button styles */
 .cv-button {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* Sets new unordered list circle style */
+/* Sets Unordered list circle styles */
 ul.circle {
   list-style-type: circle;
 }
 
-/* Sets new unordered list square style */
+/* Sets Unordered list square styles */
 ul.square {
   list-style-type: square;
 }
 
-/* Sets the Social Media icons style */
+/* Sets Social Media icons styles */
 .social_media {
   grid-gap: 20px;
   padding: 20px;
   display: inline-flex;
 }
 
-/* Sets the Scroll To Top Button style */
+/* Sets Scroll To Top Button styles */
 #scrollBtn {
   display: none;
   position: fixed;
@@ -66,10 +66,12 @@ ul.square {
   border-radius: 4px;
 }
 
+/* Sets Button hover styles for the Scroll To Top Button */
 #scrollBtn:hover {
   background-color: #008e00;
 }
 
+/* Sets Arrow Up Button styles for the Scroll To Top Button */
 .arrowUp {
   border: solid;
   border-width: 0 3px 3px 0;
