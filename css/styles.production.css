@@ -47,7 +47,7 @@ body {
   /* Sets the font to Lato and the fallback font sans-serif*/
   font-family: "Lato", sans-serif;
   /* Sets the font to embed the regular (400) version */
-  font-weight: 400px;
+  font-weight: 400;
   /* Sets the font size to specific size*/
   font-size: 16px;
   /* Sets the line-height to specific line-height*/
@@ -63,21 +63,21 @@ h3 {
 h1 {
   /* Sets the fonts size to specific size*/
   font-size: 30px;
-  font-weight: 700px;
+  font-weight: 700;
   font-family: "Benne";
 }
 
 h2 {
   /* Sets the fonts size to specific size*/
   font-size: 24px;
-  font-weight: 700px;
+  font-weight: 700;
   font-family: "Oxygen";
 }
 
 h3 {
   /* Sets the fonts size to specific size*/
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: 700;
   font-family: "Oxygen";
 }
 
@@ -171,10 +171,10 @@ button:focus,
 /* Sets responsive logo */
 .logo_icon {
   width: 10vh;
-  display: pointer;
+  display: block;
   -webkit-box-align: left;
   -ms-flex-align: left;
-  align-items: left;
+  align-items: center;
 }
 
 /* Sets the Profile Portrait*/
@@ -572,8 +572,8 @@ footer.portfolio {
 #scrollBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 45px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -598,4 +598,153 @@ footer.portfolio {
   padding: 3px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+/* Sets the Contact Form styles */
+.form-all:before {
+  background: none;
+}
+
+.form-all {
+  font-family: Inter, sans-serif;
+}
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+  font-family: Inter, sans-serif;
+}
+.form-all .form-pagebreak-back-container,
+.form-all .form-pagebreak-next-container {
+  font-family: Inter, sans-serif;
+}
+.form-header-group {
+  font-family: Inter, sans-serif;
+}
+.form-label {
+  font-family: Inter, sans-serif;
+}
+
+.form-label.form-label-auto {
+  display: block;
+  float: none;
+  text-align: left;
+  width: 100%;
+}
+
+.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.form-all {
+  max-width: 752px;
+  width: 100%;
+}
+
+.form-label.form-label-left,
+.form-label.form-label-right,
+.form-label.form-label-left.form-label-auto,
+.form-label.form-label-right.form-label-auto {
+  width: 230px;
+}
+
+.form-all {
+  font-size: 16px;
+}
+.form-all .qq-upload-button,
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+  font-size: 16px;
+}
+.form-all .form-pagebreak-back-container,
+.form-all .form-pagebreak-next-container {
+  font-size: 16px;
+}
+
+.supernova .form-all,
+.form-all {
+  background-color: #ffffff;
+}
+
+.form-all {
+  color: #2c3345;
+}
+.form-header-group .form-header {
+  color: #2c3345;
+}
+.form-header-group .form-subHeader {
+  color: #2c3345;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label {
+  color: #2c3345;
+}
+.form-sub-label {
+  color: #464d5f;
+}
+
+.supernova {
+  background-color: #ffffff;
+}
+.supernova body {
+  background: transparent;
+}
+
+.form-textbox,
+.form-textarea,
+.form-dropdown,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #fff;
+}
+
+.supernova {
+  background-image: none;
+}
+#stage {
+  background-image: none;
+}
+
+.form-all {
+  background-image: none;
+}
+
+.ie-8 .form-all:before {
+  display: none;
+}
+.ie-8 {
+  margin-top: auto;
+  margin-top: initial;
+}
+
+.contactFormLink {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sets the Contact Form @media rules styles */
+@media print {
+  .form-section {
+    display: inline !important;
+  }
+  .form-pagebreak {
+    display: none !important;
+  }
+  .form-section-closed {
+    height: auto !important;
+  }
+  .page-section {
+    position: initial !important;
+  }
 }

@@ -9,9 +9,9 @@ Active link color / dark-grey: #2b2b2b;
 */
 
 /* Add the Tailwindcss directives */
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /* Sets variables */
 :root {
@@ -28,9 +28,9 @@ Active link color / dark-grey: #2b2b2b;
   /* Active link color var*/
   --dark-grey: #2b2b2b;
   /* Basic font weight var*/
-  --basic-font-weight: 400px;
+  --basic-font-weight: 400;
   /* Headings font weight var*/
-  --heading-font-weight: 700px;
+  --heading-font-weight: 700;
   /* Fallback font family var*/
   --font-family-fallback: "Lato", sans-serif;
   /* h1, h2, h3 font family var*/
