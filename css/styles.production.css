@@ -16,26 +16,26 @@ Active link color / dark-grey: #2b2b2b;
 */
 
 /* Add the Tailwindcss directives */
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /* Sets variables */
-:root {
+/* :root {
   /* Primary link color var */
-  /* Visited link color var*/
-  /* Primary Background Color var*/
-  /* Secondary Foreground Color */
-  /* Button Secondary Color var*/
-  /* Active link color var*/
-  /* Basic font weight var*/
-  /* Headings font weight var*/
-  /* Fallback font family var*/
-  /* h1, h2, h3 font family var*/
-  /* The font-size var */
-  /* The line-height var */
-  /* Grid background color var */
-}
+/* Visited link color var*/
+/* Primary Background Color var*/
+/* Secondary Foreground Color */
+/* Button Secondary Color var*/
+/* Active link color var*/
+/* Basic font weight var*/
+/* Headings font weight var*/
+/* Fallback font family var*/
+/* h1, h2, h3 font family var*/
+/* The font-size var */
+/* The line-height var */
+/* Grid background color var 
+} */
 
 /* Sets the default width of the element via box-sizing property and border-box value  */
 * {
@@ -483,6 +483,82 @@ ul.circle {
 /* Sets Unordered list square styles */
 ul.square {
   list-style-type: square;
+}
+
+/* Sets the portfolio h3 styles */
+h3.portfolio {
+  color: #737373;
+}
+
+/* Sets Section and Portfolio footer styles */
+section,
+footer.portfolio {
+  max-width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sets Project images styles */
+.project-screen {
+  width: 100%;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  cursor: zoom-in;
+}
+
+/* Sets Project image hover styles */
+.project-screen:hover {
+  border: 1px solid #777;
+}
+
+/* Sets Container styles */
+.container {
+  padding: 0 16px;
+}
+
+/* Sets Portfolio Grid style */
+.portfolio_grid {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Sets Protfolio Grid item styles */
+.portfolio_grid_item {
+  padding: 10px 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+/* Sets Portfolio Grid item hover styles */
+.portfolio_grid_item:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Sets Portrait image styles */
+.protfolio_portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* Sets Button styles */
+.protfolio_button {
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
 }
 
 /* Sets Social Media icons styles */
