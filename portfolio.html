@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Sets the Meta Charset to UTF-8 (Unicode Standard) -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- Adds the "viewport" <meta> tag to control the viewport's size and shape. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Adds the title on the browser tab -->
     <title>Portfolio Nick Balan</title>
     <!-- Adds the favicon on the browser tab -->
     <link rel="icon" href="img/favicon/favicon_48x48.ico" type="image/x-icon" />
     <!-- CSS Reset. Link to external CND normalize.min.css file -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!-- Link the custom CSS style sheets file -->
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
     <link rel="stylesheet" type="text/css" href="public/tailwind.css" />
     <!-- Link to Google fonts CND -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,408 +25,569 @@
       href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap"
       rel="stylesheet"
     />
-     <!-- Link to external CNDs -->
+    <!-- Link to external CNDs -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header with logo and the main navigation. Add class. -->
     <header>
-        <!-- The navigation container -->
-        <div class="navMenu">
-            <nav class="bg-white shadow-lg">
-              <div class="max-w-6xl mx-auto px-4">
-                <div class="flex sm:justify-between">
-                  <div class="flex space-x-7">
-                     <!-- Personal logo of Nick Balan -->
-                    <div>
-                      <a href="index.html" class="flex items-center py-4 px-2">
-                        <img
-                            srcset="img/logo/logo_48x48.png 0.5x"
-                            src="img/logo/logo_48x48.png"
-                            class="logo"
-                            alt="Nick Balan's personal logo, a text logo in uppercase that consists of my name"
-                        />
-                      </a>
-                    </div>
-                    <!-- Navigate to About Me page -->
-                    <div class="hidden md:flex items-center space-x-4">
-                      <a
-                        href="index.html"
-                        class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-                        >About Me</a
-                      >
-                      <!-- Navigate to My Portfolio page -->
-                      <a
-                        href="portfolio.html"
-                        class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
-                        >My Portfolio</a
-                      >
-                      <!-- Navigate to Contact Me page -->
-                      <a
-                        href="contact.html"
-                        class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-                        >Contact Me</a
-                      >
-                    </div>
-                    <!-- Responsive Mobile Navbar -->
-                    <div class="flex items-center py-5 px-5 w3-display-topright">
-                        <div class="w3-bar w3-white w3-card" id="myNavbar">
-                            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-                            <a
-                                href="javascript:void(0)"
-                                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                                onclick="w3_open()"
-                            >
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </div>
-                    </div>
+      <!-- The navigation container -->
+      <div class="navMenu">
+        <nav class="bg-white shadow-lg">
+          <div class="max-w-6xl mx-auto px-4">
+            <div class="flex sm:justify-between">
+              <div class="flex space-x-7">
+                <!-- Personal logo of Nick Balan -->
+                <div>
+                  <a href="index.html" class="flex items-center py-4 px-2">
+                    <img
+                      srcset="img/logo/logo_48x48.png 0.5x"
+                      src="img/logo/logo_48x48.png"
+                      class="logo"
+                      alt="Nick Balan's personal logo, a text logo in uppercase that consists of my name"
+                    />
+                  </a>
+                </div>
+                <!-- Navigate to About Me page -->
+                <div class="hidden md:flex items-center space-x-4">
+                  <a
+                    href="index.html"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    >About Me</a
+                  >
+                  <!-- Navigate to My Portfolio page -->
+                  <a
+                    href="portfolio.html"
+                    class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
+                    >My Portfolio</a
+                  >
+                  <!-- Navigate to Contact Me page -->
+                  <a
+                    href="contact.html"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    >Contact Me</a
+                  >
+                </div>
+                <!-- Responsive Mobile Navbar -->
+                <div class="flex items-center py-5 px-5 w3-display-topright">
+                  <div class="w3-bar w3-white w3-card" id="myNavbar">
+                    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                    <a
+                      href="javascript:void(0)"
+                      class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                      onclick="w3_open()"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </nav>
-            <!-- Sidebar on small screens when clicking the menu icon -->
-            <nav
-            class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-medium w3-hide-large"
-            style="display: none; right: 0"
-            id="mySidebar"
-            id="rightMenu"
-            >
-            <a
-              href="javascript:void(0)"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button w3-large w3-padding-16"
-            >
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
-            <!-- Navigate to About Me page -->
-            <a
-              href="index.html"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button"
-              >About Me</a
-            >
-            <!-- Navigate to My Portfolio page -->
-            <a
-              href="portfolio.html"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button"
-              >My Portfolio</a
-            >
-            <!-- Navigate to Contact Me page -->
-            <a
-              href="contact.html"
-              onclick="w3_close()"
-              class="w3-bar-item w3-button"
-              >Contact Me</a
-            >
-          </nav>
-        </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav
+          class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-medium w3-hide-large"
+          style="display: none; right: 0"
+          id="mySidebar"
+        >
+          <a
+            href="javascript:void(0)"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button w3-large w3-padding-16"
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+          <!-- Navigate to About Me page -->
+          <a
+            href="index.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >About Me</a
+          >
+          <!-- Navigate to My Portfolio page -->
+          <a
+            href="portfolio.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >My Portfolio</a
+          >
+          <!-- Navigate to Contact Me page -->
+          <a
+            href="contact.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >Contact Me</a
+          >
+        </nav>
+      </div>
     </header>
     <!-- Added the Scroll To Top Button -->
-    <button 
-      onclick="topFunction()" 
-      id="scrollBtn" 
+    <button
+      onclick="topFunction()"
+      id="scrollBtn"
       title="Go to top"
       type="button"
     >
       <span class="arrowUp"></span>
-      <b><br>Top</b>
+      <b><br />Top</b>
     </button>
     <section>
-        <!-- The Grid Title -->
-        <div class="grid_title">
-            <!-- Child Grid. Container 1 -->
-            <div class="grid__item portfolio_grid_item">
-                <h1>Portfolio</h1>
-            </div>
+      <!-- The Grid Title -->
+      <div class="grid_title">
+        <!-- Child Grid. Container 1 -->
+        <div class="grid__item portfolio_grid_item">
+          <h1>Portfolio</h1>
         </div>
-        <div class="grid portfolio_grid">
-            <!-- The Grid Items -->
-            <!-- Child Grid. Container 1. Simple Portfolio Website project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Simple Portfolio Website</h2>
-                <img src="img/Livescreen/Portfolio_website_improvement_v5/Portfolio_website_About_Me_page_improvement_v5.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="Portfolio Website livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        To build a simple website using HTML and CSS that will showcase my professional portfolio, which will include the projects I have built throughout my Full-Stack Web Development Program, to my professional network and potential employers.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/portfolio-website" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's GitHub Live page -->
-                    <a href="https://nickbalan.github.io/portfolio-website/" class="button protfolio_button" target="_blank">
-                        Live Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/portfolio-website/blob/main/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 2. MyFlix Client (Angular) project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>MyFlix Client (Angular)</h2>
-                <img src="img/Livescreen/Livescreen_MyFlix_Angular_Client.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="MyFlix Angular Client livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        Using Angular, build the client-side for an application called myFlix based on its existing server-side code (REST API and database), with supporting documentation.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/myflix-angular-client" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's GitHub Live page -->
-                    <a href="https://nickbalan.github.io/myflix-angular-client/" class="button protfolio_button" target="_blank">
-                        Live Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/myflix-angular-client/blob/main/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 3. Meet App project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Meet App</h2>
-                <img src="img/Livescreen/Meet_App_livescreen_1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="Meet App livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/meet-app" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's GitHub Live page -->
-                    <a href="https://nickbalan.github.io/meet-app/" class="button protfolio_button" target="_blank">
-                        Live link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/meet-app/blob/master/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 4. Chat App project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Chat App</h2>
-                <img src="img/Livescreen/Screenshot_Chat_App_1.jpg" class="w3-hover-opacity project-screen protfolio_portrait" onclick="onClick(this)" alt="Chat App livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        To build a chat app for mobile devices using React Native. The app will provide users with a chat interface and options to share images and their location.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/chat-app" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/chat-app/blob/master/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 5. Pokédex - Simple JS App project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Pokédex - Simple JS App</h2>
-                <img src="img/Livescreen/Simple_JS_App_Livescreen_1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="Simple JS App livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>    
-                        To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/simple-js-app#pok%C3%A9dex---simple-js-app" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's GitHub Live page -->
-                    <a href="https://nickbalan.github.io/simple-js-app/" class="button protfolio_button" target="_blank">
-                        Live Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/simple-js-app/blob/master/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 6. MyFlix Client (React) project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>MyFlix Client (React)</h2>
-                <img src="img/Livescreen/MyFLixClient_Livescreen_1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="MyFlix Client (React) livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database)
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/myFlix-client" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/myFlix-client/blob/main/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid. Container 7. MyFlix API project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>MyFlix API</h2>
-                <img src="img/Livescreen/MyFlix_API_Livescreen_1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="MyFlix_API Endpoint Documentation livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        To build the server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create
-                        a list of their favorite movies.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/myflix" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/myflix/blob/main/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid container 8. Simple To-Do List App using ReactJS & TypeScript project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Simple To-Do List App using ReactJS & TypeScript</h2>
-                <img src="img/Livescreen/React_TypeScript_Livescreen_1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="Simple To-Do List App using ReactJS & TypeScript livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        A Simple To-Do List App demonstrates that TypeScript is not limited to Angular or plain JavaScript projects; we may also use it in ReactJS projects. Typescript provides the tools to define strict types for ReactJS components, props, states, and event handlers.
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/react-typescript" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/react-typescript/blob/todo-list-v2/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Child Grid container 9. Budget Planner project -->
-            <div class="grid__item portfolio_grid_item">
-                <h2>Budget Planner</h2>
-                <img src="img/Livescreen/Monthly_Budgeting_Tool_v1.JPG" class="w3-hover-opacity project-screen" onclick="onClick(this)" alt="Budget Planner App livescreen">
-                <div class="container">
-                    <!-- Project description -->
-                    <h3 class="portfolio">Objective:</h3>
-                    <p>
-                        To design and implement a financial planning feature for a fintech web app that allows users:
-                        <ul> 
-                            <li>- To add, edit, and delete a monthly budget</li>
-                            <li>- To make monthly budget entries (enter, change & delete expenses)</li>
-                            <li>- To see the total balance after expenses and monthly expenses.</li>
-                        </ul>
-                    </p>
-                    <!-- Add a call-to-action buttons with no decoration link -->
-                    <!-- Navigate to the project's GitHub Repository -->
-                    <a href="https://github.com/nickbalan/budget-planner" class="button protfolio_button" target="_blank">
-                        GitHub Link
-                    </a>
-                    <!-- Navigate to the project's Technical Case Study -->
-                    <a href="https://github.com/nickbalan/budget-planner/blob/main/README.md" class="button protfolio_button" target="_blank">
-                        Technical Case Study
-                    </a>
-                </div>
-            </div>
-            <!-- Modal Gallery for full size images on click-->
-            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-                <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </span>
-                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                    <img id="img01" class="w3-image">
-                    <p id="caption" class="w3-opacity w3-large"></p>
-                </div>
-            </div>
+      </div>
+      <div class="grid portfolio_grid">
+        <!-- The Grid Items -->
+        <!-- Child Grid. Container 1. Simple Portfolio Website project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Simple Portfolio Website</h2>
+          <img
+            src="img/Livescreen/Portfolio_website_improvement_v5/Portfolio_website_About_Me_page_improvement_v5.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="Portfolio Website livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To build a simple website using HTML and CSS that will showcase my
+              professional portfolio, which will include the projects I have
+              built throughout my Full-Stack Web Development Program, to my
+              professional network and potential employers.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/portfolio-website"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's GitHub Live page -->
+            <a
+              href="https://nickbalan.github.io/portfolio-website/"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Live Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/portfolio-website/blob/main/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
         </div>
-    </div>
-    
+        <!-- Child Grid. Container 2. MyFlix Client (Angular) project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>MyFlix Client (Angular)</h2>
+          <img
+            src="img/Livescreen/Livescreen_MyFlix_Angular_Client.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="MyFlix Angular Client livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              Using Angular, build the client-side for an application called
+              myFlix based on its existing server-side code (REST API and
+              database), with supporting documentation.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/myflix-angular-client"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's GitHub Live page -->
+            <a
+              href="https://nickbalan.github.io/myflix-angular-client/"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Live Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/myflix-angular-client/blob/main/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid. Container 3. Meet App project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Meet App</h2>
+          <img
+            src="img/Livescreen/Meet_App_livescreen_1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="Meet App livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To build a serverless, progressive web application (PWA) with
+              React using a test-driven development (TDD) technique. The
+              application uses the Google Calendar API to fetch upcoming events.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/meet-app"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's GitHub Live page -->
+            <a
+              href="https://nickbalan.github.io/meet-app/"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Live link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/meet-app/blob/master/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid. Container 4. Chat App project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Chat App</h2>
+          <img
+            src="img/Livescreen/Screenshot_Chat_App_1.jpg"
+            class="w3-hover-opacity project-screen protfolio_portrait"
+            onclick="onClick(this)"
+            alt="Chat App livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To build a chat app for mobile devices using React Native. The app
+              will provide users with a chat interface and options to share
+              images and their location.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/chat-app"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/chat-app/blob/master/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid. Container 5. Pokédex - Simple JS App project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Pokédex - Simple JS App</h2>
+          <img
+            src="img/Livescreen/Simple_JS_App_Livescreen_1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="Simple JS App livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To build a small web application with HTML, CSS, and JavaScript
+              that loads data from an external API and enables the viewing of
+              data points in detail.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/simple-js-app#pok%C3%A9dex---simple-js-app"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's GitHub Live page -->
+            <a
+              href="https://nickbalan.github.io/simple-js-app/"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Live Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/simple-js-app/blob/master/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid. Container 6. MyFlix Client (React) project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>MyFlix Client (React)</h2>
+          <img
+            src="img/Livescreen/MyFLixClient_Livescreen_1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="MyFlix Client (React) livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              Using React, build the client-side for an application called
+              myFlix based on its existing server-side code (REST API and
+              database)
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/myFlix-client"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/myFlix-client/blob/main/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid. Container 7. MyFlix API project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>MyFlix API</h2>
+          <img
+            src="img/Livescreen/MyFlix_API_Livescreen_1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="MyFlix_API Endpoint Documentation livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To build the server-side component of a “movies” web application.
+              The web application will provide users with access to information
+              about different movies, directors, and genres. Users will be able
+              to sign up, update their personal information, and create a list
+              of their favorite movies.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/myflix"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/myflix/blob/main/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid container 8. Simple To-Do List App using ReactJS & TypeScript project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Simple To-Do List App using ReactJS & TypeScript</h2>
+          <img
+            src="img/Livescreen/React_TypeScript_Livescreen_1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="Simple To-Do List App using ReactJS & TypeScript livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              A Simple To-Do List App demonstrates that TypeScript is not
+              limited to Angular or plain JavaScript projects; we may also use
+              it in ReactJS projects. Typescript provides the tools to define
+              strict types for ReactJS components, props, states, and event
+              handlers.
+            </p>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/react-typescript"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/react-typescript/blob/todo-list-v2/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Child Grid container 9. Budget Planner project -->
+        <div class="grid__item portfolio_grid_item">
+          <h2>Budget Planner</h2>
+          <img
+            src="img/Livescreen/Monthly_Budgeting_Tool_v1.JPG"
+            class="w3-hover-opacity project-screen"
+            onclick="onClick(this)"
+            alt="Budget Planner App livescreen"
+          />
+          <div class="container">
+            <!-- Project description -->
+            <h3 class="portfolio">Objective:</h3>
+            <p>
+              To design and implement a financial planning feature for a fintech
+              web app that allows users:
+            </p>
+            <ul class="square">
+              <li>To add, edit, and delete a monthly budget</li>
+              <li>
+                To make monthly budget entries (enter, change & delete expenses)
+              </li>
+              <li>
+                To see the total balance after expenses and monthly expenses.
+              </li>
+            </ul>
+            <!-- Add a call-to-action buttons with no decoration link -->
+            <!-- Navigate to the project's GitHub Repository -->
+            <a
+              href="https://github.com/nickbalan/budget-planner"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              GitHub Link
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a
+              href="https://github.com/nickbalan/budget-planner/blob/main/README.md"
+              class="button protfolio_button"
+              target="_blank"
+            >
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Modal Gallery for full size images on click -->
+        <div
+          id="modal01"
+          class="w3-modal w3-black"
+          onclick="this.style.display='none'"
+        >
+          <span
+            class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Gallery"
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div
+            class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+          >
+            <img
+              src="img/Livescreen/Portfolio_website_improvement_v5/Portfolio_website_About_Me_page_improvement_v5.JPG"
+              id="img01"
+              class="w3-image"
+              alt="Portfolio Website livescreen"
+            />
+            <p id="caption" class="w3-opacity w3-large"></p>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
     </section>
     <!-- Footer start -->
     <footer class="w3-center text-center bg-gray-900 text-white portfolio">
-        <div class="grid_title text-center p-4 py-4">
-          <a class="text-whitehite" href="#">© 2021 - 2022 Copyright: Nick Balan</a>
-        </div>
-        <div class="social_media">
-          <!-- Github logo with link to my GitHub Repository -->
-          <a
-            href="https://github.com/nickbalan/"
-            target="_blank"
-          >
-            <img
-              src="img/github_icon.svg"
-              alt="Github logo"
-              width="30"
-              height="30"
-            />
-          </a>
-          <!-- Twitter logo with link to my Twitter page -->
-          <a
-            href="https://twitter.com/NickBalan3"
-            target="_blank"
-          >
-            <img
-              src="img/twitter_icon.svg"
-              alt="Twitter logo"
-              width="30"
-              height="30"
-            />
-          </a>
-          <!-- Linkedin logo with link to my LikedIn page -->
-          <a
-            href="https://www.linkedin.com/in/nickbalan/"
-            target="_blank"
-          >
-            <img
-              src="img/linkedin_icon.svg"
-              alt="Linkedin logo"
-              width="30"
-              height="30"
-            />
-          </a>
-          <!-- Medium logo with link to my Medium page -->
-          <a
-            href="https://medium.com/@nickbalan"
-            target="_blank"
-          >
-            <img
-              src="img/medium_icon.svg"
-              alt="Medium logo"
-              width="30"
-              height="30"
-            />
-          </a>
-        </div>
+      <div class="grid_title text-center p-4 py-4">
+        <a class="text-whitehite" href="#"
+          >© 2021 - 2022 Copyright: Nick Balan</a
+        >
+      </div>
+      <div class="social_media">
+        <!-- Github logo with link to my GitHub Repository -->
+        <a href="https://github.com/nickbalan/" target="_blank">
+          <img
+            src="img/github_icon.svg"
+            alt="Github logo"
+            width="30"
+            height="30"
+          />
+        </a>
+        <!-- Twitter logo with link to my Twitter page -->
+        <a href="https://twitter.com/NickBalan3" target="_blank">
+          <img
+            src="img/twitter_icon.svg"
+            alt="Twitter logo"
+            width="30"
+            height="30"
+          />
+        </a>
+        <!-- Linkedin logo with link to my LikedIn page -->
+        <a href="https://www.linkedin.com/in/nickbalan/" target="_blank">
+          <img
+            src="img/linkedin_icon.svg"
+            alt="Linkedin logo"
+            width="30"
+            height="30"
+          />
+        </a>
+        <!-- Medium logo with link to my Medium page -->
+        <a href="https://medium.com/@nickbalan" target="_blank">
+          <img
+            src="img/medium_icon.svg"
+            alt="Medium logo"
+            width="30"
+            height="30"
+          />
+        </a>
+      </div>
     </footer>
     <!-- Added the Scroll To Top Button functions -->
     <script src="js/scrollBtn.js"></script>
@@ -433,6 +597,5 @@
     <script src="js/modalGallery.js"></script>
     <!-- Added tota11y -->
     <script src="js/tota11y.min.js"></script>
-</body>
-
+  </body>
 </html>

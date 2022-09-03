@@ -2,9 +2,12 @@ JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.newPaymentUIForNewCreatedForms = false;
 JotForm.newPaymentUI = true;
+JotForm.showJotFormPowered = "new_footer";
+JotForm.poweredByText = "Powered by Jotform";
+JotForm.forwardToEu = true;
 
+/* Sets the Contact Form initialization */
 JotForm.init(function () {
-  /*INIT-START*/
   setTimeout(function () {
     $("input_10").hint("Email");
   }, 20);
@@ -33,8 +36,7 @@ JotForm.init(function () {
     currency: "This field can only contain currency values.",
     cyrillic: "This field can only contain cyrillic characters",
     dateInvalid: "This date is not valid. The date format is {format}",
-    dateInvalidSeparate:
-      "This date is not valid. Enter a valid {element}.",
+    dateInvalidSeparate: "This date is not valid. Enter a valid {element}.",
     dateLimited: "This date is unavailable.",
     disallowDecimals: "Please enter a whole number.",
     doneButton: "Done",
@@ -52,15 +54,13 @@ JotForm.init(function () {
     geoNotAvailableTitle: "Position Unavailable",
     geoPermissionDesc: "Check your browser's privacy settings.",
     geoPermissionTitle: "Permission Denied",
-    geoTimeoutDesc:
-      "Please check your internet connection and try again.",
+    geoTimeoutDesc: "Please check your internet connection and try again.",
     geoTimeoutTitle: "Timeout",
     gradingScoreError: "Score total should only be less than or equal to",
     incompleteFields:
       "There are incomplete required fields. Please complete them.",
     inputCarretErrorA: "Input should not be less than the minimum value:",
-    inputCarretErrorB:
-      "Input should not be greater than the maximum value:",
+    inputCarretErrorB: "Input should not be greater than the maximum value:",
     justSoldOut: "Just Sold Out",
     lessThan: "Your score should be less than or equal to",
     maxDigitsError: "The maximum digits allowed is",
@@ -137,7 +137,6 @@ JotForm.init(function () {
     theme: "light-theme",
     version: "2",
   });
-  /*INIT-END*/
 });
 
 JotForm.prepareCalculationsOnTheFly([
@@ -146,12 +145,7 @@ JotForm.prepareCalculationsOnTheFly([
   null,
   null,
   null,
-  {
-    name: "contactMe",
-    qid: "5",
-    text: "Contact Me",
-    type: "control_head",
-  },
+  { name: "contactMe", qid: "5", text: "Contact Me", type: "control_head" },
   null,
   null,
   { name: "submit8", qid: "8", text: "Send", type: "control_button" },
@@ -189,12 +183,7 @@ setTimeout(function () {
     null,
     null,
     null,
-    {
-      name: "contactMe",
-      qid: "5",
-      text: "Contact Me",
-      type: "control_head",
-    },
+    { name: "contactMe", qid: "5", text: "Contact Me", type: "control_head" },
     null,
     null,
     { name: "submit8", qid: "8", text: "Send", type: "control_button" },
@@ -230,8 +219,7 @@ setTimeout(function () {
 var all_spc = document.querySelectorAll(
   "form[id='220745195995368'] .si" + "mple" + "_spc"
 );
-for (var i = 0; i < all_spc.length; i++) {
+for (var i = 0; i < all_spc.lengtFh; i++) {
   all_spc[i].value = "220745195995368-220745195995368";
-};
+}
 
-JotForm.forwardToEu = true;
