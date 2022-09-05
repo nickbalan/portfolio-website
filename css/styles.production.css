@@ -37,116 +37,94 @@ Active link color / dark-grey: #2b2b2b;
 /* Grid background color var 
 } */
 
-/* Sets the default width of the element via box-sizing property and border-box value  */
+/* Sets the default width of the element with box-sizing property and border-box styles */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  /* Sets the font to Lato and the fallback font sans-serif*/
+  /* Sets the font to Lato and the fallback font to Sans-serif */
   font-family: "Lato", sans-serif;
-  /* Sets the font to embed the regular (400) version */
+  /* Sets the font weight to embed the regular (400) version */
   font-weight: 400;
-  /* Sets the font size to specific size*/
+  /* Sets the font size to a specific size */
   font-size: 16px;
-  /* Sets the line-height to specific line-height*/
+  /* Sets the line height to a specific value */
   line-height: 1.6;
 }
 
+/* Align the h1-h3 tag to center */
 h1,
 h2,
 h3 {
   text-align: center;
 }
 
+/* Sets the h1 tag font size, font-weight, and font-family*/
 h1 {
-  /* Sets the fonts size to specific size*/
   font-size: 30px;
   font-weight: 700;
   font-family: "Benne";
 }
 
+/* Sets the h2 tag font size, font-weight, and font-family */
 h2 {
-  /* Sets the fonts size to specific size*/
   font-size: 24px;
   font-weight: 700;
   font-family: "Oxygen";
 }
 
+/* Sets the h3 tag font size, font-weight, and font-family */
 h3 {
-  /* Sets the fonts size to specific size*/
   font-size: 18px;
   font-weight: 700;
   font-family: "Oxygen";
 }
 
-/* Primary link color */
+/* Sets the primary link color */
 a {
   color: #004000;
 }
 
-/* Visited link color */
+/* Sets the visited link color */
 a:visited {
   color: #57400f;
 }
 
-/* Selected link color */
+/* Sets the selected link color */
 a:active {
   color: #2b2b2b;
 }
 
-/* No underlinig when hovering over a link */
+/* Removes the underline for link hover */
 a:hover, 
 a:focus,
-/* No decoration for social media links */
+
+/* Removes the decoration for social media links */
 .social_media__link {
   text-decoration: none;
 }
 
-/* General settings for Buttons */
+/* Sets general settings for Button */
+.button,
 button {
-  /* Overwrites browser defaults and reset the border */
-  /* Resets the border */
+  /* Overwrites browser defaults and reset the Button border */
   border: none;
   display: inline-block;
-  /* Takes the font from the outer container */
+  /* Sets the Button font family to be inherited */
   font-family: inherit;
-  /* Styles the backgound color, font color, and text decoration () */
+  /* Sets the Button backgound color, font color, text decoration, and text align */
   background-color: #f7e1bb;
   color: #000000;
   text-decoration: none;
   text-align: center;
-  /* adds spacing to the button */
+  /* Adds the Button margin, paddings, and border-radius, and bottom border */
   padding: 10px;
   margin: 5px 0;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
-  /* Sets transition-duration and transition-property */
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-.button {
-  /* Overwrites browser defaults and reset the border */
-  /* Resets the border */
-  border: none;
-  display: inline-block;
-  /* Takes the font from the outer container */
-  font-family: inherit;
-  /* Styles the backgound color, font color, and text decoration () */
-  background-color: #f7e1bb;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  /* adds spacing to the button */
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
-  /* Sets transition-duration and transition-property */
+  /* Sets Button transition-duration and transition-property */
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
@@ -156,19 +134,19 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* the mouse appear as a hand when hovering over the button */
+  /* Changes the cursor to a pointer when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
+  /* Reduces the opacity of the Button to 80% */
   opacity: 0.8;
 }
 
-/* The second button */
+/* Sets the second Button color, and background-color */
 .button_secondary {
   background-color: #e0b354;
   color: #004000;
 }
 
-/* Sets responsive logo */
+/* Sets the responsive logo styles */
 .logo_icon {
   width: 10vh;
   display: block;
@@ -177,10 +155,10 @@ button:focus,
   align-items: center;
 }
 
-/* Sets the Profile Portrait*/
+/* Sets the Profile Portrait styles */
 .profile__portrait {
   width: 250px;
-  /* add rounded corners */
+  /* add Profile Portrait rounded corners styles */
   border-radius: 10%;
   display: block;
   padding: 15px;
@@ -188,12 +166,12 @@ button:focus,
   margin-right: auto;
 }
 
-/* Profile Image Animation */
+/* Sets Profile Image hover animation */
 .profile__portrait:hover {
   border: 1px solid rgb(255, 254, 254);
 }
 
-/* Sets the Flexbox layout for Footer*/
+/** Sets the Flexbox layout for Footer */
 .page_footer {
   clear: both;
   display: -webkit-box;
