@@ -54,45 +54,45 @@ body {
   line-height: 1.6;
 }
 
-/* Align the h1-h3 tag to center */
+/* Align h1-h3 tags to center */
 h1,
 h2,
 h3 {
   text-align: center;
 }
 
-/* Sets the h1 tag font size, font-weight, and font-family*/
+/* Sets h1 tag font size, font-weight, and font-family styles */
 h1 {
   font-size: 30px;
   font-weight: 700;
   font-family: "Benne";
 }
 
-/* Sets the h2 tag font size, font-weight, and font-family */
+/* Sets h2 tag font size, font-weight, and font-family styles */
 h2 {
   font-size: 24px;
   font-weight: 700;
   font-family: "Oxygen";
 }
 
-/* Sets the h3 tag font size, font-weight, and font-family */
+/* Sets h3 tag font size, font-weight, and font-family styles */
 h3 {
   font-size: 18px;
   font-weight: 700;
   font-family: "Oxygen";
 }
 
-/* Sets the primary link color */
+/* Sets primary link color styles */
 a {
   color: #004000;
 }
 
-/* Sets the visited link color */
+/* Sets visited link color styles */
 a:visited {
   color: #57400f;
 }
 
-/* Sets the selected link color */
+/* Sets selected link color styles */
 a:active {
   color: #2b2b2b;
 }
@@ -106,7 +106,7 @@ a:focus,
   text-decoration: none;
 }
 
-/* Sets general settings for Button */
+/* Sets general styles for Buttons */
 .button,
 button {
   /* Overwrites browser defaults and reset the Button border */
@@ -140,13 +140,13 @@ button:focus,
   opacity: 0.8;
 }
 
-/* Sets the second Button color, and background-color */
+/* Sets the second Button styles */
 .button_secondary {
   background-color: #e0b354;
   color: #004000;
 }
 
-/* Sets the responsive logo styles */
+/* Sets responsive logo styles */
 .logo_icon {
   width: 10vh;
   display: block;
@@ -155,10 +155,10 @@ button:focus,
   align-items: center;
 }
 
-/* Sets the Profile Portrait styles */
+/* Sets Profile Portrait styles */
 .profile__portrait {
   width: 250px;
-  /* add Profile Portrait rounded corners styles */
+  /* add rounded corners styles */
   border-radius: 10%;
   display: block;
   padding: 15px;
@@ -166,13 +166,13 @@ button:focus,
   margin-right: auto;
 }
 
-/* Sets Profile Image hover animation */
+/* Sets Profile Image hover animation styles */
 .profile__portrait:hover {
   border: 1px solid rgb(255, 254, 254);
 }
 
-/** Sets the Flexbox layout for Footer */
-.page_footer {
+/** Sets Footer styles */
+footer {
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,21 +185,16 @@ button:focus,
   padding: 10px;
 }
 
-/* Sets the page <div> */
-.berlin_svg,
-.profile,
-.about_me,
-.contact_me,
-.contact_form {
+/* Sets Berlin SVG section styles */
+.berlin_svg {
   max-width: 700px;
   margin: 0 auto;
-  /* Sets Flex properties: flex-grow: 1, flex-shrink: 1, flex-basis: 100px*/
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100px;
   flex: 1 1 100px;
 }
 
-/* Sets Flexbox for header parent container */
+/* Sets Page header styles */
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,21 +207,21 @@ button:focus,
   padding: 20px;
 }
 
-/* Put the img item around the center */
+/* Sets Page header image styles */
 .page-header img {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-/* Sets Flexbox for header child container */
+/* Sets Page header item styles */
 .page-header__item {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-/* Targeting the last child of the two flexbox child items */
+/* Sets Last-child styles for page header item */
 .page-header__item:last-child {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -234,14 +229,14 @@ button:focus,
   text-align: right;
 }
 
-/* Sets the main navigation */
+/* Sets Main navigation styles */
 .main-navigation {
   width: 100%;
   overflow: auto;
   background-color: rgb(255, 255, 255);
 }
 
-/* Sets the navigation links */
+/* Sets Navigation link styles */
 .navigation-list a {
   float: left;
   padding: 12px;
@@ -252,23 +247,23 @@ button:focus,
   text-align: center;
 }
 
-/* Sets the navigation links hover */
+/* Sets Navigation links hover styles */
 .navigation-list a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Get rid of the dots from the navigation unordered list */
+/* Removes the dots from the unordered list of navigation */
 .navigation-list {
   list-style-type: none;
 }
 
-/* no decoration for active links */
+/* Sets no decoration for active links of navigation */
 .navigation-list li .navigation-list__item--active {
   text-decoration: none;
 }
 
-/* Sets the title grid */
+/* Sets Grid title styles */
 .grid_title {
   display: -ms-grid;
   display: grid;
@@ -278,7 +273,7 @@ button:focus,
   padding: 20px;
 }
 
-/* Make an actual grid container. Grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+/* Sets Grid container styles for the portfolio page */
 .grid {
   display: -ms-grid;
   display: grid;
@@ -288,7 +283,7 @@ button:focus,
   padding: 20px;
 }
 
-/* The grid items a background color */
+/* Sets Grid item container styles for the portfolio page */
 .grid__item {
   background-color: #f9f9f9;
   width: auto;
@@ -296,7 +291,7 @@ button:focus,
   margin: 0;
 }
 
-/* You first target the last grid__item with the pseudo-selector :last-child; */
+/* Sets Last-child container styles for the portfolio page grid item */
 .grid_item:last-child {
   -ms-grid-column: 3;
   grid-column: 3 / 3;
@@ -305,7 +300,7 @@ button:focus,
   grid-row: 1 / 3;
 }
 
-/* Sets responsive media queries for desktop screens */
+/* Sets responsive Media Queries for desktop screens */
 @media only screen and (min-width: 1024px) {
   .grid {
     display: -ms-grid;
@@ -317,7 +312,7 @@ button:focus,
   }
 }
 
-/* Sets responsive media queries for small screens */
+/* Sets responsive Media Queries for mobile screens */
 @media (max-width: 700px) {
   .grid {
     width: 100%;
@@ -341,7 +336,7 @@ button:focus,
   }
 }
 
-/* The selector witch sets rule-set for 'color-change' animation */
+/* Sets rule-set color-change styles for Animation */
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
@@ -365,13 +360,13 @@ button:focus,
   }
 }
 
-/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function */
+/* Sets 'Sun' animation styles */
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
   animation: 4s color-change infinite alternate linear;
 }
 
-/* the 'cloud-front' will move from (0, 50px) to (200px, 50px). x - horizontal value, y - vertical value */
+/* Sets 'Cloud-move' animation styles */
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
@@ -393,13 +388,13 @@ button:focus,
   }
 }
 
-/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
+/* Sets 'Cloud-front' animation styles */
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
   animation: 30s cloud-move infinite alternate linear;
 }
 
-/* the 'cloud-back' will move from (446px, 48px) to (100px, 48px). x - horizontal value, y - vertical value */
+/* Sets 'Cloud-move-reverse' animation styles */
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
@@ -421,27 +416,28 @@ button:focus,
   }
 }
 
-/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
+/* Sets 'Cloud-back' animation styles */
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* Sets the padding styles for specific sections */
 .w3-bar .w3-button {
   padding: 16px;
 }
 
-/* Sets Percentage of 95% for skills and languages bars styles */
+/* Sets Percentage of 95% for skills bars styles */
 .percentage_95 {
   width: 95%;
 }
 
-/* Sets Percentage of 90% for skills and languages bars styles */
+/* Sets Percentage of 90% for skills bars styles */
 .percentage_90 {
   width: 90%;
 }
 
-/* Sets Percentage of 85% for skills and languages bars styles */
+/* Sets Percentage of 85% for skills bars styles */
 .percentage_85 {
   width: 85%;
 }
@@ -453,17 +449,17 @@ button:focus,
   margin-right: 10px;
 }
 
-/* Sets Unordered list circle styles */
+/* Sets Circle styles for unordered list */
 ul.circle {
   list-style-type: circle;
 }
 
-/* Sets Unordered list square styles */
+/* Sets Square styles for unordered list */
 ul.square {
   list-style-type: square;
 }
 
-/* Sets the portfolio h3 styles */
+/* Sets Portfolio h3 styles */
 h3.portfolio {
   color: #737373;
 }
@@ -498,7 +494,7 @@ footer.portfolio {
   padding: 0 16px;
 }
 
-/* Sets Portfolio Grid style */
+/* Sets Portfolio grid style */
 .portfolio_grid {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -510,7 +506,7 @@ footer.portfolio {
   padding: 0 8px;
 }
 
-/* Sets Protfolio Grid item styles */
+/* Sets Protfolio grid item styles */
 .portfolio_grid_item {
   padding: 10px 10px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -518,13 +514,13 @@ footer.portfolio {
   margin: 8px;
 }
 
-/* Sets Portfolio Grid item hover styles */
+/* Sets Portfolio grid item hover styles */
 .portfolio_grid_item:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Sets Portrait image styles */
+/* Sets Protfolio Portrait styles */
 .protfolio_portrait {
   display: block;
   margin-left: auto;
@@ -532,7 +528,7 @@ footer.portfolio {
   width: 30%;
 }
 
-/* Sets Button styles */
+/* Sets Portfolio button styles */
 .protfolio_button {
   outline: 0;
   cursor: pointer;
@@ -546,7 +542,7 @@ footer.portfolio {
   display: inline-flex;
 }
 
-/* Sets Scroll To Top Button styles */
+/* Sets styles for Scroll To Top Button */
 #scrollBtn {
   display: none;
   position: fixed;
@@ -563,12 +559,12 @@ footer.portfolio {
   border-radius: 4px;
 }
 
-/* Sets Button hover styles for the Scroll To Top Button */
+/* Sets hover styles for Scroll To Top Button */
 #scrollBtn:hover {
   background-color: #008e00;
 }
 
-/* Sets Arrow Up Button styles for the Scroll To Top Button */
+/* Sets Arrow Up Button styles for Scroll To Top Button */
 .arrowUp {
   border: solid;
   border-width: 0 3px 3px 0;
@@ -578,7 +574,7 @@ footer.portfolio {
   -webkit-transform: rotate(-135deg);
 }
 
-/* Sets the Contact Form styles */
+/* Sets Contact Form styles */
 .form-all:before {
   background: none;
 }
@@ -711,7 +707,7 @@ footer.portfolio {
   margin-right: auto;
 }
 
-/* Sets the Contact Form @media rules styles */
+/* Sets responsive media queries styles for Contact Form */
 @media print {
   .form-section {
     display: inline !important;
