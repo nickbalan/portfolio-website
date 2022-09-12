@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the Meta Charset to UTF-8 (Unicode Standard) -->
+    <meta charset="utf-8" />
+    <!-- Adds the "viewport" <meta> tag to control the viewport's size and shape. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Adds the title on the browser tab -->
+    <title>Zoom Meeting with Nick Balan</title>
+    <!-- Adds the favicon on the browser tab -->
+    <link rel="icon" href="img/favicon/favicon_48x48.ico" type="image/x-icon" />
+    <!-- CSS Reset. Link to external CND normalize.min.css file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Link the custom CSS style sheets file -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <!-- Link to Google fonts CND -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="public/tailwind.css" />
+    <!-- Link to external CNDs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.35792"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.35792"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Header with logo and the main navigation. Add class. -->
+    <header>
+      <!-- The navigation container -->
+      <div class="navMenu">
+        <nav class="bg-white shadow-lg">
+          <div class="max-w-6xl mx-auto px-4">
+            <div class="flex sm:justify-between">
+              <div class="flex space-x-7">
+                <!-- Personal logo of Nick Balan -->
+                <div>
+                  <a href="index.html" class="flex items-center py-4 px-2">
+                    <img
+                      srcset="img/logo/logo_48x48.png 0.5x"
+                      src="img/logo/logo_48x48.png"
+                      class="logo"
+                      alt="Nick Balan's personal logo, a text logo in uppercase that consists of my name"
+                    />
+                  </a>
+                </div>
+                <!-- Navigate to About Me page -->
+                <div class="hidden md:flex items-center space-x-4">
+                  <a
+                    href="index.html"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    >About Me</a
+                  >
+                  <!-- Navigate to My Portfolio page -->
+                  <a
+                    href="portfolio.html"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    >My Portfolio</a
+                  >
+                  <!-- Navigate to Zoom Meeting page -->
+                  <a
+                    href="zoom-meeting.html"
+                    class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
+                    >Zoom Meeting</a
+                  >
+                  <!-- Navigate to Contact Me page -->
+                  <a
+                    href="contact.html"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    >Contact Me</a
+                  >
+                </div>
+                <!-- Responsive Mobile Navbar -->
+                <div class="flex items-center py-5 px-5 w3-display-topright">
+                  <div class="w3-bar w3-white w3-card" id="myNavbar">
+                    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                    <a
+                      href="javascript:void(0)"
+                      class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                      onclick="w3_open()"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav
+          class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-medium w3-hide-large"
+          style="display: none; right: 0"
+          id="mySidebar"
+        >
+          <a
+            href="javascript:void(0)"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button w3-large w3-padding-16"
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+          <!-- Navigate to About Me page -->
+          <a
+            href="index.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >About Me</a
+          >
+          <!-- Navigate to My Portfolio page -->
+          <a
+            href="portfolio.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >My Portfolio</a
+          >
+          <!-- Navigate to Contact Me page -->
+          <a
+            href="contact.html"
+            onclick="w3_close()"
+            class="w3-bar-item w3-button"
+            >Contact Me</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div>
+      <!-- Added the Scroll To Top Button -->
+      <button
+        onclick="topFunction()"
+        id="scrollBtn"
+        title="Go to top"
+        type="button"
+      >
+        <span class="arrowUp"></span>
+        <b><br />Top</b>
+      </button>
+    </div>
+    <!-- Adds an external Contact Form -->
+    <form
+      class="jotform-form"
+      action="https://submit.jotformeu.com/submit/222417076567056/"
+      method="post"
+      name="form_222417076567056"
+      id="222417076567056"
+      accept-charset="utf-8"
+      autocomplete="on"
+    >
+      <input type="hidden" name="formID" value="222417076567056" />
+      <input type="hidden" id="JWTContainer" value="" />
+      <input type="hidden" id="cardinalOrderNumber" value="" />
+      <div role="main" class="form-all">
+        <ul class="form-section page-section">
+          <li id="cid_1" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group header-large">
+              <div class="header-text httac htvam">
+                <h1 id="header_1" class="form-header" data-component="header">
+                  Would you like to know me better?
+                </h1>
+                <div id="subHeader_1" class="form-subHeader">
+                  You could schedule a Zoom Meeting with me!
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="form-line jf-required"
+            data-type="control_fullname"
+            id="id_3"
+          >
+            <label
+              class="form-label form-label-top form-label-auto"
+              id="label_3"
+              for="first_3"
+            >
+              Your Name
+              <span class="form-required"> * </span>
+            </label>
+            <div
+              id="cid_3"
+              class="form-input-wide jf-required"
+              data-layout="full"
+            >
+              <div data-wrapper-react="true">
+                <span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  data-input-type="first"
+                >
+                  <input
+                    type="text"
+                    id="first_3"
+                    name="q3_yourName[first]"
+                    class="form-textbox validate[required]"
+                    data-defaultvalue=""
+                    autocomplete="section-input_3 given-name"
+                    size="10"
+                    value=""
+                    data-component="first"
+                    aria-labelledby="label_3 sublabel_3_first"
+                    required=""
+                  />
+                  <label
+                    class="form-sub-label"
+                    for="first_3"
+                    id="sublabel_3_first"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                  >
+                    First Name
+                  </label>
+                </span>
+                <span
+                  class="form-sub-label-container"
+                  style="vertical-align: top"
+                  data-input-type="last"
+                >
+                  <input
+                    type="text"
+                    id="last_3"
+                    name="q3_yourName[last]"
+                    class="form-textbox validate[required]"
+                    data-defaultvalue=""
+                    autocomplete="section-input_3 family-name"
+                    size="15"
+                    value=""
+                    data-component="last"
+                    aria-labelledby="label_3 sublabel_3_last"
+                    required=""
+                  />
+                  <label
+                    class="form-sub-label"
+                    for="last_3"
+                    id="sublabel_3_last"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                  >
+                    Last Name
+                  </label>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="form-line jf-required"
+            data-type="control_appointment"
+            id="id_6"
+          >
+            <label
+              class="form-label form-label-top form-label-auto"
+              id="label_6"
+            >
+              Schedule a Zoom Meeting with me
+              <span class="form-required"> * </span>
+            </label>
+            <div
+              id="cid_6"
+              class="form-input-wide jf-required"
+              data-layout="full"
+            >
+              <div
+                id="input_6"
+                class="appointmentFieldWrapper jfQuestion-fields"
+              >
+                <input
+                  class="appointmentFieldInput validate"
+                  name="q6_scheduleA[date]"
+                  id="input_6_date"
+                />
+                <input
+                  class="appointmentFieldInput"
+                  name="q6_scheduleA[duration]"
+                  value="15"
+                  id="input_6_duration"
+                />
+                <input
+                  class="appointmentFieldInput"
+                  name="q6_scheduleA[timezone]"
+                  value="Europe/Berlin (GMT+02:00)"
+                  id="input_6_timezone"
+                />
+                <div class="appointmentField"></div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_email" id="id_4">
+            <label
+              class="form-label form-label-top form-label-auto"
+              id="label_4"
+              for="input_4"
+            >
+              Your Email
+              <span class="form-required"> * </span>
+            </label>
+            <div
+              id="cid_4"
+              class="form-input-wide jf-required"
+              data-layout="half"
+            >
+              <span
+                class="form-sub-label-container"
+                style="vertical-align: top"
+              >
+                <input
+                  type="email"
+                  id="input_4"
+                  name="q4_yourEmail"
+                  class="form-textbox validate[required, Email]"
+                  data-defaultvalue=""
+                  style="width: 310px"
+                  size="310"
+                  value=""
+                  data-component="email"
+                  aria-labelledby="label_4 sublabel_input_4"
+                  required=""
+                />
+                <label
+                  class="form-sub-label"
+                  for="input_4"
+                  id="sublabel_input_4"
+                  style="min-height: 13px"
+                  aria-hidden="false"
+                >
+                  example@email-example.com
+                </label>
+              </span>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_textarea" id="id_9">
+            <label
+              class="form-label form-label-top form-label-auto"
+              id="label_9"
+              for="input_9"
+            >
+              Your Message
+            </label>
+            <div id="cid_9" class="form-input-wide" data-layout="full">
+              <textarea
+                id="input_9"
+                class="form-textarea"
+                name="q9_yourMessage"
+                style="width: 648px; height: 163px"
+                data-component="textarea"
+                aria-labelledby="label_9"
+              ></textarea>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide" data-layout="full">
+              <div
+                data-align="auto"
+                class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"
+              >
+                <button
+                  id="input_2"
+                  type="submit"
+                  class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                  data-component="button"
+                  data-content=""
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </li>
+          <li style="display: none">
+            Should be Empty:
+            <input type="text" name="website" value="" />
+          </li>
+        </ul>
+      </div>
+      <input
+        type="hidden"
+        class="simple_spc"
+        id="simple_spc"
+        name="simple_spc"
+        value="222417076567056"
+      />
+      <div class="formFooter-heightMask"></div>
+      <div class="formFooter f6 branding21 contactFormLink">
+        <div class="formFooter-wrapper formFooter-leftSide">
+          <a
+            href="https://link.jotform.com/nickbalan-fEMlLnHAJI"
+            target="_blank"
+            class="formFooter-logoLink"
+            ><img
+              class="formFooter-logo"
+              src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg"
+              alt="Jotform Logo"
+              style="height: 44px"
+          /></a>
+        </div>
+        <div class="formFooter-wrapper formFooter-rightSide">
+          <span class="formFooter-text">
+            Now create your own Jotform - It's free!
+          </span>
+          <a
+            class="formFooter-button"
+            href="https://link.jotform.com/nickbalan-LILJt182fs"
+            target="_blank"
+            >Create your own Jotform</a
+          >
+        </div>
+      </div>
+    </form>
+    <!-- Add the external Contact Form functions -->
+    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.35792"></script>
+    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.35792"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"
+    ></script>
+    <script src="js/zoomMeeting.js"></script>
+    <script src="https://cdn03.jotfor.ms//s/umd/ie11/for-appointment-field.js"></script>
+    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.35792"></script>
+    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.35792"></script>
+    <!-- Added the Scroll To Top Button functions -->
+    <script src="js/scrollBtn.js"></script>
+    <!-- Added the mobile Navbar functions -->
+    <script src="js/mobileNavbar.js"></script>
+    <!-- Added tota11y -->
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
