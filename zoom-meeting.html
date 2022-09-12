@@ -6,7 +6,7 @@
     <!-- Adds the "viewport" <meta> tag to control the viewport's size and shape. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Adds the title on the browser tab -->
-    <title>Contact Nick Balan</title>
+    <title>Zoom Meeting with Nick Balan</title>
     <!-- Adds the favicon on the browser tab -->
     <link rel="icon" href="img/favicon/favicon_48x48.ico" type="image/x-icon" />
     <!-- CSS Reset. Link to external CND normalize.min.css file -->
@@ -38,22 +38,15 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.35623"
+      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.35792"
     />
     <link
       type="text/css"
       rel="stylesheet"
-      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.35623"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      media="all"
-      href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.35623"
+      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.35792"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-
   <body>
     <!-- Header with logo and the main navigation. Add class. -->
     <header>
@@ -90,13 +83,13 @@
                   <!-- Navigate to Zoom Meeting page -->
                   <a
                     href="zoom-meeting.html"
-                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                    class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
                     >Zoom Meeting</a
                   >
                   <!-- Navigate to Contact Me page -->
                   <a
                     href="contact.html"
-                    class="py-10 px-2 text-green-500 font-semibold border-b-4 border-green-500"
+                    class="py-10 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                     >Contact Me</a
                   >
                 </div>
@@ -176,40 +169,26 @@
     <!-- Adds an external Contact Form -->
     <form
       class="jotform-form"
-      action="https://submit.jotformeu.com/submit/220745195995368/"
+      action="https://submit.jotformeu.com/submit/222417076567056/"
       method="post"
-      name="form_220745195995368"
-      id="220745195995368"
+      name="form_222417076567056"
+      id="222417076567056"
       accept-charset="utf-8"
       autocomplete="on"
     >
-      <input type="hidden" name="formID" value="220745195995368" />
+      <input type="hidden" name="formID" value="222417076567056" />
       <input type="hidden" id="JWTContainer" value="" />
       <input type="hidden" id="cardinalOrderNumber" value="" />
       <div role="main" class="form-all">
-        <div class="cont">
-          <input
-            type="text"
-            id="input_language"
-            name="input_language"
-            style="display: none"
-          />
-          <div class="language-dd" id="langDd" style="display: none">
-            <div class="dd-placeholder lang-emp">Language</div>
-            <ul class="lang-list dn" id="langList">
-              <li data-lang="en" class="en">English (US)</li>
-            </ul>
-          </div>
-        </div>
         <ul class="form-section page-section">
-          <li id="cid_5" class="form-input-wide" data-type="control_head">
+          <li id="cid_1" class="form-input-wide" data-type="control_head">
             <div class="form-header-group header-large">
               <div class="header-text httac htvam">
-                <h1 id="header_5" class="form-header" data-component="header">
-                  Contact Me
+                <h1 id="header_1" class="form-header" data-component="header">
+                  Would you like to know me better?
                 </h1>
-                <div id="subHeader_5" class="form-subHeader">
-                  I will get back to you asap!
+                <div id="subHeader_1" class="form-subHeader">
+                  You could schedule a Zoom Meeting with me!
                 </div>
               </div>
             </div>
@@ -217,19 +196,18 @@
           <li
             class="form-line jf-required"
             data-type="control_fullname"
-            id="id_9"
-            data-compound-hint="First Name,Last Name"
+            id="id_3"
           >
             <label
               class="form-label form-label-top form-label-auto"
-              id="label_9"
-              for="first_9"
+              id="label_3"
+              for="first_3"
             >
-              Name
+              Your Name
               <span class="form-required"> * </span>
             </label>
             <div
-              id="cid_9"
+              id="cid_3"
               class="form-input-wide jf-required"
               data-layout="full"
             >
@@ -241,18 +219,26 @@
                 >
                   <input
                     type="text"
-                    id="first_9"
-                    name="q9_name[first]"
+                    id="first_3"
+                    name="q3_yourName[first]"
                     class="form-textbox validate[required]"
                     data-defaultvalue=""
-                    autocomplete="section-input_9 given-name"
+                    autocomplete="section-input_3 given-name"
                     size="10"
                     value=""
-                    placeholder="First Name"
                     data-component="first"
-                    aria-labelledby="label_9"
+                    aria-labelledby="label_3 sublabel_3_first"
                     required=""
                   />
+                  <label
+                    class="form-sub-label"
+                    for="first_3"
+                    id="sublabel_3_first"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                  >
+                    First Name
+                  </label>
                 </span>
                 <span
                   class="form-sub-label-container"
@@ -261,37 +247,83 @@
                 >
                   <input
                     type="text"
-                    id="last_9"
-                    name="q9_name[last]"
+                    id="last_3"
+                    name="q3_yourName[last]"
                     class="form-textbox validate[required]"
                     data-defaultvalue=""
-                    autocomplete="section-input_9 family-name"
+                    autocomplete="section-input_3 family-name"
                     size="15"
                     value=""
-                    placeholder="Last Name"
                     data-component="last"
-                    aria-labelledby="label_9"
+                    aria-labelledby="label_3 sublabel_3_last"
                     required=""
                   />
+                  <label
+                    class="form-sub-label"
+                    for="last_3"
+                    id="sublabel_3_last"
+                    style="min-height: 13px"
+                    aria-hidden="false"
+                  >
+                    Last Name
+                  </label>
                 </span>
               </div>
             </div>
           </li>
           <li
             class="form-line jf-required"
-            data-type="control_email"
-            id="id_10"
+            data-type="control_appointment"
+            id="id_6"
           >
             <label
               class="form-label form-label-top form-label-auto"
-              id="label_10"
-              for="input_10"
+              id="label_6"
             >
-              Email
+              Schedule a Zoom Meeting with me
               <span class="form-required"> * </span>
             </label>
             <div
-              id="cid_10"
+              id="cid_6"
+              class="form-input-wide jf-required"
+              data-layout="full"
+            >
+              <div
+                id="input_6"
+                class="appointmentFieldWrapper jfQuestion-fields"
+              >
+                <input
+                  class="appointmentFieldInput validate"
+                  name="q6_scheduleA[date]"
+                  id="input_6_date"
+                />
+                <input
+                  class="appointmentFieldInput"
+                  name="q6_scheduleA[duration]"
+                  value="15"
+                  id="input_6_duration"
+                />
+                <input
+                  class="appointmentFieldInput"
+                  name="q6_scheduleA[timezone]"
+                  value="Europe/Berlin (GMT+02:00)"
+                  id="input_6_timezone"
+                />
+                <div class="appointmentField"></div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_email" id="id_4">
+            <label
+              class="form-label form-label-top form-label-auto"
+              id="label_4"
+              for="input_4"
+            >
+              Your Email
+              <span class="form-required"> * </span>
+            </label>
+            <div
+              id="cid_4"
               class="form-input-wide jf-required"
               data-layout="half"
             >
@@ -301,73 +333,62 @@
               >
                 <input
                   type="email"
-                  id="input_10"
-                  name="q10_email"
+                  id="input_4"
+                  name="q4_yourEmail"
                   class="form-textbox validate[required, Email]"
                   data-defaultvalue=""
                   style="width: 310px"
                   size="310"
                   value=""
-                  placeholder="Email"
                   data-component="email"
-                  aria-labelledby="label_10 sublabel_input_10"
+                  aria-labelledby="label_4 sublabel_input_4"
                   required=""
                 />
                 <label
                   class="form-sub-label"
-                  for="input_10"
-                  id="sublabel_input_10"
+                  for="input_4"
+                  id="sublabel_input_4"
                   style="min-height: 13px"
                   aria-hidden="false"
                 >
-                  example@example.com
+                  example@email-example.com
                 </label>
               </span>
             </div>
           </li>
-          <li
-            class="form-line jf-required"
-            data-type="control_textarea"
-            id="id_14"
-          >
+          <li class="form-line" data-type="control_textarea" id="id_9">
             <label
               class="form-label form-label-top form-label-auto"
-              id="label_14"
-              for="input_14"
+              id="label_9"
+              for="input_9"
             >
               Your Message
-              <span class="form-required"> * </span>
             </label>
-            <div
-              id="cid_14"
-              class="form-input-wide jf-required"
-              data-layout="full"
-            >
+            <div id="cid_9" class="form-input-wide" data-layout="full">
               <textarea
-                id="input_14"
-                class="form-textarea validate[required]"
-                name="q14_yourMessage"
+                id="input_9"
+                class="form-textarea"
+                name="q9_yourMessage"
                 style="width: 648px; height: 163px"
                 data-component="textarea"
-                required=""
-                aria-labelledby="label_14"
+                aria-labelledby="label_9"
               ></textarea>
             </div>
           </li>
-          <li class="form-line" data-type="control_button" id="id_8">
-            <div id="cid_8" class="form-input-wide" data-layout="full">
+          <li class="form-line" data-type="control_button" id="id_2">
+            <div id="cid_2" class="form-input-wide" data-layout="full">
               <div
                 data-align="auto"
                 class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"
               >
                 <button
-                  id="input_8"
+                  id="input_2"
                   type="submit"
-                  class="form-submit-button form-submit-button-simple_green_apple submit-button jf-form-buttons jsTest-submitField"
+                  class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
                   data-component="button"
                   data-content=""
                 >
-                  Send
+                  Submit
                 </button>
               </div>
             </div>
@@ -383,7 +404,7 @@
         class="simple_spc"
         id="simple_spc"
         name="simple_spc"
-        value="220745195995368"
+        value="222417076567056"
       />
       <div class="formFooter-heightMask"></div>
       <div class="formFooter f6 branding21 contactFormLink">
@@ -399,31 +420,30 @@
               style="height: 44px"
           /></a>
         </div>
-        <div class="formFooter-wrapper formFooter-rightSide w3-center">
-          <span class="formFooter-text"
-            >Create your own Contact Form - It's easy!
+        <div class="formFooter-wrapper formFooter-rightSide">
+          <span class="formFooter-text">
+            Now create your own Jotform - It's free!
           </span>
           <a
             class="formFooter-button"
             href="https://link.jotform.com/nickbalan-LILJt182fs"
             target="_blank"
-            >Create a Contact Form</a
+            >Create your own Jotform</a
           >
         </div>
       </div>
     </form>
     <!-- Add the external Contact Form functions -->
-    <script src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.35623"></script>
-    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.35623"></script>
-    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.35623"></script>
+    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.35792"></script>
+    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.35792"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"
     ></script>
-    <script src="js/contactForm.js"></script>
-    <script src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.33807"></script>
-    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.35623"></script>
-    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.35623"></script>
+    <script src="js/zoomMeeting.js"></script>
+    <script src="https://cdn03.jotfor.ms//s/umd/ie11/for-appointment-field.js"></script>
+    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.35792"></script>
+    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.35792"></script>
     <!-- Added the Scroll To Top Button functions -->
     <script src="js/scrollBtn.js"></script>
     <!-- Added the mobile Navbar functions -->
