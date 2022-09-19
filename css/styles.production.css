@@ -574,27 +574,36 @@ footer.portfolio {
   -webkit-transform: rotate(-135deg);
 }
 
-/* Sets Contact Form styles */
+/* Set background styles for Contact Forms */
 .form-all:before {
   background: none;
 }
 
+/* Set font styles for Contact Forms */
 .form-all {
   font-family: Inter, sans-serif;
 }
+
+/* Set font styles for Contact Form Buttons */
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
 .form-all .form-submit-reset,
 .form-all .form-submit-print {
   font-family: Inter, sans-serif;
 }
+
+/* Set font styles for Contact Form pagebreak containers */
 .form-all .form-pagebreak-back-container,
 .form-all .form-pagebreak-next-container {
   font-family: Inter, sans-serif;
 }
+
+/* Set font styles for Contact Form headers */
 .form-header-group {
   font-family: Inter, sans-serif;
 }
+
+/* Set font styles for Contact Form labels */
 .form-label {
   font-family: Inter, sans-serif;
 }
@@ -709,15 +718,22 @@ footer.portfolio {
 
 /* Sets responsive media queries styles for Contact Form */
 @media print {
+  /* Set the display styles of the form section */
   .form-section {
     display: inline !important;
   }
+
+  /* Set the display styles of the form pagebreak */
   .form-pagebreak {
     display: none !important;
   }
+
+  /* Set the display styles of the closed form section */
   .form-section-closed {
     height: auto !important;
   }
+
+  /* Sets the display styles of the page section */
   .page-section {
     position: initial !important;
   }
