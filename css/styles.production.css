@@ -579,11 +579,6 @@ footer.portfolio {
   background: none;
 }
 
-/* Set font styles for Contact Forms */
-.form-all {
-  font-family: Inter, sans-serif;
-}
-
 /* Set font styles for Contact Form Buttons */
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
@@ -608,6 +603,7 @@ footer.portfolio {
   font-family: Inter, sans-serif;
 }
 
+/* Set styles for Contact Form labels */
 .form-label.form-label-auto {
   display: block;
   float: none;
@@ -615,16 +611,23 @@ footer.portfolio {
   width: 100%;
 }
 
+/* Set styles for Contact Form lines */
 .form-line {
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
+/* Set styles for all Contact Form */
 .form-all {
   max-width: 752px;
   width: 100%;
+  font-size: 16px;
+  color: #2c3345;
+  background-image: none;
+  font-family: Inter, sans-serif;
 }
 
+/* Set styles for Contact Form labels */
 .form-label.form-label-left,
 .form-label.form-label-right,
 .form-label.form-label-left.form-label-auto,
@@ -632,9 +635,7 @@ footer.portfolio {
   width: 230px;
 }
 
-.form-all {
-  font-size: 16px;
-}
+/* Set styles for Contact Form buttons */
 .form-all .qq-upload-button,
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
@@ -642,25 +643,27 @@ footer.portfolio {
 .form-all .form-submit-print {
   font-size: 16px;
 }
+
+/* Set styles for Contact Form pagebreaks */
 .form-all .form-pagebreak-back-container,
 .form-all .form-pagebreak-next-container {
   font-size: 16px;
 }
 
+/* Set styles for all Contact Form */
 .supernova .form-all,
 .form-all {
   background-color: #ffffff;
 }
 
-.form-all {
-  color: #2c3345;
-}
+/* Set styles for Contact Form headers */
 .form-header-group .form-header {
   color: #2c3345;
 }
 .form-header-group .form-subHeader {
   color: #2c3345;
 }
+
 .form-label-top,
 .form-label-left,
 .form-label-right,
@@ -694,10 +697,6 @@ footer.portfolio {
   background-image: none;
 }
 #stage {
-  background-image: none;
-}
-
-.form-all {
   background-image: none;
 }
 
