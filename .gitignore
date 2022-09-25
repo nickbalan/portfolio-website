@@ -1,3 +1,44 @@
-node_modules
+# Standardized .gitignore file that developers must use to avoid committing and pushing logs files, VSCode files, etc.
+
+# A .gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; see the link ->  https://git-scm.com/docs/gitignore for more information about gitignore file.
+
+# production
+/build
+build.json
+
+# compiled output
+/dist
 /node_modules
+node_modules
 .cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
