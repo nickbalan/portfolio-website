@@ -649,13 +649,15 @@
             <br />
           </div>
           <!-- Sets the Education section -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <button class="accordion w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16">
               <i
                 class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-green"
               ></i
               >Education
             </h2>
+          </button>
+          <div class="panel w3-container w3-card w3-white w3-margin-bottom">
             <div class="w3-container">
               <h5 class="w3-opacity"><b>CareerFoundry</b></h5>
               <h6 class="w3-text-gray">
@@ -703,13 +705,17 @@
             <br />
           </div>
           <!-- Sets the Certification section -->
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <button class="accordion w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16">
               <i
                 class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-green"
               ></i
               >Certification
             </h2>
+          </button>
+          <div
+            class="panel w3-container w3-card w3-white w3-padding-16 w3-margin-bottom"
+          >
             <div class="w3-container">
               <h5 class="w3-opacity">
                 <b
@@ -800,6 +806,7 @@
             </div>
             <br />
           </div>
+          <!-- </div> -->
         </div>
       </div>
       <!-- The End of the Grid layout -->
@@ -859,6 +866,8 @@
     <script src="js/scrollBtn.js"></script>
     <!-- Added the mobile Navbar functions -->
     <script src="js/mobileNavbar.js"></script>
+    <!-- Added the Accordion functions -->
+    <script src="js/accordion.js"></script>
     <!-- Added tota11y -->
     <script src="js/tota11y.min.js"></script>
   </body>
