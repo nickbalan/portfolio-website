@@ -157,7 +157,7 @@ button:focus,
 
 /* Sets Profile Portrait styles */
 .profile__portrait {
-  width: 250px;
+  width: 210px;
   /* add rounded corners styles */
   border-radius: 10%;
   display: block;
@@ -764,4 +764,8 @@ footer.portfolio {
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+.material-icons {
+  font-size: 46px;
 }
