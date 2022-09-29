@@ -115,8 +115,8 @@ button {
   /* Sets the Button font family to be inherited */
   font-family: inherit;
   /* Sets the Button backgound color, font color, text decoration, and text align */
-  background-color: #f7e1bb;
-  color: #000000;
+  background-color: #183a37;
+  color: #f6edd9;
   text-decoration: none;
   text-align: center;
   /* Adds the Button margin, paddings, and border-radius, and bottom border */
@@ -144,6 +144,15 @@ button:focus,
 .button_secondary {
   background-color: #e0b354;
   color: #004000;
+}
+
+.bar-color {
+  background-color: #04151f;
+  color: #efd6ac;
+}
+
+.icon {
+  color: #183a37;
 }
 
 /* Sets responsive logo styles */
@@ -233,7 +242,8 @@ footer {
 .main-navigation {
   width: 100%;
   overflow: auto;
-  background-color: rgb(255, 255, 255);
+  color: #003100;
+  border-color: #003100;
 }
 
 /* Sets Navigation link styles */
