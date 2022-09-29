@@ -115,8 +115,8 @@ button {
   /* Sets the Button font family to be inherited */
   font-family: inherit;
   /* Sets the Button backgound color, font color, text decoration, and text align */
-  background-color: #183a37;
-  color: #f6edd9;
+  background-color: #04151f;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   /* Adds the Button margin, paddings, and border-radius, and bottom border */
@@ -148,7 +148,15 @@ button:focus,
 
 .bar-color {
   background-color: #04151f;
-  color: #efd6ac;
+  color: #ffffff;
+}
+
+.bar-background {
+  background-color: #efd6ac;
+}
+
+.tab {
+  tab-size: 2;
 }
 
 .icon {
@@ -166,7 +174,7 @@ button:focus,
 
 /* Sets Profile Portrait styles */
 .profile__portrait {
-  width: 210px;
+  width: 215px;
   /* add rounded corners styles */
   border-radius: 10%;
   display: block;
@@ -437,6 +445,10 @@ footer {
   padding: 16px;
 }
 
+/* Sets Percentage of 99% for skills bars styles */
+.percentage_99 {
+  width: 99%;
+}
 /* Sets Percentage of 95% for skills bars styles */
 .percentage_95 {
   width: 95%;
