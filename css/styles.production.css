@@ -146,19 +146,23 @@ button:focus,
   color: #004000;
 }
 
+/* Sets percentage bars styles */
 .bar-color {
   background-color: #04151f;
   color: #ffffff;
 }
 
+/* Sets percentage bars background styles */
 .bar-background {
   background-color: #efd6ac;
 }
 
+/* Sets the tab-size styles */
 .tab {
   tab-size: 2;
 }
 
+/* Sets icons color styles */
 .icon {
   color: #183a37;
 }
@@ -246,29 +250,18 @@ footer {
   text-align: right;
 }
 
-/* Sets Main navigation styles */
-.main-navigation {
-  width: 100%;
-  overflow: auto;
-  color: #003100;
-  border-color: #003100;
+/* Sets main navigation links styles */
+.main-navigation a {
+  color: #183a37;
+  border-color: #183a37;
 }
 
-/* Sets Navigation link styles */
-.navigation-list a {
-  float: left;
-  padding: 12px;
-  color: #008b00;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%;
-  text-align: center;
-}
-
-/* Sets Navigation links hover styles */
-.navigation-list a:hover {
-  background-color: #ddd;
-  color: black;
+/* Sets main navigation links hover styles */
+.main-navigation a:hover {
+  color: #efd6ac;
+  border-color: #efd6ac;
+  color-scheme: dark;
+  text-shadow: 1px 1px 1px #183a37;
 }
 
 /* Removes the dots from the unordered list of navigation */
