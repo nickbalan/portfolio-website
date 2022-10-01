@@ -136,8 +136,8 @@ button:focus,
 .button:focus {
   /* Changes the cursor to a pointer when hovering over the button */
   cursor: pointer;
-  /* Reduces the opacity of the Button to 80% */
-  opacity: 0.8;
+  color: #183a37;
+  background-color: #efd6ac;
 }
 
 /* Sets the second Button styles */
@@ -567,7 +567,7 @@ footer.portfolio {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #555;
+  background-color: #183a37;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -576,7 +576,8 @@ footer.portfolio {
 
 /* Sets hover styles for Scroll To Top Button */
 #scrollBtn:hover {
-  background-color: #008e00;
+  background-color: #efd6ac;
+  text-shadow: 1px 1px 1px #183a37;
 }
 
 /* Sets Arrow Up Button styles for Scroll To Top Button */
@@ -657,6 +658,27 @@ footer.portfolio {
 }
 .form-sub-label {
   color: #464d5f;
+}
+
+.submit-button {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+}
+.submit-button {
+  min-width: 180px;
+}
+.form-submit-button:not(.form-sacl-button) {
+  color: #ffffff;
+  background: #183a37;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  color: #183a37;
+  background-color: #efd6ac;
 }
 
 /* Set styles for Form buttons */
