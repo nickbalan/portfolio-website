@@ -321,6 +321,30 @@ footer {
     grid-gap: 20px;
     padding: 20px;
   }
+
+  .button,
+  button {
+    /* Overwrites browser defaults and reset the Button border */
+    border: none;
+    display: inline-block;
+    /* Sets the Button font family to be inherited */
+    font-family: inherit;
+    /* Sets the Button backgound color, font color, text decoration, and text align */
+    background-color: #04151f;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* Changes the cursor to a pointer when hovering over the button */
+    cursor: pointer;
+    color: #183a37;
+    background-color: #efd6ac;
+  }
 }
 
 /* Sets responsive Media Queries for mobile screens */
@@ -344,6 +368,30 @@ footer {
   .navigation-list a:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  .button,
+  button {
+    /* Overwrites browser defaults and reset the Button border */
+    border: none;
+    display: inline-block;
+    /* Sets the Button font family to be inherited */
+    font-family: inherit;
+    /* Sets the Button backgound color, font color, text decoration, and text align */
+    background-color: #04151f;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* Changes the cursor to a pointer when hovering over the button */
+    cursor: pointer;
+    color: #183a37;
+    background-color: #efd6ac;
   }
 }
 
