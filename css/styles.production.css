@@ -206,15 +206,6 @@ footer {
   padding: 10px;
 }
 
-/* Sets Berlin SVG section styles */
-.berlin_svg {
-  max-width: 700px;
-  margin: 0 auto;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100px;
-  flex: 1 1 100px;
-}
-
 /* Sets Page header styles */
 .page-header {
   display: -webkit-box;
@@ -262,16 +253,6 @@ footer {
   border-color: #efd6ac;
   color-scheme: dark;
   text-shadow: 1px 1px 1px #183a37;
-}
-
-/* Removes the dots from the unordered list of navigation */
-.navigation-list {
-  list-style-type: none;
-}
-
-/* Sets no decoration for active links of navigation */
-.navigation-list li .navigation-list__item--active {
-  text-decoration: none;
 }
 
 /* Sets Grid title styles */
@@ -353,22 +334,6 @@ footer {
     width: 100%;
     display: block;
   }
-  .navigation-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .navigation-list a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  .navigation-list a:hover {
-    background-color: #ddd;
-    color: black;
-  }
 
   .button,
   button {
@@ -393,92 +358,6 @@ footer {
     color: #183a37;
     background-color: #efd6ac;
   }
-}
-
-/* Sets rule-set color-change styles for Animation */
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
-/* Sets 'Sun' animation styles */
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
-}
-
-/* Sets 'Cloud-move' animation styles */
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-/* Sets 'Cloud-front' animation styles */
-.cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-/* Sets 'Cloud-move-reverse' animation styles */
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-@keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
-  }
-}
-
-/* Sets 'Cloud-back' animation styles */
-.cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Sets the padding styles for specific sections */
