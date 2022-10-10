@@ -522,14 +522,6 @@ footer.portfolio {
   background: none;
 }
 
-/* Set font styles for Form Buttons */
-.form-all .qq-upload-button,
-.form-all .form-submit-button,
-.form-all .form-submit-reset,
-.form-all .form-submit-print {
-  font-family: Inter, sans-serif;
-}
-
 /* Set font styles for Form pagebreak containers */
 .form-all .form-pagebreak-back-container,
 .form-all .form-pagebreak-next-container {
@@ -588,13 +580,19 @@ footer.portfolio {
 }
 
 .submit-button {
+  border: none;
+  display: inline-block;
+  background-color: #04151f;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  min-width: 180px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: normal;
   font-family: "Inter", sans-serif;
 }
-.submit-button {
-  min-width: 180px;
-}
+
 .form-submit-button:not(.form-sacl-button) {
   color: #ffffff;
   background: #183a37;
@@ -603,18 +601,10 @@ footer.portfolio {
 }
 
 .submit-button:hover {
+  border: none;
   cursor: pointer;
   color: #183a37;
   background-color: #efd6ac;
-}
-
-/* Set styles for Form buttons */
-.form-all .qq-upload-button,
-.form-all .qq-upload-button,
-.form-all .form-submit-button,
-.form-all .form-submit-reset,
-.form-all .form-submit-print {
-  font-size: 16px;
 }
 
 /* Set styles for Form pagebreaks */

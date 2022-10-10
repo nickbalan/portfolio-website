@@ -1,5 +1,6 @@
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
+JotForm.singleProduct = false;
 JotForm.newPaymentUIForNewCreatedForms = true;
 JotForm.newPaymentUI = true;
 JotForm.clearFieldOnHide = "disable";
