@@ -133,7 +133,8 @@ button {
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus .active,
+.collapsible:hover {
   /* Changes the cursor to a pointer when hovering over the button */
   cursor: pointer;
   color: #183a37;
@@ -433,7 +434,6 @@ footer.portfolio {
   -ms-flex-align: baseline;
   align-items: baseline;
   border: 1px solid #ccc;
-  margin-right: 10px;
   cursor: zoom-in;
 }
 
@@ -737,8 +737,10 @@ footer.portfolio {
 
 /* Sets the styles for collapsible sections */
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: #183a37;
+  color: #ffffff;
+  /* background-color: #777;
+  color: white; */
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -766,10 +768,4 @@ footer.portfolio {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-}
-
-/* Sets the styles for collapsible sections hover */
-.active,
-.collapsible:hover {
-  background-color: #555;
 }
