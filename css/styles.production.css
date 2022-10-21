@@ -122,7 +122,7 @@ button {
   /* Adds the Button margin, paddings, and border-radius, and bottom border */
   padding: 10px;
   margin: 5px 0;
-  border-radius: 3px;
+  border-radius: 4px;
   border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
   /* Sets Button transition-duration and transition-property */
   -webkit-transition: 0.2s opacity;
@@ -429,12 +429,19 @@ footer.portfolio {
 
 /* Sets Project images styles */
 .project-screen {
-  width: 100%;
+  /* width: 100%; */
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
   border: 1px solid #ccc;
   cursor: zoom-in;
+  display: block;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 5px;
+  height: 150px;
 }
 
 /* Sets Project image hover styles */
@@ -471,14 +478,6 @@ footer.portfolio {
 .portfolio_grid_item:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Sets Protfolio Portrait styles */
-.protfolio_portrait {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
 }
 
 /* Sets Portfolio button styles */
@@ -748,6 +747,7 @@ footer.portfolio {
   text-align: left;
   outline: none;
   font-size: 15px;
+  border-radius: 4px;
 }
 
 .collapsible:after {
