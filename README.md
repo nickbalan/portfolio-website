@@ -1,8 +1,8 @@
-# Simple Portfolio Website. Technical Case Study
+# Portfolio Website. Technical Case Study
 
 ## Objective
 
-To build a simple responsive website using just HTML and CSS that showcases my professional portfolio, which will include the projects I've built throughout my Full-Stack Web Development Program, to my professional network and potential employers.
+Build a portfolio website with HTML, CSS, and JavaScript to showcase my portfolio to my professional network and potential employers.
 
 ## Context
 
