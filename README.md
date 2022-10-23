@@ -1,4 +1,4 @@
-# Simple Portfolio Website. Technical Case Study
+# Portfolio Website. Technical Case Study
 
 ## Objective
 
