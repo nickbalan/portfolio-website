@@ -48,6 +48,11 @@ As a user, I should be able to view the professional portfolio website and navig
 
 ## Technical Improvements & Solutions
 
+### To Do:
+
+- All pages must have an improved Mobile layout
+- All pages must have an improved Mobile Navbar design.
+
 ### Done:
 
 - All pages must have an improved desktop layout
@@ -56,11 +61,6 @@ As a user, I should be able to view the professional portfolio website and navig
 - All pages must have a Scroll To Top Button
 - All pages must have a Responsive Mobile Navbar
 - All pages must have a Modal Image Gallery.
-
-### To Do:
-
-- All pages must have an improved Mobile layout
-- All pages must have an improved Mobile Navbar design.
 
 ## Key Features
 
