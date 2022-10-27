@@ -48,11 +48,19 @@ As a user, I should be able to view the professional portfolio website and navig
 
 ## Technical Improvements & Solutions
 
-- The About Me page must also use W3Schools CSS
-- The Navigation Menu and the Footer on each page must use Tailwind CSS and PostCSS
-- All the pages must have a Scroll To Top Button
-- All the pages must have a Responsive Mobile Navbar
-- The Portfolio page must have a Modal Image Gallery.
+### Done:
+
+- All pages must have an improved desktop layout
+- All pages must have a responsive Navigation Menu and a responsive Footer
+- All pages must also use external CNDs
+- All pages must have a Scroll To Top Button
+- All pages must have a Responsive Mobile Navbar
+- All pages must have a Modal Image Gallery.
+
+### To Do:
+
+- All pages must have an improved Mobile layout
+- All pages must have an improved Mobile Navbar design.
 
 ## Key Features
 
