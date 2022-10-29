@@ -12,10 +12,6 @@ For a professional web developer is essential to have a designated place to pres
 
 [CareerFoundry](https://careerfoundry.com/) (25.02.2021 - 17.03.2022)
 
-## Project Improvement Strategies
-
-- Nick Balan
-
 ## My Role
 
 - Full-Stack Web Developer
