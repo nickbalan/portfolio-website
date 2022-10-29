@@ -8,13 +8,13 @@ Build a portfolio website with HTML, CSS, and JavaScript to showcase my portfoli
 
 For a professional web developer is essential to have a designated place to present the work and demonstrate relevant skills such as problem-solving or practical knowledge in a programming language.
 
-## Project Deliverables Acknowledgement
+## Project Owner, Management, and Acknowledgement.
 
-- CareerFoundry (25.02.2021 - 17.03.2022)
+[CareerFoundry](https://careerfoundry.com/) (25.02.2021 - 17.03.2022)
 
 ## Project Improvement Strategies
 
-- Nick Balan (18.03.2022 - Current)
+- Nick Balan
 
 ## My Role
 
