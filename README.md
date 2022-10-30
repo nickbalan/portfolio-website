@@ -33,12 +33,12 @@ As a user, I should be able to view the professional portfolio website and navig
 - The website must consist of at least three interconnected HTML pages
 - The website must use at least one CSS file in which all styles are defined
 - The website must use either CSS variables or a CSS preprocessor
-- The website’s code must be hosted in a Git repository on GitHub
+- The website’s code must be hosted in a GitHub repository
 - The website must be deployed on a server like GitHub Pages
 - All the code must be valid
   - The HTML files must pass validation on the [Markup Validation Service](https://validator.w3.org/)
   - All colors used need to pass the [AA Accessibility Guidelines](https://contrastchecker.com/)
-- The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions as well as on IE11
+- The website must work on the latest Chrome, Firefox, Safari, Edge, and Opera browser versions, as well as on IE11
 - The website must work on all screen sizes (including mobile and tablet) between 1920px and 320px in width
 - The website must work with keyboard, mouse, and touch inputs.
 
@@ -60,10 +60,10 @@ As a user, I should be able to view the professional portfolio website and navig
 
 ## Key Features
 
-- A homepage/landing/blog page with a short introduction and link(s) to work examples
+- A landing page with a short introduction and links to work examples
 - An about me page/section with crucial information about me as an individual, my relevant skills, and the tools or programming language(s) I used
 - A portfolio page with my project examples in a grid
-- A contact section — in the footer on each page and a contact form page.
+- A contact page and a contact section — in the footer of all pages.
 
 ## Link to live hosted Simple Portfolio Website
 
