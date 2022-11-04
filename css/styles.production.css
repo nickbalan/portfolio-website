@@ -359,6 +359,12 @@ footer {
     color: #183a37;
     background-color: #efd6ac;
   }
+
+  /* Sets the Responsive Mobile Sidebar styles */
+  .right {
+    display: none;
+    right: 0;
+  }
 }
 
 /* Sets the padding styles for specific sections */
