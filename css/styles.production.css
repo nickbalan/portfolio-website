@@ -412,6 +412,7 @@ footer {
 /* Sets Circle styles for unordered list */
 ul.circle {
   list-style-type: circle;
+  font-style: italic;
 }
 
 /* Sets Square styles for unordered list */
