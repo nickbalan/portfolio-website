@@ -179,9 +179,9 @@ button:focus,
 
 /* Sets Profile Portrait styles */
 .profile__portrait {
-  width: 215px;
+  width: 200px;
   /* add rounded corners styles */
-  border-radius: 10%;
+  border-radius: 4%;
   display: block;
   padding: 15px;
   margin-left: auto;
@@ -412,6 +412,7 @@ footer {
 /* Sets Circle styles for unordered list */
 ul.circle {
   list-style-type: circle;
+  font-style: italic;
 }
 
 /* Sets Square styles for unordered list */
