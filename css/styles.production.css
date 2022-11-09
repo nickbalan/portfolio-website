@@ -403,7 +403,8 @@ footer {
 }
 
 /* Sets Button styles */
-.cv-button {
+.cv-button,
+.section {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
