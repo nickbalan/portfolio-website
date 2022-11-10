@@ -181,16 +181,14 @@ button:focus,
 .profile__portrait {
   width: 200px;
   /* add rounded corners styles */
-  border-radius: 4%;
+  border-radius: 4px;
   display: block;
   padding: 15px;
+  margin: 15px 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Sets Profile Image hover animation styles */
-.profile__portrait:hover {
-  border: 1px solid rgb(255, 254, 254);
+  align-items: baseline;
+  border: 1px solid #ccc;
 }
 
 /** Sets Footer styles */
@@ -404,7 +402,13 @@ footer {
 
 /* Sets Button styles */
 .cv-button,
-.section {
+section.job-skills,
+section.about-me,
+section.work-experience,
+section.project-experience,
+section.education,
+section.certification,
+section.hobbies {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
