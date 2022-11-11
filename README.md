@@ -71,7 +71,7 @@ Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-w
 
 ## Portfolio Website live screenshots
 
-![Livescreen](img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_About_Me_page_improvement_v7_2.JPG)
+![Livescreen](img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_About_Me_page_improvement_v7_3.JPG)
 ![Livescreen](img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_Portfolio_page_improvement_v7_2.JPG)
 ![Livescreen](img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_Zoom_Meeting_page_improvement_v7.JPG)
 ![Livescreen](img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_Contact_Me_page_improvement_v7.JPG)
