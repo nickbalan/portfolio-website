@@ -12,6 +12,10 @@ For a professional web developer is essential to have a designated place to pres
 
 [CareerFoundry](https://careerfoundry.com/) (25.02.2021 - 17.03.2022)
 
+## Project Owner and improvements
+
+Nick Balan (18.03.2022 - now)
+
 ## My Role
 
 - Full-Stack Web Developer
@@ -19,7 +23,7 @@ For a professional web developer is essential to have a designated place to pres
 ## The 5 W's
 
 - Who? — My professional network and potential employers. The website is for anyone interested in my professional work and who might want to contact me about it.
-- What? — A responsive portfolio website built just with HTML and CSS.
+- What? — A responsive portfolio website built with HTML, CSS, and JavaScript.
 - When? — The website might be visited when a potential employer checks out my previous experience or after I've met a professional contact. They would want to see what I'm up to nowadays.
 - Where? — Potential employers might look at the website from their offices while networking contacts might access it from their mobile phones (e.g., after meeting me).
 - Why? — For my potential employers, clients, or collaborators to learn more about my professional experience and relevant skills and how to reach me. The website will also demonstrate my HTML and CSS front-end development skills to employers.
@@ -67,7 +71,7 @@ As a user, I should be able to view the professional portfolio website and navig
 
 ## Link to live hosted Portfolio Website
 
-Check out the [Simple Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
+Check out my [Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
 
 ## Portfolio Website live screenshots
 
