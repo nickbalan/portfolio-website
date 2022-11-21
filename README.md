@@ -71,7 +71,7 @@ As a user, I should be able to view the professional portfolio website and navig
 
 ## Link to live hosted Portfolio Website
 
-Check out my [Portfolio Website](https://nickbalan.github.io/portfolio-website/) page.
+Check out my [Portfolio Website](https://nickbalan.github.io/portfolio-website/).
 
 ## Portfolio Website live screenshots
 
