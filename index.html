@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Sets the Meta Charset to UTF-8 (Unicode Standard) -->
+    <!-- Sets the Charset Metadata -->
     <meta charset="utf-8" />
-    <!-- Adds the "viewport" <meta> tag to control the viewport's size and shape. -->
+    <!-- Sets the Viewport Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Sets the Content Metadata -->
+    <meta name="language" content="English" />
+    <!-- Sets the Robot Metadata -->
+    <meta name="robots" content="index, follow" />
+    <!-- Sets the Revision Metadata -->
+    <meta name="revised" content="December 1st, 2022, 2:00 pm" />
+    <!-- Sets the Copyright Metadata -->
+    <meta name="copyright" content="Copyright 2022" />
+    <!-- Sets the Mobile Metadata -->
+    <meta name="HandheldFriendly" content="true" />
+
     <!-- Sets the title on the browser tab -->
-    <title>Nick Balan's Home</title>
+    <title>About Me</title>
+    <!-- Sets the Description Metadata -->
+    <meta name="description" content="Nick Balan's About Me page" />
+    <!-- Sets the Author Metadata -->
+    <meta name="author" content="Nick Balan" />
+
+    <!-- Sets the Open Graph Protocol (OGP) Metadate -->
+    <meta property="og:title" content="About Me" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="img/Livescreen/Portfolio_website_improvement_v7/Portfolio_website_About_Me_page_improvement_v7_4.JPG"
+    />
+    <meta
+      property="og:url"
+      content="https://nickbalan.github.io/portfolio-website/"
+    />
+    <meta property="og:description" content="Nick Balan's About Me page" />
+    <meta property="og:site_name" content="Nick Balan" />
+
     <!-- Adds the favicon on the browser tab -->
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
     <!-- CSS Reset. Link to external CND normalize.min.css file -->
@@ -36,7 +66,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-
   <body>
     <!-- The Header with logo and the main navigation -->
     <header>
@@ -144,876 +173,897 @@
         </nav>
       </div>
     </header>
-    <!-- Added the Scroll To Top Button -->
-    <button
-      onclick="topFunction()"
-      id="scrollBtn"
-      title="Go to top"
-      type="button"
-    >
-      <span class="arrowUp"></span>
-      <b><br />Top</b>
-    </button>
-    <!-- The Page Container -->
-    <div class="w3-content w3-margin-top w3-width" style="max-width: 1400px">
-      <!-- Sets a Grid layout -->
-      <div class="w3-row-padding">
-        <!-- Sets the Left Column section -->
-        <div class="w3-third">
-          <div class="w3-white w3-text-dark-gray w3-card-4">
-            <!-- Added a profile section -->
-            <div class="w3-display-container">
-              <div class="w3-container w3-text-black">
-                <img
-                  src="img/Nick_Balan_photo_12072022.jpg"
-                  class="profile__portrait"
-                  alt="Nick Balan's photo"
-                />
-                <h2>Nick Balan</h2>
-                <!-- Navigate to My Portfolio page -->
-                <a
-                  href="portfolio.html"
-                  target="_self"
-                  class="button cv-button"
-                >
-                  Check out my projects
-                </a>
-                <!-- Added a Download link for my Resume -->
-                <a
-                  href="files/Nick_Balan_Full-Stack_EN--Resume_V12_1.pdf"
-                  target="_blank"
-                  class="button cv-button"
-                  download
-                >
-                  Download my Resume
-                </a>
-              </div>
-            </div>
-            <br />
-            <!-- Added the Job Skills section -->
-            <section class="job-skills">
-              <div class="w3-container">
-                <p>
-                  <i
-                    class="fa fa-briefcase fa-fw w3-margin-right w3-large icon"
-                  ></i
-                  >Full-Stack Developer | Front-End Developer | Web Developer
-                </p>
-                <p>
-                  <i class="fa fa-home fa-fw w3-margin-right w3-large icon"></i
-                  >Nürnberg (Nuremberg)
-                </p>
-                <p>
-                  <i
-                    class="fa fa-envelope fa-fw w3-margin-right w3-large icon"
-                  ></i
-                  >nickolae.balan@gmail.com
-                </p>
-                <hr />
-                <!-- Added the Web development skills section with Proficiency Percentage Bars -->
-                <p class="w3-large w3-margin-top w3-margin-bottom">
-                  <b
-                    ><i class="fa fa-asterisk fa-fw w3-margin-right icon"></i
-                    >Web development skills</b
-                  >
-                </p>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    HTML / HTML5
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    CSS / CSS3
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    JavaScript
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    TypeScript
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    Node.js, Express
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    Bootstrap, Redux
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    React w/ TypeScript
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    React Native
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    Angular JS w/ TypeScript
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    Git, Git CLI
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    GitHub, GitLab
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    MERN Stack
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_90"
-                  >
-                    Serverless, AWS Lambda
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_90"
-                  >
-                    SQL, MongoDB, Firebase
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_90"
-                  >
-                    Heroku
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_90"
-                  >
-                    Google Calendar API
-                  </div>
-                </div>
-                <hr />
-                <!-- Added the Languages skills section with Proficiency Percentage Bars -->
-                <p class="w3-large w3-text-theme w3-margin-top">
-                  <b
-                    ><i class="fa fa-globe fa-fw w3-margin-right icon"></i
-                    >Languages</b
-                  >
-                </p>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_99"
-                  >
-                    Romanian
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_95"
-                  >
-                    English
-                  </div>
-                </div>
-                <div
-                  class="bar-background w3-round-xlarge w3-small w3-margin-top w3-margin-bottom bar-shadow"
-                >
-                  <div
-                    class="w3-container w3-round-xlarge bar-color tab percentage_85"
-                  >
-                    German
-                  </div>
-                </div>
-              </div>
-            </section>
-            <br />
-          </div>
-        </div>
-        <!-- Sets the Right Column section -->
-        <div class="w3-twothird">
-          <!-- Sets the About Me section -->
-          <div
-            class="w3-container w3-card w3-white w3-margin-top w3-margin-bottom"
-          >
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-key fa-fw w3-margin-right w3-xxlarge icon"></i
-              >About Me
-            </h2>
-            <section class="about-me">
-              <div class="w3-container">
-                <p>
-                  Hi everyone,<br />
-                  I am Nick Balan, a Full Stack / Front-End Developer and
-                  certified professional with an experience of:
-                </p>
-                <br />
-                <ul class="square">
-                  <li>
-                    two years as a Web Developer, including practical and
-                    theoretical achievements within CareerFoundary courses and
-                    projects, but also
-                  </li>
-                  <li>
-                    at least five years as an IT administrator (in Romania and
-                    Moldova)
-                  </li>
-                  <li>
-                    and five years of experience as a Logistics Specialist,
-                    including one year as an Indirect Lead for 7-21 IT team
-                    members / SuperUsers at Amazon (in Germany)
-                  </li>
-                  <li>I graduated with a master's degree in Geoinformatics.</li>
-                </ul>
-                <br />
-                <p>
-                  My acquired theoretical and practical web development skills
-                  are added value to any team.
-                </p>
-                <br />
-                <p>
-                  My Tech stack used for the web development of applications
-                  includes:
-                </p>
-                <br />
-                <ul class="circle">
-                  <li>
-                    Front-End: HTML, CSS, TypeScript, JavaScript & React, and
-                    other JS frameworks and libraries
-                  </li>
-                  <li>
-                    Back-End: JavaScript, TypeScript, and Node.js frameworks and
-                    libraries.
-                  </li>
-                </ul>
-                <br />
-                <p>
-                  Besides my technical skills, proven high motivation,
-                  perseverance, and inspiring experience make me an excellent
-                  candidate for the following roles:
-                </p>
-                <br />
-                <ul class="circle">
-                  <li>
-                    Full-Stack Developer using JavaScript, TypeScript, MERN
-                    Stack, React w/ TypeScript, Angular &c
-                  </li>
-                  <li>
-                    Front-End Developer using HTML, CSS, JavaScript, TypeScript,
-                    and JS frameworks such as Angular, React Native, or JS
-                    libraries like React &c.
-                  </li>
-                </ul>
-                <br />
-                <p>
-                  I'm always open to remote or hybrid collaboration on
-                  innovative projects, allowing us to be creative and flexible
-                  in solving problems or exchanging ideas on projects.
-                </p>
-                <br />
-                <p>
-                  Check out my code on GitHub:
-                  <a href="https://www.github.com/nickbalan/" target="_blank"
-                    >https://www.github.com/nickbalan/</a
-                  ><br />
-                  or reach out to me on LinkedIn:
+    <main>
+      <!-- Added the Scroll To Top Button -->
+      <button
+        onclick="topFunction()"
+        id="scrollBtn"
+        title="Go to top"
+        type="button"
+      >
+        <span class="arrowUp"></span>
+        <b><br />Top</b>
+      </button>
+      <!-- The Page Container -->
+      <div class="w3-content w3-margin-top w3-width" style="max-width: 1400px">
+        <!-- Sets a Grid layout -->
+        <div class="w3-row-padding">
+          <!-- Sets the Left Column section -->
+          <div class="w3-third">
+            <div class="w3-white w3-text-dark-gray w3-card-4">
+              <!-- Added a profile section -->
+              <div class="w3-display-container">
+                <div class="w3-container w3-text-black">
+                  <img
+                    src="img/Nick_Balan_photo_12072022.jpg"
+                    class="profile__portrait"
+                    alt="Nick Balan's photo"
+                  />
+                  <h2>Nick Balan</h2>
+                  <!-- Navigate to My Portfolio page -->
                   <a
-                    href="https://www.linkedin.com/in/nickbalan/"
+                    href="portfolio.html"
+                    target="_self"
+                    class="button cv-button"
+                  >
+                    Check out my projects
+                  </a>
+                  <!-- Added a Download link for my Resume -->
+                  <a
+                    href="files/Nick_Balan_Full-Stack_EN--Resume_V12_1.pdf"
                     target="_blank"
-                    >https://www.linkedin.com/in/nickbalan/</a
+                    class="button cv-button"
+                    download
                   >
-                </p>
+                    Download my Resume
+                  </a>
+                </div>
               </div>
-            </section>
-            <br />
-          </div>
-          <!-- Sets the Work Experience section -->
-          <div class="accordion w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="test fa fa-group fa-fw w3-margin-right w3-xxlarge icon"
-              ></i
-              >Work Experience
-              <i
-                class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
-              ></i>
-            </h2>
-          </div>
-          <div class="panel w3-container w3-card w3-white w3-padding-16">
-            <section class="work-experience">
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >Junior Full Stack Developer /
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/ID+League+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+202756+B"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i> ID
-                      LEAGUE GmbH (liq)
-                    </a>
-                  </b>
-                  <i>(direct employment contract / Remote)</i>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >Nov 2022</span
-                  >
-                </h6>
-                <p>Tech stack used for the web development of applications:</p>
-                <ul class="circle">
-                  <li>
-                    Front-End: HTML, CSS, TypeScript, JavaScript & React, and
-                    other JS frameworks and libraries
-                  </li>
-                  <li>
-                    Back-End: JavaScript, TypeScript, and Node.js frameworks and
-                    libraries.
-                  </li>
-                </ul>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >Indirect Team Lead for IT SuperUsers /
-                    <a
-                      href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
-                      target="_blank"
-                      rel="external"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Amazon SZ Franken GmbH
-                    </a>
-                  </b>
-                  <i>(direct employment contract)</i>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 -
-                  Mar 2022
-                </h6>
-                <p>Indirect Team Lead for IT SuperUsers</p>
-                <ul class="circle">
-                  <li>
-                    Co-lead a team of 21 IT SuperUsers (shift and work planning)
-                  </li>
-                  <li>Inventory and maintenance of all IT equipment</li>
-                  <li>
-                    Improvement of the internal IT troubleshooting and
-                    deployment process.
-                  </li>
-                </ul>
-                <br />
-                <p>Inbound and Outbound Shipping Clerk</p>
-                <ul class="circle">
-                  <li>Leading a team of 5-7 employees</li>
-                  <li>Preparation of documents</li>
-                  <li>
-                    Ensuring safety procedures for loading or unloading trucks.
-                  </li>
-                </ul>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >Order Picker, Warehouse clerk, Forklift operator /
-                    <a
-                      href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
-                      target="_blank"
-                      rel="external"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Amazon SZ Franken GmbH;
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/Richter%2BFrenzel+N%C3%BCrnberg+GmbH,+N%C3%BCrnberg/HRB+29129"
+              <br />
+              <!-- Added the Job Skills section -->
+              <section class="job-skills">
+                <div class="w3-container">
+                  <p>
+                    <i
+                      class="fa fa-briefcase fa-fw w3-margin-right w3-large icon"
+                    ></i
+                    >Full-Stack Developer | Front-End Developer | Web Developer
+                  </p>
+                  <p>
+                    <i
+                      class="fa fa-home fa-fw w3-margin-right w3-large icon"
+                    ></i
+                    >Nürnberg (Nuremberg)
+                  </p>
+                  <p>
+                    <i
+                      class="fa fa-envelope fa-fw w3-margin-right w3-large icon"
+                    ></i
+                    >nickolae.balan@gmail.com
+                  </p>
+                  <hr />
+                  <!-- Added the Web development skills section with Proficiency Percentage Bars -->
+                  <p class="w3-large w3-margin-top w3-margin-bottom">
+                    <b
+                      ><i class="fa fa-asterisk fa-fw w3-margin-right icon"></i
+                      >Web development skills</b
                     >
-                      <i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Richter + Frenzel GmbH + Co. KG;
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/UVEX+SAFETY+Logistics+GmbH,+Schwabach/Amtsgericht+N%C3%BCrnberg+HRB+20119"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i> Uvex
-                      Safety Logistics GmbH;</a
+                  </p>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/TNT+Express+GmbH,+N%C3%BCrnberg/HRB+11467"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i> TNT
-                      Express;</a
+                      HTML / HTML5
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/H%C3%B6fner+Transport+GmbH,+N%C3%BCrnberg/HRB+31111"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Höfner Transport GmbH;</a
+                      CSS / CSS3
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/PANALPINA+WELTTRANSPORT+GmbH,+N%C3%BCrnberg/HRB+9473"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Panalpina Welttransport GmbH;</a
+                      JavaScript
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.northdata.com/Amm+GmbH+%26+Co.+KG+Spedition,+N%C3%BCrnberg/HRA+6901"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i> Amm
-                      GmbH & Co KG Spedition</a
+                      TypeScript
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                  </b>
-                  <i>(contract with temporary employment agencies)</i>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2016 -
-                  Aug 2019
-                </h6>
-                <ul class="circle">
-                  <li>Collecting packages for orders</li>
-                  <li>Prepare orders for pickup</li>
-                  <li>Loading and unloading of trucks.</li>
-                </ul>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >IT Administrator /
-                    <a
-                      target="_blank"
-                      rel="external"
-                      href="https://www.romanian-companies.eu/supremoffice-srl-15241139/"
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i>
-                      Supremoffice SRL (România);</a
+                      Node.js, Express
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
                     >
-                    ICS Land Support Systems SRL; State University (Chișinău,
-                    Moldova)
-                  </b>
-                  <i>(direct employment contract)</i>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2011 -
-                  Sep 2016
-                </h6>
-                <ul class="circle">
-                  <li>
-                    Hardware installation and maintenance for PCs and IT
-                    peripherals
-                  </li>
-                  <li>
-                    Software and operating systems installation and maintenance
-                  </li>
-                  <li>LAN and WiFi Networks installation and maintenance.</li>
-                </ul>
-              </div>
-            </section>
-            <br />
+                      Bootstrap, Redux
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      React w/ TypeScript
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      React Native
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      Angular JS w/ TypeScript
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      Git, Git CLI
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      GitHub, GitLab
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      MERN Stack
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_90"
+                    >
+                      Serverless, AWS Lambda
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_90"
+                    >
+                      SQL, MongoDB, Firebase
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_90"
+                    >
+                      Heroku
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_90"
+                    >
+                      Google Calendar API
+                    </div>
+                  </div>
+                  <hr />
+                  <!-- Added the Languages skills section with Proficiency Percentage Bars -->
+                  <p class="w3-large w3-text-theme w3-margin-top">
+                    <b
+                      ><i class="fa fa-globe fa-fw w3-margin-right icon"></i
+                      >Languages</b
+                    >
+                  </p>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_99"
+                    >
+                      Romanian
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_95"
+                    >
+                      English
+                    </div>
+                  </div>
+                  <div
+                    class="bar-background w3-round-xlarge w3-small w3-margin-top w3-margin-bottom bar-shadow"
+                  >
+                    <div
+                      class="w3-container w3-round-xlarge bar-color tab percentage_85"
+                    >
+                      German
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <br />
+            </div>
           </div>
-          <!-- Sets the Project Experience section -->
-          <div class="accordion w3-container w3-card w3-white w3-margin-top">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge icon"
-              ></i
-              >Project Experience
-              <i
-                class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
-              ></i>
-            </h2>
-          </div>
-          <div class="panel w3-container w3-card w3-white w3-padding-16">
-            <section class="project-experience">
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Full Stack Developer Certification </b>
-                  <i>(project-based / Remote)</i>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 -
-                  Jul 2022
-                </h6>
-                <p>Theoretical achievements (A):</p>
-                <ul class="circle">
-                  <li>
-                    A0 - HTML and CSS; Web Accessibility, CSS Grid & Flexbox,
-                    CSS Animations & Transitions, Responsive Web Design, Git &
-                    Version Control, Cross-browser Testing & Debugging, Web
-                    Hosting
-                  </li>
-                  <li>
-                    A1 - Basic to Advanced JavaScript, JavaScript Libraries and
-                    Frameworks
-                  </li>
-                  <li>
-                    A2 - Server-Side Programming & Node.js, Web Server
-                    Frameworks, Relational and Non-Relational Databases, Web
-                    Ethics & Data Security
-                  </li>
-                  <li>A3 - Client-Side Programming & React</li>
-                  <li>
-                    A4 - Testing in the Development Process, Data Visualization,
-                    Functional and Object-Oriented Programming, Test-Driven
-                    Development
-                  </li>
-                  <li>A5 - Native App Development & React Native</li>
-                  <li>A6 - Documentation, Handoffs & Collaborative Working</li>
-                  <li>A7 - Job Preparation.</li>
-                </ul>
-                <br />
-                <p>Built the following Apps (projects):</p>
-                <ul class="square">
-                  <li>
-                    Portfolio website using HTML, CSS, and JavaScript that
-                    showcases my professional portfolio
-                  </li>
-                  <li>
-                    JS App using HTML, CSS, and JavaScript that loads data from
-                    a REST API
-                  </li>
-                  <li>
-                    REST API using JavaScript, Node.js, Express, SQL, and
-                    MongoDB
-                  </li>
-                  <li>
-                    React Front-End App using MERN stack and loads data from a
-                    REST API
-                  </li>
-                  <li>
-                    Serverless, progressive web app (PWA) with React using a TDD
-                    technique
-                  </li>
-                  <li>React Native App Mobile App</li>
-                  <li>
-                    Collaboration & Documentation project using Angular w/
-                    TypeScript.
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <br />
-          </div>
-          <!-- Sets the Education section -->
-          <div class="accordion w3-container w3-card w3-white w3-margin-top">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge icon"
-              ></i
-              >Education
-              <i
-                class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
-              ></i>
-            </h2>
-          </div>
-          <div class="panel w3-container w3-card w3-white w3-padding-16">
-            <section class="education">
-              <div class="w3-container">
-                <h5 class="w3-opacity"><b>CareerFoundry</b></h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 -
-                  Mar 2022
-                </h6>
-                <p>Full-Stack Web Developer Certified Professional</p>
-                <br />
-                <p>
-                  If you are interested in studying with CareerFoundry (CF), you
-                  can use my referral link to create an account on CF platform
-                  and:<br />
-                  <a
-                    href="https://careerfoundry.com/en/referral_registrations/new?referral=17bRBA7L"
-                    class="button"
-                    ><b
-                      >Benefit now from a 5% discount for CareerFoundry
-                      courses!</b
-                    ></a
-                  >
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Hochschule für Technik Stuttgart</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 -
-                  Jun 2012
-                </h6>
-                <p>Exchange student / MSc in Geoinformatics</p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>State University (Chișinău, Moldova)</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2011 -
-                  Jun 2013
-                </h6>
-                <p>Master of Science (MSc) in Geoinformatics</p>
-              </div>
-            </section>
-            <br />
-          </div>
-          <!-- Sets the Certification section -->
-          <div class="accordion w3-container w3-card w3-white w3-margin-top">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge icon"
-              ></i
-              >Certification
-              <i
-                class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
-              ></i>
-            </h2>
-          </div>
-          <div class="panel w3-container w3-card w3-white w3-padding-16">
-            <section class="certification">
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >Introduction to Back-End Development / Certified
-                    Professional</b
-                  >
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2022 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >No Expiration Date</span
-                  >
-                </h6>
-                <p>
-                  Non-credit certificate authorized by Meta and offered through
-                  Coursera.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b
-                    >Introduction to Front-End Development / Certified
-                    Professional</b
-                  >
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2022 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >No Expiration Date</span
-                  >
-                </h6>
-                <p>
-                  Non-credit certificate authorized by Meta and offered through
-                  Coursera.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Full-Stack Web Development / Certified Professional</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2022 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >No Expiration Date</span
-                  >
-                </h6>
-                <p>
-                  Non-credit certificate authorized by ZFU (Staatliche
-                  Zentralstelle für Fernunterricht) — the state body for
-                  distance learning in Germany, and offered through
-                  CareerFoundry.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Full-Stack Immersion / Certified Professional</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2022 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >No Expiration Date</span
-                  >
-                </h6>
-                <p>
-                  Non-credit certificate authorized by ZFU (Staatliche
-                  Zentralstelle für Fernunterricht) — the state body for
-                  distance learning in Germany, and offered through
-                  CareerFoundry.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Intro to Frontend Development / Certified Professional</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 -
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >No Expiration Date</span
-                  >
-                </h6>
-                <p>
-                  Non-credit certificate authorized by ZFU (Staatliche
-                  Zentralstelle für Fernunterricht) — the state body for
-                  distance learning in Germany, and offered through
-                  CareerFoundry.
-                </p>
-              </div>
-            </section>
-            <br />
-          </div>
-          <!-- Sets the Certification section -->
-          <div class="accordion w3-container w3-card w3-white w3-margin-top">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-bookmark fa-fw w3-margin-right w3-xxlarge icon"
-              ></i
-              >Hobbies
-              <i
-                class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
-              ></i>
-            </h2>
-          </div>
-          <div
-            class="panel w3-container w3-card w3-white w3-padding-16 w3-margin-bottom"
-          >
-            <section class="hobbies">
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Reading Books</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-solid fa-book fa-fw w3-margin-right"></i>
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >Every day</span
-                  >
-                </h6>
-                <p>
-                  I mostly read Technology books, Sci-Fi books, and also some
-                  Art books.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Cycling and jogging</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa-bicycle fa-fw w3-margin-right"></i>
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >2-3 times per week</span
-                  >
-                </h6>
-                <p>
-                  I'm not too fond of bike trips shorter than 20 km; cycling on
-                  short distances is not worth practicing; for distances up to
-                  20 km, the most suitable sport is jogging.
-                </p>
-              </div>
-              <hr />
-              <div class="w3-container">
-                <h5 class="w3-opacity">
-                  <b>Watching Movies</b>
-                </h5>
-                <h6 class="w3-text-gray">
-                  <i class="fa fa fa-film fa-fw w3-margin-right"></i>
-                  <span class="w3-tag w3-gray w3-text-black w3-round"
-                    >Weekends</span
-                  >
-                </h6>
-                <p>
-                  I'm picky about movies; if the first 20-25 minutes of a film
-                  don't seem attractive, I don't even watch it until the end. I
-                  don't like to waste my time with cheap movies. The time
-                  invested in watching a film must be worth it.
-                </p>
-              </div>
-            </section>
-            <br />
+          <!-- Sets the Right Column section -->
+          <div class="w3-twothird">
+            <!-- Sets the About Me section -->
+            <div
+              class="w3-container w3-card w3-white w3-margin-top w3-margin-bottom"
+            >
+              <h2 class="w3-text-grey w3-padding-16">
+                <i class="fa fa-key fa-fw w3-margin-right w3-xxlarge icon"></i
+                >About Me
+              </h2>
+              <section class="about-me">
+                <div class="w3-container">
+                  <p>
+                    Hi everyone,<br />
+                    I am Nick Balan, a Full Stack / Front-End Developer and
+                    certified professional with an experience of:
+                  </p>
+                  <br />
+                  <ul class="square">
+                    <li>
+                      two years as a Web Developer, including practical and
+                      theoretical achievements within CareerFoundary courses and
+                      projects, but also
+                    </li>
+                    <li>
+                      at least five years as an IT administrator (in Romania and
+                      Moldova)
+                    </li>
+                    <li>
+                      and five years of experience as a Logistics Specialist,
+                      including one year as an Indirect Lead for 7-21 IT team
+                      members / SuperUsers at Amazon (in Germany)
+                    </li>
+                    <li>
+                      I graduated with a master's degree in Geoinformatics.
+                    </li>
+                  </ul>
+                  <br />
+                  <p>
+                    My acquired theoretical and practical web development skills
+                    are added value to any team.
+                  </p>
+                  <br />
+                  <p>
+                    My Tech stack used for the web development of applications
+                    includes:
+                  </p>
+                  <br />
+                  <ul class="circle">
+                    <li>
+                      Front-End: HTML, CSS, TypeScript, JavaScript & React, and
+                      other JS frameworks and libraries
+                    </li>
+                    <li>
+                      Back-End: JavaScript, TypeScript, and Node.js frameworks
+                      and libraries.
+                    </li>
+                  </ul>
+                  <br />
+                  <p>
+                    Besides my technical skills, proven high motivation,
+                    perseverance, and inspiring experience make me an excellent
+                    candidate for the following roles:
+                  </p>
+                  <br />
+                  <ul class="circle">
+                    <li>
+                      Full-Stack Developer using JavaScript, TypeScript, MERN
+                      Stack, React w/ TypeScript, Angular &c
+                    </li>
+                    <li>
+                      Front-End Developer using HTML, CSS, JavaScript,
+                      TypeScript, and JS frameworks such as Angular, React
+                      Native, or JS libraries like React &c.
+                    </li>
+                  </ul>
+                  <br />
+                  <p>
+                    I'm always open to remote or hybrid collaboration on
+                    innovative projects, allowing us to be creative and flexible
+                    in solving problems or exchanging ideas on projects.
+                  </p>
+                  <br />
+                  <p>
+                    Check out my code on GitHub:
+                    <a href="https://www.github.com/nickbalan/" target="_blank"
+                      >https://www.github.com/nickbalan/</a
+                    ><br />
+                    or reach out to me on LinkedIn:
+                    <a
+                      href="https://www.linkedin.com/in/nickbalan/"
+                      target="_blank"
+                      >https://www.linkedin.com/in/nickbalan/</a
+                    >
+                  </p>
+                </div>
+              </section>
+              <br />
+            </div>
+            <!-- Sets the Work Experience section -->
+            <div class="accordion w3-container w3-card w3-white">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i
+                  class="test fa fa-group fa-fw w3-margin-right w3-xxlarge icon"
+                ></i
+                >Work Experience
+                <i
+                  class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
+                ></i>
+              </h2>
+            </div>
+            <div class="panel w3-container w3-card w3-white w3-padding-16">
+              <section class="work-experience">
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Junior Full Stack Developer /
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/ID+League+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+202756+B"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i> ID
+                        LEAGUE GmbH (liq)
+                      </a>
+                    </b>
+                    <i>(direct employment contract / Remote)</i>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >Nov 2022</span
+                    >
+                  </h6>
+                  <p>
+                    Tech stack used for the web development of applications:
+                  </p>
+                  <ul class="circle">
+                    <li>
+                      Front-End: HTML, CSS, TypeScript, JavaScript & React, and
+                      other JS frameworks and libraries
+                    </li>
+                    <li>
+                      Back-End: JavaScript, TypeScript, and Node.js frameworks
+                      and libraries.
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Indirect Team Lead for IT SuperUsers /
+                      <a
+                        href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
+                        target="_blank"
+                        rel="external"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Amazon SZ Franken GmbH
+                      </a>
+                    </b>
+                    <i>(direct employment contract)</i>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020
+                    - Mar 2022
+                  </h6>
+                  <p>Indirect Team Lead for IT SuperUsers</p>
+                  <ul class="circle">
+                    <li>
+                      Co-lead a team of 21 IT SuperUsers (shift and work
+                      planning)
+                    </li>
+                    <li>Inventory and maintenance of all IT equipment</li>
+                    <li>
+                      Improvement of the internal IT troubleshooting and
+                      deployment process.
+                    </li>
+                  </ul>
+                  <br />
+                  <p>Inbound and Outbound Shipping Clerk</p>
+                  <ul class="circle">
+                    <li>Leading a team of 5-7 employees</li>
+                    <li>Preparation of documents</li>
+                    <li>
+                      Ensuring safety procedures for loading or unloading
+                      trucks.
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Order Picker, Warehouse clerk, Forklift operator /
+                      <a
+                        href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
+                        target="_blank"
+                        rel="external"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Amazon SZ Franken GmbH;
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/Richter%2BFrenzel+N%C3%BCrnberg+GmbH,+N%C3%BCrnberg/HRB+29129"
+                      >
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Richter + Frenzel GmbH + Co. KG;
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/UVEX+SAFETY+Logistics+GmbH,+Schwabach/Amtsgericht+N%C3%BCrnberg+HRB+20119"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Uvex Safety Logistics GmbH;</a
+                      >
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/TNT+Express+GmbH,+N%C3%BCrnberg/HRB+11467"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        TNT Express;</a
+                      >
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/H%C3%B6fner+Transport+GmbH,+N%C3%BCrnberg/HRB+31111"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Höfner Transport GmbH;</a
+                      >
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/PANALPINA+WELTTRANSPORT+GmbH,+N%C3%BCrnberg/HRB+9473"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Panalpina Welttransport GmbH;</a
+                      >
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.northdata.com/Amm+GmbH+%26+Co.+KG+Spedition,+N%C3%BCrnberg/HRA+6901"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Amm GmbH & Co KG Spedition</a
+                      >
+                    </b>
+                    <i>(contract with temporary employment agencies)</i>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2016
+                    - Aug 2019
+                  </h6>
+                  <ul class="circle">
+                    <li>Collecting packages for orders</li>
+                    <li>Prepare orders for pickup</li>
+                    <li>Loading and unloading of trucks.</li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >IT Administrator /
+                      <a
+                        target="_blank"
+                        rel="external"
+                        href="https://www.romanian-companies.eu/supremoffice-srl-15241139/"
+                        ><i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Supremoffice SRL (România);</a
+                      >
+                      ICS Land Support Systems SRL; State University (Chișinău,
+                      Moldova)
+                    </b>
+                    <i>(direct employment contract)</i>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2011
+                    - Sep 2016
+                  </h6>
+                  <ul class="circle">
+                    <li>
+                      Hardware installation and maintenance for PCs and IT
+                      peripherals
+                    </li>
+                    <li>
+                      Software and operating systems installation and
+                      maintenance
+                    </li>
+                    <li>LAN and WiFi Networks installation and maintenance.</li>
+                  </ul>
+                </div>
+              </section>
+              <br />
+            </div>
+            <!-- Sets the Project Experience section -->
+            <div class="accordion w3-container w3-card w3-white w3-margin-top">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i
+                  class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge icon"
+                ></i
+                >Project Experience
+                <i
+                  class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
+                ></i>
+              </h2>
+            </div>
+            <div class="panel w3-container w3-card w3-white w3-padding-16">
+              <section class="project-experience">
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Full Stack Developer Certification </b>
+                    <i>(project-based / Remote)</i>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021
+                    - Jul 2022
+                  </h6>
+                  <p>Theoretical achievements (A):</p>
+                  <ul class="circle">
+                    <li>
+                      A0 - HTML and CSS; Web Accessibility, CSS Grid & Flexbox,
+                      CSS Animations & Transitions, Responsive Web Design, Git &
+                      Version Control, Cross-browser Testing & Debugging, Web
+                      Hosting
+                    </li>
+                    <li>
+                      A1 - Basic to Advanced JavaScript, JavaScript Libraries
+                      and Frameworks
+                    </li>
+                    <li>
+                      A2 - Server-Side Programming & Node.js, Web Server
+                      Frameworks, Relational and Non-Relational Databases, Web
+                      Ethics & Data Security
+                    </li>
+                    <li>A3 - Client-Side Programming & React</li>
+                    <li>
+                      A4 - Testing in the Development Process, Data
+                      Visualization, Functional and Object-Oriented Programming,
+                      Test-Driven Development
+                    </li>
+                    <li>A5 - Native App Development & React Native</li>
+                    <li>
+                      A6 - Documentation, Handoffs & Collaborative Working
+                    </li>
+                    <li>A7 - Job Preparation.</li>
+                  </ul>
+                  <br />
+                  <p>Built the following Apps (projects):</p>
+                  <ul class="square">
+                    <li>
+                      Portfolio website using HTML, CSS, and JavaScript that
+                      showcases my professional portfolio
+                    </li>
+                    <li>
+                      JS App using HTML, CSS, and JavaScript that loads data
+                      from a REST API
+                    </li>
+                    <li>
+                      REST API using JavaScript, Node.js, Express, SQL, and
+                      MongoDB
+                    </li>
+                    <li>
+                      React Front-End App using MERN stack and loads data from a
+                      REST API
+                    </li>
+                    <li>
+                      Serverless, progressive web app (PWA) with React using a
+                      TDD technique
+                    </li>
+                    <li>React Native App Mobile App</li>
+                    <li>
+                      Collaboration & Documentation project using Angular w/
+                      TypeScript.
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <br />
+            </div>
+            <!-- Sets the Education section -->
+            <div class="accordion w3-container w3-card w3-white w3-margin-top">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i
+                  class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge icon"
+                ></i
+                >Education
+                <i
+                  class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
+                ></i>
+              </h2>
+            </div>
+            <div class="panel w3-container w3-card w3-white w3-padding-16">
+              <section class="education">
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>CareerFoundry</b></h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021
+                    - Mar 2022
+                  </h6>
+                  <p>Full-Stack Web Developer Certified Professional</p>
+                  <br />
+                  <p>
+                    If you are interested in studying with CareerFoundry (CF),
+                    you can use my referral link to create an account on CF
+                    platform and:<br />
+                    <a
+                      href="https://careerfoundry.com/en/referral_registrations/new?referral=17bRBA7L"
+                      class="button"
+                      ><b
+                        >Benefit now from a 5% discount for CareerFoundry
+                        courses!</b
+                      ></a
+                    >
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Hochschule für Technik Stuttgart</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012
+                    - Jun 2012
+                  </h6>
+                  <p>Exchange student / MSc in Geoinformatics</p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>State University (Chișinău, Moldova)</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2011
+                    - Jun 2013
+                  </h6>
+                  <p>Master of Science (MSc) in Geoinformatics</p>
+                </div>
+              </section>
+              <br />
+            </div>
+            <!-- Sets the Certification section -->
+            <div class="accordion w3-container w3-card w3-white w3-margin-top">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i
+                  class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge icon"
+                ></i
+                >Certification
+                <i
+                  class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
+                ></i>
+              </h2>
+            </div>
+            <div class="panel w3-container w3-card w3-white w3-padding-16">
+              <section class="certification">
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Introduction to Back-End Development / Certified
+                      Professional</b
+                    >
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2022
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >No Expiration Date</span
+                    >
+                  </h6>
+                  <p>
+                    Non-credit certificate authorized by Meta and offered
+                    through Coursera.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Introduction to Front-End Development / Certified
+                      Professional</b
+                    >
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2022
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >No Expiration Date</span
+                    >
+                  </h6>
+                  <p>
+                    Non-credit certificate authorized by Meta and offered
+                    through Coursera.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Full-Stack Web Development / Certified Professional</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2022
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >No Expiration Date</span
+                    >
+                  </h6>
+                  <p>
+                    Non-credit certificate authorized by ZFU (Staatliche
+                    Zentralstelle für Fernunterricht) — the state body for
+                    distance learning in Germany, and offered through
+                    CareerFoundry.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Full-Stack Immersion / Certified Professional</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2022
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >No Expiration Date</span
+                    >
+                  </h6>
+                  <p>
+                    Non-credit certificate authorized by ZFU (Staatliche
+                    Zentralstelle für Fernunterricht) — the state body for
+                    distance learning in Germany, and offered through
+                    CareerFoundry.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b
+                      >Intro to Frontend Development / Certified Professional</b
+                    >
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021
+                    -
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >No Expiration Date</span
+                    >
+                  </h6>
+                  <p>
+                    Non-credit certificate authorized by ZFU (Staatliche
+                    Zentralstelle für Fernunterricht) — the state body for
+                    distance learning in Germany, and offered through
+                    CareerFoundry.
+                  </p>
+                </div>
+              </section>
+              <br />
+            </div>
+            <!-- Sets the Certification section -->
+            <div class="accordion w3-container w3-card w3-white w3-margin-top">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i
+                  class="fa fa-bookmark fa-fw w3-margin-right w3-xxlarge icon"
+                ></i
+                >Hobbies
+                <i
+                  class="fa fa-angle-down fa-fw w3-margin-right w3-xxlarge icon w3-right"
+                ></i>
+              </h2>
+            </div>
+            <div
+              class="panel w3-container w3-card w3-white w3-padding-16 w3-margin-bottom"
+            >
+              <section class="hobbies">
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Reading Books</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-solid fa-book fa-fw w3-margin-right"></i>
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >Every day</span
+                    >
+                  </h6>
+                  <p>
+                    I mostly read Technology books, Sci-Fi books, and also some
+                    Art books.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Cycling and jogging</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa-bicycle fa-fw w3-margin-right"></i>
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >2-3 times per week</span
+                    >
+                  </h6>
+                  <p>
+                    I'm not too fond of bike trips shorter than 20 km; cycling
+                    on short distances is not worth practicing; for distances up
+                    to 20 km, the most suitable sport is jogging.
+                  </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                  <h5 class="w3-opacity">
+                    <b>Watching Movies</b>
+                  </h5>
+                  <h6 class="w3-text-gray">
+                    <i class="fa fa fa-film fa-fw w3-margin-right"></i>
+                    <span class="w3-tag w3-gray w3-text-black w3-round"
+                      >Weekends</span
+                    >
+                  </h6>
+                  <p>
+                    I'm picky about movies; if the first 20-25 minutes of a film
+                    don't seem attractive, I don't even watch it until the end.
+                    I don't like to waste my time with cheap movies. The time
+                    invested in watching a film must be worth it.
+                  </p>
+                </div>
+              </section>
+              <br />
+            </div>
           </div>
         </div>
+        <!-- The End of the Grid layout -->
       </div>
-      <!-- The End of the Grid layout -->
-    </div>
-    <!-- Inserts single line breaks -->
-    <br />
+      <!-- Inserts single line breaks -->
+      <br />
+    </main>
     <!-- Sets the Footer section -->
     <footer class="w3-center text-center bg-gray-900 text-white">
       <hr
