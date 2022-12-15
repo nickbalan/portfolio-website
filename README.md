@@ -69,9 +69,9 @@ As a user, I should be able to view the professional portfolio website and navig
 - A portfolio page with my project examples in a grid
 - A contact page and a contact section — in the footer of all pages.
 
-## Link to live hosted Portfolio Website
+## Live Demo
 
-Check out my [Portfolio Website](https://nickbalan.github.io/portfolio-website/).
+Check out the [Portfolio Website - Live page](https://nickbalan.github.io/portfolio-website/)
 
 ## Portfolio Website live screenshots
 
