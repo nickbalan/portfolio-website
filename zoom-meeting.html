@@ -57,10 +57,6 @@
     <link rel="stylesheet" type="text/css" href="public/tailwind.css" />
     <!-- Link to external CNDs -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
       type="text/css"
       rel="stylesheet"
       href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"
@@ -68,12 +64,12 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.36304"
+      href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.38511"
     />
     <link
       type="text/css"
       rel="stylesheet"
-      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.36304"
+      href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.38511"
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
@@ -198,291 +194,36 @@
       </button>
     </div>
     <!-- Adds an external Contact Form -->
-    <form
-      class="jotform-form"
-      action="https://submit.jotformeu.com/submit/222417076567056/"
-      method="post"
-      name="form_222417076567056"
-      id="222417076567056"
-      accept-charset="utf-8"
-      autocomplete="on"
+    <iframe
+      id="JotFormIFrame-222417076567056"
+      title="Zoom Meeting Form"
+      onload="window.parent.scrollTo(0,0)"
+      src="https://form.jotform.com/222417076567056"
+      frameborder="0"
+      style="min-width: 100%; height: 539px; border: none"
+      scrolling="no"
     >
-      <input type="hidden" name="formID" value="222417076567056" />
-      <input type="hidden" id="JWTContainer" value="" />
-      <input type="hidden" id="cardinalOrderNumber" value="" />
-      <div role="main" class="form-all">
-        <!-- Added the Form section -->
-        <ul class="form-section page-section">
-          <!-- Added the Title field -->
-          <li id="cid_1" class="form-input-wide" data-type="control_head">
-            <div class="form-header-group header-large">
-              <div class="header-text httac htvam">
-                <h1 id="header_1" class="form-header" data-component="header">
-                  Would you like to know me better?
-                </h1>
-                <div id="subHeader_1" class="form-subHeader">
-                  You could schedule a Zoom Meeting with me!
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- Added the Your Name field -->
-          <li
-            class="form-line jf-required"
-            data-type="control_fullname"
-            id="id_3"
-          >
-            <label
-              class="form-label form-label-top form-label-auto"
-              id="label_3"
-              for="first_3"
-            >
-              Your Name
-              <span class="form-required"> * </span>
-            </label>
-            <div
-              id="cid_3"
-              class="form-input-wide jf-required"
-              data-layout="full"
-            >
-              <div data-wrapper-react="true">
-                <span
-                  class="form-sub-label-container"
-                  style="vertical-align: top"
-                  data-input-type="first"
-                >
-                  <input
-                    type="text"
-                    id="first_3"
-                    name="q3_yourName[first]"
-                    class="form-textbox validate[required]"
-                    data-defaultvalue=""
-                    autocomplete="section-input_3 given-name"
-                    size="10"
-                    value=""
-                    data-component="first"
-                    aria-labelledby="label_3 sublabel_3_first"
-                    required=""
-                  />
-                  <label
-                    class="form-sub-label"
-                    for="first_3"
-                    id="sublabel_3_first"
-                    style="min-height: 13px"
-                    aria-hidden="false"
-                  >
-                    First Name
-                  </label>
-                </span>
-                <span
-                  class="form-sub-label-container"
-                  style="vertical-align: top"
-                  data-input-type="last"
-                >
-                  <input
-                    type="text"
-                    id="last_3"
-                    name="q3_yourName[last]"
-                    class="form-textbox validate[required]"
-                    data-defaultvalue=""
-                    autocomplete="section-input_3 family-name"
-                    size="15"
-                    value=""
-                    data-component="last"
-                    aria-labelledby="label_3 sublabel_3_last"
-                    required=""
-                  />
-                  <label
-                    class="form-sub-label"
-                    for="last_3"
-                    id="sublabel_3_last"
-                    style="min-height: 13px"
-                    aria-hidden="false"
-                  >
-                    Last Name
-                  </label>
-                </span>
-              </div>
-            </div>
-          </li>
-          <!-- Added the Zoom Meeting field -->
-          <li
-            class="form-line jf-required"
-            data-type="control_appointment"
-            id="id_6"
-          >
-            <label
-              class="form-label form-label-top form-label-auto"
-              id="label_6"
-            >
-              Schedule a Zoom Meeting with me
-              <span class="form-required"> * </span>
-            </label>
-            <div
-              id="cid_6"
-              class="form-input-wide jf-required"
-              data-layout="full"
-            >
-              <div
-                id="input_6"
-                class="appointmentFieldWrapper jfQuestion-fields"
-              >
-                <input
-                  class="appointmentFieldInput validate"
-                  name="q6_scheduleA[date]"
-                  id="input_6_date"
-                />
-                <input
-                  class="appointmentFieldInput"
-                  name="q6_scheduleA[duration]"
-                  value="15"
-                  id="input_6_duration"
-                />
-                <input
-                  class="appointmentFieldInput"
-                  name="q6_scheduleA[timezone]"
-                  value="Europe/Berlin (GMT+02:00)"
-                  id="input_6_timezone"
-                />
-                <div class="appointmentField"></div>
-              </div>
-            </div>
-          </li>
-          <!-- Added the Your Email field -->
-          <li class="form-line jf-required" data-type="control_email" id="id_4">
-            <label
-              class="form-label form-label-top form-label-auto"
-              id="label_4"
-              for="input_4"
-            >
-              Your Email
-              <span class="form-required"> * </span>
-            </label>
-            <div
-              id="cid_4"
-              class="form-input-wide jf-required"
-              data-layout="half"
-            >
-              <span
-                class="form-sub-label-container"
-                style="vertical-align: top"
-              >
-                <input
-                  type="email"
-                  id="input_4"
-                  name="q4_yourEmail"
-                  class="form-textbox validate[required, Email]"
-                  data-defaultvalue=""
-                  style="width: 310px"
-                  size="310"
-                  value=""
-                  data-component="email"
-                  aria-labelledby="label_4 sublabel_input_4"
-                  required=""
-                />
-                <label
-                  class="form-sub-label"
-                  for="input_4"
-                  id="sublabel_input_4"
-                  style="min-height: 13px"
-                  aria-hidden="false"
-                >
-                  example@email-example.com
-                </label>
-              </span>
-            </div>
-          </li>
-          <!-- Added the Message field -->
-          <li class="form-line" data-type="control_textarea" id="id_9">
-            <label
-              class="form-label form-label-top form-label-auto"
-              id="label_9"
-              for="input_9"
-            >
-              Your Message
-            </label>
-            <div id="cid_9" class="form-input-wide" data-layout="full">
-              <textarea
-                id="input_9"
-                class="form-textarea"
-                name="q9_yourMessage"
-                style="width: 648px; height: 163px"
-                data-component="textarea"
-                aria-labelledby="label_9"
-              ></textarea>
-            </div>
-          </li>
-          <!-- Added a Send button field -->
-          <li class="form-line" data-type="control_button" id="id_2">
-            <div id="cid_2" class="form-input-wide" data-layout="full">
-              <div
-                data-align="auto"
-                class="form-buttons-wrapper form-buttons-auto jsTest-button-wrapperField"
-              >
-                <button
-                  id="input_2"
-                  type="submit"
-                  class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
-                  data-component="button"
-                  data-content=""
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </li>
-          <li style="display: none">
-            Should be Empty:
-            <input type="text" name="website" value="" />
-          </li>
-        </ul>
-      </div>
-      <input
-        type="hidden"
-        class="simple_spc"
-        id="simple_spc"
-        name="simple_spc"
-        value="222417076567056"
-      />
-      <!-- Added a footer field with external links -->
-      <div class="formFooter-heightMask"></div>
-      <div class="formFooter f6 branding21 contactFormLink">
-        <div class="formFooter-wrapper formFooter-leftSide">
-          <a
-            href="https://link.jotform.com/nickbalan-fEMlLnHAJI"
-            target="_blank"
-            class="formFooter-logoLink"
-            ><img
-              class="formFooter-logo"
-              src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg"
-              alt="Jotform Logo"
-              style="height: 44px"
-          /></a>
-        </div>
-        <div class="formFooter-wrapper formFooter-rightSide">
-          <span class="formFooter-text">
-            Now create your own Jotform - It's free!
-          </span>
-          <a
-            class="formFooter-button"
-            href="https://link.jotform.com/nickbalan-LILJt182fs"
-            target="_blank"
-            >Create your own Jotform</a
-          >
-        </div>
-      </div>
-    </form>
+    </iframe>
     <!-- Add the external Contact Form functions -->
-    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.36304"></script>
-    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.36304"></script>
+    <script
+      src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.38511"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.38511"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn03.jotfor.ms/s/umd/f49e237f0c5/for-appointment-field.js?v=3.3.38511"
+      type="text/javascript"
+    ></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"
     ></script>
     <script src="js/zoomMeeting.js"></script>
-    <script src="https://cdn03.jotfor.ms//s/umd/ie11/for-appointment-field.js"></script>
-    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.36304"></script>
-    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.36304"></script>
+    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.38511"></script>
+    <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.38511"></script>
     <!-- Added the Scroll To Top Button functions -->
     <script src="js/scrollBtn.js"></script>
     <!-- Added the mobile Navbar functions -->
