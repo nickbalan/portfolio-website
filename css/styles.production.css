@@ -254,6 +254,12 @@ footer {
   text-shadow: 1px 1px 1px #183a37;
 }
 
+/* Sets the main section styles for the Contact Form */
+.main .jotform-form {
+  width: 100%;
+  padding: 0 3%;
+}
+
 /* Sets Grid title styles */
 .grid_title {
   display: -ms-grid;
@@ -566,6 +572,26 @@ footer.portfolio {
   margin-bottom: 12px;
 }
 
+.form-line-column {
+  width: calc(50% - 8px);
+}
+
+.form-line-active {
+  background-color: #ffffe0;
+}
+
+li.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.form-section:first-child {
+  border-radius: 3px 3px 0 0;
+}
+.form-section:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
 /* Set styles for all Form */
 .form-all {
   max-width: 752px;
@@ -574,6 +600,8 @@ footer.portfolio {
   color: #2c3345;
   background-image: none;
   font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Set styles for Form labels */
