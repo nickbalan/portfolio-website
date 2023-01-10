@@ -811,6 +811,7 @@ li.form-line {
 }
 
 iframe {
+  overflow: hidden;
   min-width: 100%;
   height: 539px;
   border: none;
