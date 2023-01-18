@@ -56,8 +56,7 @@ body {
 
 /* Align h1-h3 tags to center */
 h1,
-h2,
-h3 {
+h2 {
   text-align: center;
 }
 
