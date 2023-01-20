@@ -809,6 +809,7 @@ li.form-line {
   background-color: #f1f1f1;
 }
 
+/* Sets the styles for iframe sections */
 iframe {
   overflow: hidden;
   min-width: 100%;
