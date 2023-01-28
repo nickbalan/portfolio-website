@@ -364,7 +364,7 @@ footer {
   }
 
   /* Sets the Responsive Mobile Sidebar styles */
-  .right {
+  #mySidebar {
     display: none;
     right: 0;
   }
