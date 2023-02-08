@@ -382,6 +382,25 @@ footer {
 /* Sets Percentage of 95% for skills bars styles */
 .percentage_95 {
   width: 95%;
+  height: 18px;
+  position: relative;
+  animation-name: bar-animation;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bar-animation {
+  0% {
+    left: 0px;
+    top: 0px;
+    width: 200px;
+  }
+  100% {
+    left: 160px;
+    top: 0px;
+    width: 200px;
+  }
 }
 
 /* Sets Percentage of 90% for skills bars styles */
