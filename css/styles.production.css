@@ -378,18 +378,48 @@ footer {
 /* Sets Percentage of 99% for skills bars styles */
 .percentage_99 {
   width: 99%;
+  height: 18px;
+  position: relative;
+  animation-name: bar-animation;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
 }
+
 /* Sets Percentage of 95% for skills bars styles */
 .percentage_95 {
   width: 95%;
   height: 18px;
   position: relative;
   animation-name: bar-animation;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-direction: alternate-reverse;
 }
 
+/* Sets Percentage of 90% for skills bars styles */
+.percentage_90 {
+  width: 90%;
+  height: 18px;
+  position: relative;
+  animation-name: bar-animation;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+}
+
+/* Sets Percentage of 85% for skills bars styles */
+.percentage_85 {
+  width: 85%;
+  height: 18px;
+  position: relative;
+  animation-name: bar-animation;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+}
+
+/* Sets an animation for skills bars styles */
 @keyframes bar-animation {
   0% {
     left: 0px;
@@ -401,16 +431,6 @@ footer {
     top: 0px;
     width: 200px;
   }
-}
-
-/* Sets Percentage of 90% for skills bars styles */
-.percentage_90 {
-  width: 90%;
-}
-
-/* Sets Percentage of 85% for skills bars styles */
-.percentage_85 {
-  width: 85%;
 }
 
 /* Sets shadow styles for skills bars */
