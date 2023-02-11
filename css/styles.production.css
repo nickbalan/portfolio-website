@@ -140,12 +140,6 @@ button:focus,
   background-color: #efd6ac;
 }
 
-/* Sets the second Button styles */
-.button_secondary {
-  background-color: #e0b354;
-  color: #004000;
-}
-
 /* Sets percentage bars styles */
 .bar-color {
   background-color: #04151f;
@@ -167,17 +161,8 @@ button:focus,
   color: #183a37;
 }
 
-/* Sets responsive logo styles */
-.logo_icon {
-  width: 10vh;
-  display: block;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: center;
-}
-
 /* Sets Profile Portrait styles */
-.profile__portrait {
+.profile-portrait {
   width: 200px;
   /* add rounded corners styles */
   border-radius: 4px;
@@ -202,41 +187,6 @@ footer {
   flex-direction: column;
   text-align: center;
   padding: 10px;
-}
-
-/* Sets Page header styles */
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-}
-
-/* Sets Page header image styles */
-.page-header img {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
-
-/* Sets Page header item styles */
-.page-header__item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
-}
-
-/* Sets Last-child styles for page header item */
-.page-header__item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: right;
 }
 
 /* Sets main navigation links styles */
@@ -331,7 +281,7 @@ footer {
     background-color: #efd6ac;
   }
   /* Sets Percentage of 99% for skills bars styles */
-  .percentage_99 {
+  .percentage-99 {
     width: 99%;
     height: 18px;
     position: relative;
@@ -342,7 +292,7 @@ footer {
   }
 
   /* Sets Percentage of 95% for skills bars styles */
-  .percentage_95 {
+  .percentage-95 {
     width: 95%;
     height: 18px;
     position: relative;
@@ -353,7 +303,7 @@ footer {
   }
 
   /* Sets Percentage of 90% for skills bars styles */
-  .percentage_90 {
+  .percentage-90 {
     width: 90%;
     height: 18px;
     position: relative;
@@ -364,7 +314,7 @@ footer {
   }
 
   /* Sets Percentage of 85% for skills bars styles */
-  .percentage_85 {
+  .percentage-85 {
     width: 85%;
     height: 18px;
     position: relative;
@@ -419,25 +369,25 @@ footer {
 }
 
 /* Sets Percentage of 99% for skills bars styles */
-.percentage_99 {
+.percentage-99 {
   width: 99%;
   height: 18px;
 }
 
 /* Sets Percentage of 95% for skills bars styles */
-.percentage_95 {
+.percentage-95 {
   width: 95%;
   height: 18px;
 }
 
 /* Sets Percentage of 90% for skills bars styles */
-.percentage_90 {
+.percentage-90 {
   width: 90%;
   height: 18px;
 }
 
 /* Sets Percentage of 85% for skills bars styles */
-.percentage_85 {
+.percentage-85 {
   width: 85%;
   height: 18px;
 }
@@ -559,14 +509,14 @@ footer.portfolio {
 }
 
 /* Sets Portfolio button styles */
-.protfolio_button {
+.protfolio-button {
   outline: 0;
   cursor: pointer;
   width: 100%;
 }
 
 /* Sets Social Media icons styles */
-.social_media {
+.social-media {
   grid-gap: 20px;
   padding: 20px;
   display: inline-flex;
