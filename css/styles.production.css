@@ -352,6 +352,12 @@ footer {
     display: none;
     right: 0;
   }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* Sets the padding styles for specific sections */
@@ -821,4 +827,38 @@ iframe {
 
 iframe:focus {
   outline: none;
+}
+
+/* Blog styles for Header */
+.blog-title {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Blog styles for left column  */
+.left-column {
+  float: left;
+  width: 75%;
+}
+
+/* Blog styles for right column  */
+.right-column {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Blog styles for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Blog styles for after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
