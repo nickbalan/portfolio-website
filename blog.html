@@ -10,14 +10,14 @@
     <!-- Sets the Robot Metadata -->
     <meta name="robots" content="index, follow" />
     <!-- Sets the Revision Metadata -->
-    <meta name="revised" content="December 1st, 2022, 2:00 pm" />
+    <meta name="revised" content="February 23th, 2023, 2:00 pm" />
     <!-- Sets the Copyright Metadata -->
-    <meta name="copyright" content="Copyright 2022" />
+    <meta name="copyright" content="Copyright 2023" />
     <!-- Sets the Mobile Metadata -->
     <meta name="HandheldFriendly" content="true" />
 
     <!-- Sets the title on the browser tab -->
-    <title>About Me</title>
+    <title>Blog</title>
     <!-- Sets the Description Metadata -->
     <meta name="description" content="Nick Balan's About Me page" />
     <!-- Sets the Author Metadata -->
@@ -87,12 +87,18 @@
                   </a>
                 </div>
                 <div
-                  class="main-navigation hidden w3-hide-medium md:flex items-center space-x-4"
+                  class="w3-hide-medium md:flex items-center space-x-4 main-navigation hidden"
                 >
+                  <!-- Navigate to Blog page -->
+                  <a
+                    href="blog.html"
+                    class="py-10 px-2 font-semibold border-b-4"
+                    >Blog</a
+                  >
                   <!-- Navigate to About Me page -->
                   <a
                     href="index.html"
-                    class="py-10 px-2 font-semibold border-b-4"
+                    class="py-10 px-2 font-semibold transition duration-300"
                     >About Me</a
                   >
                   <!-- Navigate to My Portfolio page -->
@@ -186,24 +192,75 @@
         <b><br />Top</b>
       </button>
       <!-- The Page Container -->
-      <div id="blog">
+      <div class="blog-content">
         <div class="blog-title">
           <h2>Weekly Blog</h2>
         </div>
-
-        <div class="card">
-          <h3>Don't ever give up your goals</h3>
-          <h4>
-            Author: Nick Balan, Category: Motivation<br />
-            Monday, February 6th, 2023
-          </h4>
-          <p>Some text..</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
+        <div class="left-column">
+          <div class="card">
+            <h3>
+              Don't ever give up on your dreams. <br />Part I - Mixed origins
+            </h3>
+            <h4>
+              Author: Nick Balan <br />
+              Category: Motivation <br />
+              Monday, February 23th, 2023
+            </h4>
+            <p><br />Hi everyone,</p>
+            <p>
+              <br />
+              I am Nick Balan; I was born and raised in Chișinău, Republic of
+              Moldova, but I have lived in Germany for six years.
+            </p>
+            <p>
+              <br />My parents were born in the USSR, but my grandparents were
+              born in Greater Romania. "How is this possible?" you might ask
+              yourself.
+            </p>
+            <p>
+              <br />According to history, in 1940, the Soviet Union (USSR)
+              issued an ultimatum to Greater Romania (currently Romania)
+              requesting the cession of the territory of Bessarabia (currently
+              Republic of Moldova) and northern Bucovina. Thus, the region of
+              Bessarabia (currently Republic of Moldova) was annexed to the
+              USSR, remaining part of it for half a century until 1991, when the
+              USSR fell apart and the Republic of Moldova declared its
+              independence from the USSR.
+            </p>
+            <p>
+              <br />In other words, my grandparents were born in Greater
+              Romania, my parents were born in the USSR, and I was a few years
+              old when Republic of Moldova declared its independence.
+            </p>
+            <p>
+              <br />If you are interested in the history of my country of
+              origin, I recommend reading the following Wikipedia pages:
+              <br />
+              <a
+                href="https://en.wikipedia.org/wiki/Moldova#World_War_II_and_Soviet_era"
+                >1. Rep. Moldova wiki page, section: World War II and Soviet
+                era;
+              </a>
+              <br />
+              <a
+                href="https://en.wikipedia.org/wiki/Greater_Romania#World_War_II_losses"
+                >2. Romania wiki page, section: World War II losses.
+              </a>
+            </p>
+            <p><br />[...]</p>
+            <p>[...]</p>
+            <p>[...]</p>
+            <p>
+              <br />I hope this brief historical summary explains my mixed
+              origins in some way.
+            </p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="card">
+            <h3>About Me</h3>
+            <p>Some text about me ...</p>
+          </div>
         </div>
       </div>
       <!-- Inserts single line breaks -->
@@ -215,11 +272,9 @@
         class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
       />
       <div class="text-center p-4 py-4">
-        <a class="text-whitehite" href="#"
-          >© 2021 - 2023 Copyright: Nick Balan</a
-        >
+        <a class="text-whitehite" href="#">© 2023 Copyright: Nick Balan</a>
       </div>
-      <div class="social_media">
+      <div class="social-media">
         <!-- Added the Github logo with a link to my GitHub Repository -->
         <a href="https://github.com/nickbalan/" target="_blank">
           <img
