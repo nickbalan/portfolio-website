@@ -52,6 +52,8 @@ body {
   font-size: 16px;
   /* Sets the line height to a specific value */
   line-height: 1.6;
+  /* Sets the backg */
+  background-color: #fcfcfc;
 }
 
 /* Align h1-h3 tags to center */
@@ -480,7 +482,8 @@ footer.portfolio {
 }
 
 /* Sets Portfolio grid style */
-.portfolio-grid {
+.portfolio-grid,
+.blog-grid {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -492,7 +495,8 @@ footer.portfolio {
 }
 
 /* Sets Protfolio grid item styles */
-.portfolio-grid-item {
+.portfolio-grid-item,
+.blog-grid-item {
   padding: 10px 10px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -831,33 +835,37 @@ iframe:focus {
 
 /* Blog styles for Header */
 .blog-title {
-  padding: 30px;
+  margin: 10px;
+  padding: 40px 0 30px;
   font-size: 40px;
+  text-align: center;
+}
+
+.blog-header {
+  padding: 20px 0 20px;
   text-align: center;
 }
 
 /* Blog styles for left column  */
 .left-column {
   float: left;
-  width: 75%;
+  width: 73%;
+  padding: 5px;
 }
 
 /* Blog styles for right column  */
 .right-column {
   float: left;
-  width: 25%;
-  padding-left: 20px;
+  width: 24%;
 }
 
 /* Blog styles for articles */
 .card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 /* Blog styles for after the columns */
-.row:after {
+.blog-content:after {
   content: "";
   display: table;
   clear: both;
