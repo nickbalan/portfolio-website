@@ -849,15 +849,14 @@ iframe:focus {
 /* Blog styles for left column  */
 .left-column {
   float: left;
-  width: 73%;
+  width: auto;
   padding: 5px;
 }
 
 /* Blog styles for right column  */
-.right-column {
-  float: left;
-  width: 24%;
-}
+/* .right-column {
+  width: auto;
+} */
 
 /* Blog styles for articles */
 .card {
