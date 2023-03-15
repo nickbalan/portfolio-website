@@ -482,8 +482,7 @@ footer.portfolio {
 }
 
 /* Sets Portfolio grid style */
-.portfolio-grid,
-.blog-grid {
+.portfolio-grid {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -833,6 +832,17 @@ iframe:focus {
   outline: none;
 }
 
+.blog-grid {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: flex;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
 /* Blog styles for Header */
 .blog-title {
   margin: 10px;
@@ -841,22 +851,29 @@ iframe:focus {
   text-align: center;
 }
 
-.blog-header {
-  padding: 20px 0 20px;
+.left-section-header {
+  padding: 20px;
   text-align: center;
+}
+
+.right-section-header {
+  padding: 20px;
+  text-align: left;
 }
 
 /* Blog styles for left column  */
 .left-column {
-  float: left;
+  flex: 75%;
   width: auto;
-  padding: 5px;
+  padding: 20px;
 }
 
 /* Blog styles for right column  */
-/* .right-column {
+.right-column {
+  flex: 25%;
   width: auto;
-} */
+  padding: 20px;
+}
 
 /* Blog styles for articles */
 .card {
