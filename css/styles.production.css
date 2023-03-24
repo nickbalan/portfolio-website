@@ -318,7 +318,20 @@ footer {
   }
 }
 
-/* Sets responsive Media Queries for mobile screens */
+/* Sets responsive Media Queries for tablet screens */
+@media (max-width: 999px) {
+  /* Blog styles on tablet screens */
+  .right-column {
+    display: none;
+  }
+
+  .left-column {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Sets responsive Media Queries for mobile and tablet screens */
 @media (max-width: 700px) {
   .grid {
     width: 100%;
@@ -353,12 +366,6 @@ footer {
   #mySidebar {
     display: none;
     right: 0;
-  }
-
-  .left-column,
-  .right-column {
-    width: 100%;
-    padding: 0;
   }
 }
 
