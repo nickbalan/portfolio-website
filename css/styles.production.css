@@ -587,6 +587,7 @@ footer.portfolio {
 .form-line {
   margin-top: 12px;
   margin-bottom: 12px;
+  padding: 12px 10px;
 }
 
 .form-line-column {
@@ -701,6 +702,7 @@ li.form-line {
 .supernova .form-all,
 .form-all {
   background-color: #ffffff;
+  border-radius: 3px;
 }
 
 /* Set styles for Form subheaders */
@@ -741,6 +743,7 @@ li.form-line {
   /* Set the display styles of the form section */
   .form-section {
     display: inline !important;
+    padding: 0px 38px;
   }
 
   /* Set the display styles of the form pagebreak */
