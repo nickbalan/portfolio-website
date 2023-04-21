@@ -75,7 +75,8 @@ Check out the [Portfolio Website - Live page](https://nickbalan.github.io/portfo
 
 ## Portfolio Website live screenshots
 
-![Livescreen](img/Livescreens/Portfolio_Website/v7/Portfolio_Website_About_Me_page_Livescreen.JPG)
-![Livescreen](img/Livescreens/Portfolio_Website/v7/Portfolio_Website_Portfolio_page_Livescreen.JPG)
-![Livescreen](img/Livescreens/Portfolio_Website/v7/Portfolio_Website_Zoom_Meeting_Livescreen.JPG)
-![Livescreen](img/Livescreens/Portfolio_Website/v7/Portfolio_Website_Contact_Me_page_Livescreen.JPG)
+![Livescreen](img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG)
+![Livescreen](img/Livescreens/Portfolio_Website/v8/Portfolio_Website_Blog_page_Livescreen.JPG)
+![Livescreen](img/Livescreens/Portfolio_Website/v8/Portfolio_Website_Portfolio_page_Livescreen.JPG)
+![Livescreen](img/Livescreens/Portfolio_Website/v8/Portfolio_Website_Zoom_Meeting_Livescreen.JPG)
+![Livescreen](img/Livescreens/Portfolio_Website/v8/Portfolio_Website_Contact_Me_page_Livescreen.JPG)
