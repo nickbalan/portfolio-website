@@ -43,6 +43,14 @@ Active link color / dark-grey: #2b2b2b;
   box-sizing: border-box;
 }
 
+/* Sets the default margin and padding to 0 */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   /* Sets the font to Lato and the fallback font to Sans-serif */
   font-family: "Lato", sans-serif;
@@ -177,7 +185,7 @@ button:focus,
   border: 1px solid #ccc;
 }
 
-/** Sets Footer styles */
+/* Sets Footer styles */
 footer {
   clear: both;
   display: -webkit-box;
@@ -237,6 +245,7 @@ footer {
   width: auto;
   min-height: auto;
   margin: 0;
+  border-radius: 2px;
 }
 
 /* Sets responsive Media Queries for desktop screens */
@@ -273,6 +282,39 @@ footer {
     color: #183a37;
     background-color: #efd6ac;
   }
+
+  /* Sets percentage bars styles */
+  @keyframes bar-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* Sets Percentage of 0% for skills bars styles */
+  .percentage {
+    width: 0%;
+    height: 18px;
+    position: relative;
+    animation-name: bar-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+  }
+
+  /* Sets Percentage of 100% for skills bars styles */
+  .percentage-100 {
+    width: 100%;
+    height: 18px;
+    position: relative;
+    animation-name: bar-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+  }
+
   /* Sets Percentage of 99% for skills bars styles */
   .percentage-99 {
     width: 99%;
@@ -483,8 +525,14 @@ footer.portfolio {
   border: 1px solid #777;
 }
 
-/* Sets Container styles */
+/* Sets the width of the main container */
 .container {
+  width: 100%;
+  /* Sets the max-width of the main container */
+  max-width: 1200px;
+  /* Sets the margin to auto */
+  margin: 0 auto;
+  /* Sets the padding to 0 */
   padding: 0 16px;
 }
 
