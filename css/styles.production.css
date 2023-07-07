@@ -293,70 +293,54 @@ footer {
     }
   }
 
-  /* Sets Percentage of 0% for skills bars styles */
-  .percentage {
-    width: 0%;
-    height: 18px;
+  /* Sets default Percentage styles for skills bars */
+  .percentage-0,
+  .percentage-100,
+  .percentage-99,
+  .percentage-95,
+  .percentage-90,
+  .percentage-85 {
     position: relative;
     animation-name: bar-animation;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-direction: alternate-reverse;
+  }
+
+  /* Sets Percentage styles for skills bars */
+  .percentage-0 {
+    width: 0%;
+    height: 18px;
   }
 
   /* Sets Percentage of 100% for skills bars styles */
   .percentage-100 {
     width: 100%;
     height: 18px;
-    position: relative;
-    animation-name: bar-animation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
   }
 
   /* Sets Percentage of 99% for skills bars styles */
   .percentage-99 {
     width: 99%;
     height: 18px;
-    position: relative;
-    animation-name: bar-animation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
   }
 
   /* Sets Percentage of 95% for skills bars styles */
   .percentage-95 {
     width: 95%;
     height: 18px;
-    position: relative;
-    animation-name: bar-animation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
   }
 
   /* Sets Percentage of 90% for skills bars styles */
   .percentage-90 {
     width: 90%;
     height: 18px;
-    position: relative;
-    animation-name: bar-animation;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
   }
 
   /* Sets Percentage of 85% for skills bars styles */
   .percentage-85 {
     width: 85%;
     height: 18px;
-    position: relative;
-    animation-name: bar-animation;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: alternate-reverse;
   }
 }
 
