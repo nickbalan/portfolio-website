@@ -107,7 +107,7 @@ a:active {
 }
 
 /* Removes the underline for link hover */
-a:hover, 
+a:hover,
 a:focus,
 
 /* Removes the decoration for social media links */
@@ -288,6 +288,7 @@ footer {
     0% {
       width: 0%;
     }
+
     100% {
       width: 100%;
     }
@@ -346,6 +347,7 @@ footer {
 
 /* Sets responsive Media Queries for tablet screens */
 @media (max-width: 999px) {
+
   /* Blog styles on tablet screens */
   .right-column {
     display: none;
@@ -431,6 +433,7 @@ footer {
     top: 0px;
     width: 200px;
   }
+
   100% {
     left: 60px;
     top: 0px;
@@ -638,6 +641,7 @@ li.form-line {
 .form-section:first-child {
   border-radius: 3px 3px 0 0;
 }
+
 .form-section:last-child {
   border-radius: 0 0 3px 3px;
 }
@@ -661,12 +665,14 @@ li.form-line {
   text-align: left;
   width: 100%;
 }
+
 .form-label.form-label-left,
 .form-label.form-label-right,
 .form-label.form-label-left.form-label-auto,
 .form-label.form-label-right.form-label-auto {
   width: 230px;
 }
+
 .form-label-top,
 .form-label-left,
 .form-label-right,
@@ -675,6 +681,7 @@ li.form-line {
 .form-radio-item label {
   color: #2c3345;
 }
+
 .form-sub-label {
   color: #464d5f;
 }
@@ -728,9 +735,11 @@ li.form-line {
   background-color: #ffffff;
   background-image: none;
 }
+
 .supernova body {
   background: transparent;
 }
+
 .supernova .form-all,
 .form-all {
   background-color: #ffffff;
@@ -757,6 +766,7 @@ li.form-line {
 .ie-8 .form-all:before {
   display: none;
 }
+
 .ie-8 {
   margin-top: auto;
   margin-top: initial;
@@ -772,6 +782,7 @@ li.form-line {
 
 /* Sets responsive media queries styles for Contact Form */
 @media print {
+
   /* Set the display styles of the form section */
   .form-section {
     display: inline !important;
