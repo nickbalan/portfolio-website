@@ -1,7 +1,12 @@
-// Modal Image Gallery
+// Get the Modal
+var modal = document.getElementById("modal-gallery");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img-n1");
+var captionText = document.getElementById("caption");
+
+// Modal Image Gallery function
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
+  modalImg.src = element.src;
+  modal.style.display = "block";
   captionText.innerHTML = element.alt;
 }
