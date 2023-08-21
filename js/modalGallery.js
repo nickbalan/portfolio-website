@@ -1,6 +1,6 @@
 // Get the Modal
 var modal = document.getElementById("modal-gallery");
-var img = document.getElementById("myImg");
+var img = document.getElementById("modal-img");
 var modalImg = document.getElementById("img-n1");
 var captionText = document.getElementById("caption");
 
