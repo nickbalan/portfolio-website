@@ -18,6 +18,7 @@ JotForm.init(function () {
 });
 
 JotForm.prepareCalculationsOnTheFly([null, null, null, null, null, { "name": "contactMe", "qid": "5", "text": "Contact Me", "type": "control_head" }, null, null, null, { "description": "", "name": "name", "qid": "9", "text": "Name", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "10", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, null, null, null, { "description": "", "name": "yourMessage", "qid": "14", "subLabel": "", "text": "Your Message", "type": "control_textarea" }, { "name": "submit", "qid": "15", "text": "Submit", "type": "control_button" }]);
+
 setTimeout(function () {
   JotForm.paymentExtrasOnTheFly([null, null, null, null, null, { "name": "contactMe", "qid": "5", "text": "Contact Me", "type": "control_head" }, null, null, null, { "description": "", "name": "name", "qid": "9", "text": "Name", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "10", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, null, null, null, { "description": "", "name": "yourMessage", "qid": "14", "subLabel": "", "text": "Your Message", "type": "control_textarea" }, { "name": "submit", "qid": "15", "text": "Submit", "type": "control_button" }]);
 }, 20);
