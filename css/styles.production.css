@@ -470,11 +470,13 @@ section.hobbies {
 ul.circle {
   list-style-type: circle;
   font-style: italic;
+  margin-left: 25px;
 }
 
 /* Sets Square styles for unordered list */
 ul.square {
   list-style-type: square;
+  margin-left: 25px;
 }
 
 /* Sets Portfolio h3 styles */
