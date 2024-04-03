@@ -13,6 +13,54 @@ Active link color / dark-grey: #2b2b2b;
 @tailwind components;
 @tailwind utilities; */
 
+/* Sets the default font size and line-height */
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Sets the default font family */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Sets the default width of the element via box-sizing property and border-box value  */
+* {
+  box-sizing: border-box;
+} 
+
+/* Sets the default margin and padding to 0 */ 
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets the default list-style to none */
+ul {
+  list-style: none;
+}
+
+/* Sets the default font color */
+body {
+  color: #141414;
+}
+
+/* Sets the default background color */
+body {
+  background-color: #F7E1BB;
+}
+
+/* Sets the default font color */
+a {
+  color: #004000;
+}
+
 /* Sets variables */
 :root {
   /* Primary link color var */
