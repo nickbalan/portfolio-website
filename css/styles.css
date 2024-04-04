@@ -61,6 +61,33 @@ a {
   color: #004000;
 }
 
+/* Sets the default font color for visited links */
+a:visited {
+  color: #57400F;
+}
+
+/* Sets the default font color for active links */
+a:active {
+  color: #2b2b2b;
+}
+
+/* Sets the default font weight */
+body {
+  font-weight: 400;
+}
+
+/* Sets the default font weight for headings */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* Sets the default font family */
+body {
+  font-family: "Lato", sans-serif;
+}
+
 /* Sets variables */
 :root {
   /* Primary link color var */
