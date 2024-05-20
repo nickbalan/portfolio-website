@@ -1,12 +1,13 @@
-/* Colors used 
-Text Color: #141414;
-Primary Background Color: #F7E1BB;
-Secondary Foreground Color: #000000;
-Button Secondary Color: #e0b354;
-Primary link color / primary-color: #004000;
-Visited link color / secondary-color: #57400F;
-Active link color / dark-grey: #2b2b2b;
-*/
+/* Colors used */
+:root {
+    --text-color: #141414;
+    --primary-bg-color: #F7E1BB;
+    --secondary-fg-color: #000000;
+    --button-secondary-color: #e0b354;
+    --primary-link-color: #004000;
+    --visited-link-color: #57400F;
+    --active-link-color: #2b2b2b;
+}
 
 /* Add the Tailwindcss directives */
 /* @tailwind base;
@@ -48,27 +49,27 @@ ul {
 
 /* Sets the default font color */
 body {
-  color: #141414;
+  color: var(--text-color);
 }
 
 /* Sets the default background color */
 body {
-  background-color: #F7E1BB;
+  background-color: var(--primary-bg-color);
 }
 
 /* Sets the default font color */
 a {
-  color: #004000;
+  color: var(--primary-link-color);
 }
 
 /* Sets the default font color for visited links */
 a:visited {
-  color: #57400F;
+  color: var(--visited-link-color);
 }
 
 /* Sets the default font color for active links */
 a:active {
-  color: #2b2b2b;
+  color: var(--active-link-color);
 }
 
 /* Sets the default font weight */
