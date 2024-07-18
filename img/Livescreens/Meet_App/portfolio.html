@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Sets the Charset Metadata -->
+  <meta charset="utf-8">
+  <!-- Sets the Viewport Metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sets the Content Metadata -->
+  <meta name="language" content="English">
+  <!-- Sets the Robot Metadata -->
+  <meta name="robots" content="index, follow">
+  <!-- Sets the Revision Metadata -->
+  <meta name="revised" content="January 1st, 2024, 2:00 pm">
+  <!-- Sets the Copyright Metadata -->
+  <meta name="copyright" content="© Copyright Nick Balan 2021 - 2024">
+  <!-- Sets the Mobile Metadata -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- Sets the title on the browser tab -->
+  <title>Portfolio</title>
+  <!-- Sets the Description Metadata -->
+  <meta name="description" content="Nick Balan's Portfolio page">
+  <!-- Sets the Author Metadata -->
+  <meta name="author" content="Nick Balan">
+  <!-- Sets the Open Graph Protocol (OGP) Metadate -->
+  <meta property="og:title" content="Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG">
+  <meta property="og:url" content="https://nickbalan.github.io/portfolio-website/portfolio.html">
+  <meta property="og:description" content="Nick Balan's Portfolio page">
+  <meta property="og:site_name" content="Nick Balan">
+  <!-- Adds the favicon on the browser tab -->
+  <link rel="icon" href="../img/favicon/favicon.ico">
+  <!-- CSS Reset. Link to external CND normalize.min.css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Link the custom CSS style sheets file -->
+  <link rel="stylesheet" href="../css/styles.production.css">
+  <link rel="stylesheet" href="../public/tailwind.css">
+  <!-- Link to Google fonts CND -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap" rel="stylesheet">
+  <!-- Link to external CNDs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <!-- The Header with logo and the main navigation -->
+  <header>
+    <!-- Sets the main navigation container -->
+    <div class="navMenu">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex sm:justify-between">
+            <div class="flex space-x-7">
+              <!-- Added the Personal logo of Nick Balan -->
+              <div>
+                <a href="../index.html" class="flex items-center py-4 px-2">
+                  <img srcset="../img/logo/logo_48x48.ico 0.5x" src="../img/logo/logo_48x48.ico" class="logo"
+                    alt="Nick Balan's logo">
+                </a>
+              </div>
+              <div class="w3-hide-medium md:flex items-center space-x-4 main-navigation hidden">
+                <!-- Navigate to About Me page -->
+                <a href="../index.html" class="py-10 px-2 font-semibold transition duration-300">About Me</a>
+                <!-- Navigate to Blog page -->
+                <a href="blog.html" class="py-10 px-2 font-semibold transition duration-300">Blog</a>
+                <!-- Navigate to My Portfolio page -->
+                <a href="portfolio.html" class="py-10 px-2 font-semibold border-b-4">My Portfolio</a>
+                <!-- Navigate to Zoom Meeting page -->
+                <a href="zoom-meeting.html" class="py-10 px-2 font-semibold transition duration-300">Zoom Meeting</a>
+                <!-- Navigate to Contact Me page -->
+                <a href="contact.html" class="py-10 px-2 font-semibold transition duration-300">Contact Me</a>
+              </div>
+              <!-- Hides the Main Navbar on small screens and replaces it with a Sidebar -->
+              <div class="flex items-center py-5 px-5 w3-display-topright">
+                <div class="w3-bar w3-white w3-card" id="myNavbar">
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Sets the Responsive Mobile Sidebar -->
+      <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-large"
+        style="display: none; right: 0" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-large w3-medium w3-padding-16">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <!-- Navigate to About Me page -->
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+        <!-- Navigate to Blog page -->
+        <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">
+          Blog
+        </a>
+        <!-- Navigate to My Portfolio page -->
+        <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">My Portfolio</a>
+        <!-- Navigate to Zoom Meeting page -->
+        <a href="zoom-meeting.html" onclick="w3_close()" class="w3-bar-item w3-button">Zoom Meeting</a>
+        <!-- Navigate to Contact Me page -->
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Added the Scroll To Top Button -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top" type="button">
+      <span class="arrowUp"></span>
+      <b><br>Top</b>
+    </button>
+    <section>
+      <!-- The Grid layout -->
+      <div class="grid-title">
+        <!-- Child Grid. Container 1 -->
+        <div class="grid-item portfolio-grid-item">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+      <!-- Sets a Grid layout for all projects -->
+      <div class="grid portfolio-grid">
+        <!-- Sets the Grid layout for the Portfolio Website project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Portfolio Website</h2>
+          <h2>
+            <sup>(w/ HTML, CSS, & JS)</sup>
+          </h2>
+          <div class="container">
+            <!-- Sets the roject live screen -->
+            <img src="../img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)"
+              alt="Portfolio Website live screenshot">
+            <!-- Added the Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a portfolio website with HTML, CSS, and JavaScript to
+              showcase my portfolio to my professional network and potential
+              employers.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/portfolio-website" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/portfolio-website/blob/main/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Movie App v2 project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Movie App v2</h2>
+          <h2>
+            <sup>(w/ TypeScript & Angular)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Movie_App_v2/v1/Movie_App_v2_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)"
+              alt="Movie App v2 live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a client-side app with TypeScript and Angular as Front-End
+              and a REST API as Back-End.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/movie-app-v2" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/movie-app-v2/blob/main/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Meet App project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Meet App</h2>
+          <h2>
+            <sup>(PWA w/ React)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Meet_App/v1/Meet_App_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)" alt="Meet App live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a serverless, progressive web application (PWA) with React
+              using test-driven development (TDD) techniques.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/meet-app" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/meet-app/blob/master/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Chat App project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Chat App</h2>
+          <h2>
+            <sup>(w/ React Native)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Chat_App/v1/Chat_App_Livescreen.jpg"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)" alt="Chat App live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a chat app for mobile devices (Android and iOS) with React
+              Native. The app provides users with a simple chat interface and
+              options for sharing images and locations.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/chat-app" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/chat-app/blob/master/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Pokedex App project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Pokedex App</h2>
+          <h2>
+            <sup>(w/ HTML, CSS, & JS)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Pokedex_App/v1/Pokedex_App_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)" alt="JS App live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a web application with HTML, CSS, and JavaScript that
+              loads data from an external API and allows detailed
+              visualization of data endpoints.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/pokedex-app" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/pokedex-app/blob/master/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Movie App v1 project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Movie App v1</h2>
+          <h2>
+            <sup>(w/ React)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Movie_App_v1/v1/Movie_App_v1_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)"
+              alt="Movie App v1 live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a client-side app with React as Front-End and using a REST
+              API as Back-End.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/movie-app-v1" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/movie-app-v1/blob/main/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Movie API project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Movie API</h2>
+          <h2>
+            <sup>(w/ Node.js & Express)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Movie_API/v1/Movie_API_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)"
+              alt="Movie API Endpoints Documentation live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <p class="content">
+              Build a server-side REST API to store data about movies, and use
+              it as a Back-End for other projects. This REST API gives users
+              data endpoints with different films, directors, and genres.
+            </p>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/movie-api" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/movie-api/blob/main/README.md" class="button protfolio-button"
+              target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Grid layout for the Budget Planner project section -->
+        <div class="grid-item portfolio-grid-item">
+          <h2>Budget Planner App</h2>
+          <h2>
+            <sup>(w/ React)</sup>
+          </h2>
+          <div class="container">
+            <!-- Project live screen -->
+            <img src="../img/Livescreens/Budget_Planner_App/v1/Budget_Planner_App_Livescreen.JPG"
+              class="w3-hover-opacity project-screen modal-img" onclick="onClick(this)"
+              alt="Budget Planner App live screenshot">
+            <!-- Project description -->
+            <h3 class="collapsible">Objective:</h3>
+            <div class="content">
+              <p>
+                Build a financial planning prototype feature for an existing
+                fintech web app that allows users:
+                <br>
+                1. To add, edit, and delete a monthly budget,
+                <br>
+                2. To make monthly budget entries (enter, change & delete
+                expenses),
+                <br>
+                3. To have a dashboard with a total balance after costs and
+                monthly payments.
+              </p>
+            </div>
+            <!-- Navigate to the project's GitHub Repository -->
+            <a href="https://github.com/nickbalan/budget-planner-app" class="button protfolio-button" target="_self">
+              GitHub
+            </a>
+            <!-- Navigate to the project's Technical Case Study -->
+            <a href="https://github.com/nickbalan/budget-planner-app/blob/main/README.md"
+              class="button protfolio-button" target="_self">
+              Technical Case Study
+            </a>
+          </div>
+        </div>
+        <!-- Sets the Modal Gallery section -->
+        <div id="modal-gallery" class="w3-modal w3-black" onclick="this.style.display='none'">
+          <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Gallery">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img src="../img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG"
+              id="img-n1" class="w3-image" alt="Portfolio Website live screenshot">
+            <p id="caption" class="w3-opacity w3-large"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Sets the Footer section -->
+  <footer class="w3-center text-center bg-gray-900 text-white portfolio">
+    <div class="grid-title text-center p-4 py-4">
+      <a class="text-whitehite" href="#">© Copyright Nick Balan 2021 - 2024</a>
+    </div>
+    <div class="social-media">
+      <!-- Added the Github logo with a link to my GitHub Repository -->
+      <a href="https://github.com/nickbalan/" target="_self">
+        <img src="../img/icon/github_logo_icon.svg" alt="Github logo" width="30" height="30">
+      </a>
+      <!-- Added the Linkedin logo with a link to my LikedIn profile -->
+      <a href="https://www.linkedin.com/in/nickbalan/" target="_self">
+        <img src="../img/icon/linkedin_logo_icon.svg" alt="Linkedin logo" width="30" height="30">
+      </a>
+      <!-- Added the Instagram logo with a link to my Instagram profile -->
+      <a href="https://www.instagram.com/nickbalancom/" target="_self">
+        <img src="../img/icon/instagram_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+      <!-- Added the Medium logo with a link to my Medium profile -->
+      <a href="https://medium.com/@nickbalan" target="_self">
+        <img src="../img/icon/medium_logo_icon.svg" alt="Medium logo" width="30" height="30">
+      </a>
+      <!-- Added the Threads logo with a link to my Threads profile -->
+      <a href="https://threads.net/@nickbalancom/" target="_self">
+        <img src="../img/icon/threads_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+    </div>
+  </footer>
+  <!-- Added the Section functions -->
+  <script src="../js/sections.js"></script>
+  <!-- Added the Scroll To Top Button functions -->
+  <script src="../js/scrollBtn.js"></script>
+  <!-- Added the mobile Navbar functions -->
+  <script src="../js/mobileNavbar.js"></script>
+  <!-- Added the Modal Gallery functions -->
+  <script src="../js/modalGallery.js"></script>
+  <!-- Added tota11y -->
+  <script src="../js/tota11y.min.js"></script>
+</body>
+
+</html>

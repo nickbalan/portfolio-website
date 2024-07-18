@@ -1,0 +1,442 @@
+/* Colors used */
+:root {
+    --text-color: #141414;
+    --primary-bg-color: #F7E1BB;
+    --secondary-fg-color: #000000;
+    --button-secondary-color: #e0b354;
+    --primary-link-color: #004000;
+    --visited-link-color: #57400F;
+    --active-link-color: #2b2b2b;
+}
+
+/* Add the Tailwindcss directives */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Sets the default font size and line-height */
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Sets the default font family */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Sets the default width of the element via box-sizing property and border-box value  */
+* {
+  box-sizing: border-box;
+} 
+
+/* Sets the default margin and padding to 0 */ 
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets the default list-style to none */
+ul {
+  list-style: none;
+}
+
+/* Sets the default font color */
+body {
+  color: var(--text-color);
+}
+
+/* Sets the default background color */
+body {
+  background-color: var(--primary-bg-color);
+}
+
+/* Sets the default font color */
+a {
+  color: var(--primary-link-color);
+}
+
+/* Sets the default font color for visited links */
+a:visited {
+  color: var(--visited-link-color);
+}
+
+/* Sets the default font color for active links */
+a:active {
+  color: var(--active-link-color);
+}
+
+/* Sets the default font weight */
+body {
+  font-weight: 400;
+}
+
+/* Sets the default font weight for headings */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* Sets the default font family */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Sets variables */
+:root {
+  /* Primary link color var */
+  --primary-color: #004000;
+  /* Visited link color var*/
+  --secondary-color: #57400f;
+  /* Primary Background Color var*/
+  --bkground-color: #f7e1bb;
+  /* Secondary Foreground Color */
+  --sec-bkground-color: #000000;
+  /* Button Secondary Color var*/
+  --button-sec-color: #e0b354;
+  /* Active link color var*/
+  --dark-grey: #2b2b2b;
+  /* Basic font weight var*/
+  --basic-font-weight: 400;
+  /* Headings font weight var*/
+  --heading-font-weight: 700;
+  /* Fallback font family var*/
+  --font-family-fallback: "Lato", sans-serif;
+  /* h1, h2, h3 font family var*/
+  --h1-font-family: "Benne";
+  --h2-h3-font-family: "Oxygen";
+  /* The font-size var */
+  --basic-font-size: 16px;
+  --h1-font-size: 30px;
+  --h2-font-size: 24px;
+  --h3-font-size: 18px;
+  /* The line-height var */
+  --basic-line-height: 1.6;
+  /* Grid background color var */
+  --grid-bkground-color: #f9f9f9;
+}
+
+/* Sets the default width of the element via box-sizing property and border-box value  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Sets the font to Lato and the fallback font sans-serif*/
+  font-family: var(--font-family-fallback);
+  /* Sets the font to embed the regular (400) version */
+  font-weight: var(--basic-font-weight);
+  /* Sets the font size to specific size*/
+  font-size: var(--basic-font-size);
+  /* Sets the line-height to specific line-height*/
+  line-height: var(--basic-line-height);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  /* Sets the fonts size to specific size*/
+  font-size: var(--h1-font-size);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--h1-font-family);
+}
+
+h2 {
+  /* Sets the fonts size to specific size*/
+  font-size: var(--h2-font-size);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--h2-h3-font-family);
+}
+
+h3 {
+  /* Sets the fonts size to specific size*/
+  font-size: var(--h3-font-size);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--h2-h3-font-family);
+}
+
+/* Primary link color */
+a {
+  color: var(--primary-color);
+}
+
+/* Visited link color */
+a:visited {
+  color: var(--secondary-color);
+}
+
+/* Selected link color */
+a:active {
+  color: var(--dark-grey);
+}
+
+/* No underlinig when hovering over a link */
+a:hover, 
+a:focus,
+/* No decoration for social media links */
+.social_media__link {
+  text-decoration: none;
+}
+
+/* General settings for Buttons */
+button,
+.button {
+  /* Overwrites browser defaults and reset the border */
+  /* Resets the border */
+  border: none;
+  display: inline-block;
+  /* Takes the font from the outer container */
+  font-family: inherit;
+  /* Styles the backgound color, font color, and text decoration () */
+  background-color: var(--bkground-color);
+  color: var(--sec-bkground-color);
+  text-decoration: none;
+  text-align: center;
+  /* adds spacing to the button */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid RGBA(0, 0, 0, 0.3);
+  /* Sets transition-duration and transition-property */
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+/* The second button */
+.button_secondary {
+  background-color: var(--button-sec-color);
+  color: var(--primary-color);
+}
+
+/* Sets logo */
+.logo {
+  max-width: 150px;
+}
+
+/* Sets the Profile Portrait*/
+.profile__portrait {
+  width: 250px;
+  /* add rounded corners */
+  border-radius: 10%;
+  display: block;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Profile Image Animation */
+.profile__portrait:hover {
+  border: 1px solid rgb(255, 254, 254);
+}
+
+/* Sets the Flexbox layout for Footer*/
+.page_footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Sets the page <div> */
+.berlin_svg,
+.profile,
+.about_me,
+.contact_me,
+.contact_form {
+  max-width: 700px;
+  margin: 0 auto;
+  /* Sets Flex properties: flex-grow: 1, flex-shrink: 1, flex-basis: 100px*/
+  flex: 1 1 100px;
+}
+
+/* Sets Flexbox for header parent container */
+.page-header {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* Put the img item around the center */
+.page-header img {
+  align-self: center;
+}
+
+/* Sets Flexbox for header child container */
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+/* Targeting the last child of the two flexbox child items */
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/* Sets the main navigation */
+.main-navigation {
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Sets the navigation links */
+.navigation-list a {
+  float: left;
+  padding: 12px;
+  color: #008b00;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+
+/* Sets the navigation links hover */
+.navigation-list a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Get rid of the dots from the navigation unordered list */
+.navigation-list {
+  list-style-type: none;
+}
+
+/* no decoration for active links */
+.navigation-list li .navigation-list__item--active {
+  text-decoration: none;
+}
+
+/* Sets the title grid */
+.grid_title {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Make an actual grid container. Grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* The grid items a background color */
+.grid__item {
+  background-color: var(--grid-bkground-color);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+/* You first target the last grid__item with the pseudo-selector :last-child; */
+.grid_item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+/* Sets responsive media queries for desktop screens */
+@media only screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Sets responsive media queries for small screens */
+@media (max-width: 700px) {
+  .grid {
+    width: 100%;
+    display: block;
+  }
+  .navigation-list {
+    flex-direction: column;
+  }
+  .navigation-list a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navigation-list a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+/* The selector witch sets rule-set for 'color-change' animation */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function */
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/* the 'cloud-front' will move from (0, 50px) to (200px, 50px). x - horizontal value, y - vertical value */
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+/* the 'cloud-back' will move from (446px, 48px) to (100px, 48px). x - horizontal value, y - vertical value */
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+/* Sets animation-duration, -name, -iteration-count, -direction, -timing-function for cloud-front*/
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}

@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Sets the Charset Metadata -->
+  <meta charset="utf-8">
+  <!-- Sets the Viewport Metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sets the Content Metadata -->
+  <meta name="language" content="English">
+  <!-- Sets the Robot Metadata -->
+  <meta name="robots" content="index, follow">
+  <!-- Sets the Revision Metadata -->
+  <meta name="revised" content="January 1st, 2024, 2:00 pm">
+  <!-- Sets the Copyright Metadata -->
+  <meta name="copyright" content="© Copyright Nick Balan 2021 - 2024">
+  <!-- Sets the Mobile Metadata -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- Sets the title on the browser tab -->
+  <title>About Me</title>
+  <!-- Sets the Description Metadata -->
+  <meta name="description" content="Nick Balan's About Me page">
+  <!-- Sets the Author Metadata -->
+  <meta name="author" content="Nick Balan">
+  <!-- Sets the Open Graph Protocol (OGP) Metadata -->
+  <meta property="og:title" content="About Me">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG">
+  <meta property="og:url" content="https://nickbalan.github.io/portfolio-website/">
+  <meta property="og:description" content="Nick Balan's About Me page">
+  <meta property="og:site_name" content="Nick Balan">
+  <!-- Adds the favicon on the browser tab -->
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <!-- CSS Reset. Link to external CND normalize.min.css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Link the custom CSS style sheets file -->
+  <link rel="stylesheet" href="css/styles.production.css">
+  <link rel="stylesheet" href="public/tailwind.css">
+  <!-- Link to Google fonts CND -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap" rel="stylesheet">
+  <!-- Link to external CNDs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <!-- The Header with logo and the main navigation -->
+  <header>
+    <!-- Sets the main navigation container -->
+    <div class="navMenu">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex sm:justify-between">
+            <div class="flex space-x-7">
+              <!-- Added the Personal logo of Nick Balan -->
+              <div>
+                <a href="index.html" class="flex items-center py-4 px-2">
+                  <img srcset="img/logo/logo_48x48.ico 0.5x" src="img/logo/logo_48x48.ico" class="logo"
+                    alt="Nick Balan's logo">
+                </a>
+              </div>
+              <div class="w3-hide-medium md:flex items-center space-x-4 main-navigation hidden">
+                <!-- Navigate to About Me page -->
+                <a href="index.html" class="py-10 px-2 font-semibold border-b-4">About Me</a>
+                <!-- Navigate to Blog page -->
+                <a href="pages/blog.html" class="py-10 px-2 font-semibold transition duration-300">Blog</a>
+                <!-- Navigate to My Portfolio page -->
+                <a href="pages/portfolio.html" class="py-10 px-2 font-semibold transition duration-300">My Portfolio</a>
+                <!-- Navigate to Zoom Meeting page -->
+                <a href="pages/zoom-meeting.html" class="py-10 px-2 font-semibold transition duration-300">Zoom
+                  Meeting</a>
+                <!-- Navigate to Contact Me page -->
+                <a href="pages/contact.html" class="py-10 px-2 font-semibold transition duration-300">Contact Me</a>
+              </div>
+              <!-- Hides the Main Navbar on small screens and replaces it with a Sidebar -->
+              <div class="flex items-center py-5 px-5 w3-display-topright">
+                <div class="w3-bar w3-white w3-card" id="myNavbar">
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Sets the Responsive Mobile Sidebar -->
+      <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-large"
+        style="display: none; right: 0" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-large w3-medium w3-padding-16">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <!-- Navigate to About Me page -->
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+        <!-- Navigate to Blog page -->
+        <a href="pages/blog.html" onclick="w3_close()" class="w3-bar-item w3-button">
+          Blog
+        </a>
+        <!-- Navigate to My Portfolio page -->
+        <a href="pages/portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">My Portfolio</a>
+        <!-- Navigate to Zoom Meeting page -->
+        <a href="pages/zoom-meeting.html" onclick="w3_close()" class="w3-bar-item w3-button">Zoom Meeting</a>
+        <!-- Navigate to Contact Me page -->
+        <a href="pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Added the Scroll To Top Button -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top" type="button">
+      <span class="arrowUp"></span>
+      <b><br>Top</b>
+    </button>
+    <!-- The Page Container -->
+    <div class="about-me-grid w3-content w3-margin-top w3-width" style="max-width: 1440px">
+      <!-- Sets a Grid layout -->
+      <div class="w3-row-padding">
+        <!-- Sets the Left Column section -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-dark-gray w3-card-4">
+            <!-- Added the Profile & Skills section -->
+            <section class="job-skills">
+              <div class="w3-display-container">
+                <div class="w3-container w3-text-black">
+                  <img src="img/photo/Nick_Balan_photo_12072022.jpg" class="profile-portrait" alt="Nick Balan's photo">
+                  <h1>Nick Balan</h1>
+                  <!-- Navigate to My Portfolio page -->
+                  <a href="pages/portfolio.html" target="_self" class="button cv-button">
+                    Check out my projects
+                  </a>
+                  <!-- Added a Download link for my Resume -->
+                  <a href="files/29012024_Nick_Balan_Full-Stack_Developer_EN--Resume.pdf" target="_self"
+                    class="button cv-button" download>
+                    Download my Resume
+                  </a>
+                </div>
+              </div>
+              <br>
+              <div class="w3-container">
+                <p>
+                  <i class="w3-margin-right w3-large icon fa fa-briefcase fa-fw"></i>Full Stack
+                  Developer | Web Development
+                </p>
+                <p>
+                  <i class="w3-margin-right w3-large icon fa fa-home fa-fw"></i>Nuremberg (Nürnberg)
+                </p>
+                <p>
+                  <i class="w3-margin-right w3-large icon fa fa-envelope fa-fw"></i>nickolae.balan@gmail.com
+                </p>
+                <hr>
+                <!-- Added the Web development skills section with Proficiency Percentage Bars -->
+                <p class="w3-large w3-margin-top w3-margin-bottom">
+                  <b><i class="w3-margin-right icon fa fa-asterisk fa-fw"></i>Web development skills</b>
+                </p>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    HTML / HTML5
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    CSS / CSS3
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    JavaScript
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    TypeScript
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    Node.js, Express
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    Bootstrap, Redux
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    React w/ TypeScript
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    React Native
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    Angular JS w/ TypeScript
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    Git, Git CLI
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    GitHub, GitLab
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    MERN Stack
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-90">
+                    #C and ASP.Net Core
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-90">
+                    Serverless, AWS Lambda
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-90">
+                    SQL, MongoDB, Firebase
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-90">
+                    Heroku, Netlify
+                  </div>
+                </div>
+                <hr>
+                <!-- Added the Languages skills section with Proficiency Percentage Bars -->
+                <p class="w3-large w3-text-theme w3-margin-top">
+                  <b><i class="fa fa-globe fa-fw w3-margin-right icon"></i>Languages</b>
+                </p>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-99">
+                    Romanian
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-95">
+                    English
+                  </div>
+                </div>
+                <div class="w3-round-xlarge w3-small w3-margin-top w3-margin-bottom bar-background bar-shadow">
+                  <div class="w3-container w3-round-xlarge bar-color tab percentage-85">
+                    German
+                  </div>
+                </div>
+              </div>
+            </section>
+            <br>
+          </div>
+        </div>
+        <!-- Sets the Right Column section -->
+        <div class="w3-twothird">
+          <!-- Sets the About Me section -->
+          <div class="w3-container w3-card w3-white w3-margin-top w3-margin-bottom">
+            <section class="about-me">
+              <h2 class="w3-text-grey w3-padding-16">
+                <i class="w3-margin-right w3-xxlarge icon fa fa-key fa-fw"></i>About Me
+              </h2>
+              <div class="w3-container">
+                <p>
+                  <br>
+                  Hi everyone,
+                </p>
+                <br>
+                <p>
+                  As a Full Stack Developer, I have over two years of experience building and maintaining web
+                  applications using modern technologies and frameworks. I am certified by CareerFoundry and have
+                  contributed to several open-source projects on GitHub.
+                </p>
+                <br>
+                <p>
+                  My core competencies include HTML, CSS, JavaScript, MERN Stack, React, Angular, TypeScript, Node.js,
+                  and recently digging deeper into C# and ASP.NET Core. I am proficient in both web front-end and web back-end
+                  development, and I
+                  enjoy creating user-friendly and responsive interfaces and implementing scalable APIs. I am also
+                  familiar with best practices in web testing, debugging, and clean code.
+                </p>
+                <br>
+                <p>
+                  I am passionate about web development and eager to learn new skills and tools daily. I am always open
+                  to on-site, hybrid, or remote collaboration on innovative projects where I can apply my expertise and
+                  creativity to solve problems and deliver value to any team.
+                </p>
+                <br>
+                <p>
+                  If you are looking for a Full Stack Developer with a proven track record, a robust skill set, and high
+                  motivation, check out my Public Showcase Portfolio on Github:
+                  <a href="https://www.github.com/nickbalan/" target="_self">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    https://www.github.com/nickbalan/
+                  </a>
+                  <br>
+                  or contact me on LinkedIn:
+
+                  <a href="https://www.linkedin.com/in/nickbalan/" target="_self">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    https://www.linkedin.com/in/nickbalan/
+                  </a>
+                </p>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Education section -->
+          <div class="w3-container w3-card w3-white accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-graduation-cap fa-fw"></i>Education
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 panel">
+            <section class="education">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Full-Stack Web Development Program
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/CareerFoundry+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+155933+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    CareerFoundry GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2021 - Mar 2022
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Exchange student / TEMPUS programme / MSc in
+                    Geoinformatics
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Hochschule+f%C3%BCr+Technik+Stuttgart,+Stuttgart,+DE/_c5717727271">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    Stuttgart Technology University of Applied Sciences
+                    (Hochschule für Technik Stuttgart - HFT Stuttgart)
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2012 - Jun 2012
+                  <i>
+                    <br>
+                    (In-Person Learning / Full-time / On-site)
+                  </i>
+                </h4>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Master of Science (MSc) in Geoinformatics
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    State University (Chișinău, Moldova)
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Sep 2011 - Jun 2013
+                  <i>
+                    <br>
+                    (In-Person Learning / Full-time / On-site)
+                  </i>
+                </h4>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Work Experience section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-group fa-fw"></i>Work Experience
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 panel">
+            <section class="work-experience">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Web Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    evosoft GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Sep 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Present</span>
+                  <i>
+                    <br>
+                    (direct employment contract / Full-time
+                    / On-site & Hybrid)
+                  </i>
+                </h4>
+                <!-- <h5>
+                    Tech stack used for the web development of applications:
+                  </h5>
+                  <ul class="circle">
+                    <li>
+                     ... need updates
+                    </li>
+                  </ul> -->
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Full Stack Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Freelancer & Open source volunteer contributor
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jul 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Present</span>
+                  <i>
+                    <br>
+                    (Freelancer & Volunteer contributor / Part-time & Weekends
+                    / Remote)
+                  </i>
+                </h4>
+                <!-- <h5>
+                    Tech stack used for the web development of applications:
+                  </h5>
+                  <ul class="circle">
+                    <li>
+                     ... need updates
+                    </li>
+                  </ul> -->
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Web Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Materna+Information+%26+Communications+SE,+Dortmund/HRB+30301">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Materna Information & Communications SE
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2023 - Jun 2023
+                  <i>
+                    <br>
+                    (direct employment contract / Full-time / Remote & Hybrid)
+                  </i>
+                </h4>
+                <h5>
+                  Tech stack used for the web development of applications:
+                </h5>
+                <ul class="circle">
+                  <li>
+                    Front-End: HTML, CSS, SASS, JavaScript, jQuery, Government
+                    Site Builder (GSB), ZURB Foundation Framework, and other
+                    JS frameworks and libraries.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Full Stack Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Open source volunteer contributor
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Dec 2022 - Jun 2023
+                  <i>
+                    <br>
+                    (Volunteer contributor / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <!-- <h5>
+                    Tech stack used for the web development of applications:
+                  </h5>
+                  <ul class="circle">
+                    <li>
+                     ... need updates
+                    </li>
+                  </ul> -->
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Junior Full Stack Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/ID+League+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+202756+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    ID League GmbH (liq)
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Aug 2022 - Nov 2022
+                  <i>
+                    <br>
+                    (direct employment contract / Full-time / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Tech stack used for the web development of applications:
+                </h5>
+                <ul class="circle">
+                  <li>
+                    Front-End: HTML, CSS, TypeScript, JavaScript & React, and
+                    other JS frameworks and libraries
+                  </li>
+                  <li>
+                    Back-End: JavaScript, TypeScript, and Node.js frameworks
+                    and libraries.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Indirect Team Lead for IT SuperUsers
+                    <br>
+                  </b>
+                  <a href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
+                    target="_self" rel="external">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Amazon SZ Franken GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2020 - Mar 2022
+                  <i>
+                    <br>
+                    (direct employment contract / Full-time / On-site)
+                  </i>
+                </h4>
+                <h5>Indirect Team Lead for IT SuperUsers</h5>
+                <ul class="circle">
+                  <li>
+                    Co-lead a team of 21 IT SuperUsers (shift and work
+                    planning)
+                  </li>
+                  <li>Inventory and maintenance of all IT equipment</li>
+                  <li>
+                    Improvement of the internal IT troubleshooting and
+                    deployment process.
+                  </li>
+                </ul>
+                <br>
+                <h5>Inbound and Outbound Shipping Clerk</h5>
+                <ul class="circle">
+                  <li>Leading a team of 5-7 employees</li>
+                  <li>Preparation of documents</li>
+                  <li>
+                    Ensuring safety procedures for loading or unloading
+                    trucks.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Warehouse Associate
+                    <br>
+                  </b>
+                  <a href="https://www.northdata.com/Amazon+SZ+Franken+GmbH,+Eggolsheim/Amtsgericht+N%C3%BCrnberg+HRB+36299"
+                    target="_self" rel="external">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Amazon SZ Franken GmbH;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Richter%2BFrenzel+N%C3%BCrnberg+GmbH,+N%C3%BCrnberg/HRB+29129">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Richter + Frenzel GmbH + Co. KG;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/UVEX+SAFETY+Logistics+GmbH,+Schwabach/Amtsgericht+N%C3%BCrnberg+HRB+20119">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Uvex Safety Logistics GmbH;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/TNT+Express+GmbH,+N%C3%BCrnberg/HRB+11467">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    TNT Express;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/H%C3%B6fner+Transport+GmbH,+N%C3%BCrnberg/HRB+31111">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Höfner Transport GmbH;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/PANALPINA+WELTTRANSPORT+GmbH,+N%C3%BCrnberg/HRB+9473">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Panalpina Welttransport GmbH;
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Amm+GmbH+%26+Co.+KG+Spedition,+N%C3%BCrnberg/HRA+6901">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Amm GmbH & Co KG Spedition
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Oct 2016 - Aug 2019
+                  <i>
+                    <br>(contract with temporary employment agencies /
+                    Full-time / On-site)
+                  </i>
+                </h4>
+                <ul class="circle">
+                  <li>Collecting packages for orders (Order Picker)</li>
+                  <li>Prepare orders for pickup (Warehouse Clerk)</li>
+                  <li>
+                    Loading and unloading of trucks (Forklift operator).
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    IT Administrator
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="https://www.romanian-companies.eu/supremoffice-srl-15241139/">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Supremoffice SRL (România); ICS Land Support Systems SRL;
+                    State University (Chișinău, Moldova)</a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2011 - Sep 2016
+                  <i>
+                    <br>
+                    (direct employment contract / Full-time / On-site)</i>
+                </h4>
+                <ul class="circle">
+                  <li>
+                    Hardware installation and maintenance for PCs and IT
+                    peripherals
+                  </li>
+                  <li>
+                    Software and operating systems installation and
+                    maintenance
+                  </li>
+                  <li>LAN and WiFi Networks installation and maintenance.</li>
+                </ul>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Project Experience section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-suitcase fa-fw"></i>Project Experience
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 panel">
+            <section class="project-experience">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Full Stack Web Developer
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/CareerFoundry+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+155933+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    CareerFoundry GmbH</a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2021 - Jul 2022
+                  <i>
+                    <br>
+                    (project-based / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>Worked on the following projects:</h5>
+                <ul class="square">
+                  <li>
+                    Portfolio website using HTML, CSS, and JavaScript that
+                    showcases my professional portfolio
+                  </li>
+                  <li>
+                    JS App using HTML, CSS, and JavaScript that loads data
+                    from a REST API
+                  </li>
+                  <li>
+                    REST API using JavaScript, Node.js, Express, SQL, and
+                    MongoDB
+                  </li>
+                  <li>
+                    React Front-End App using MERN stack and loads data from a
+                    REST API
+                  </li>
+                  <li>
+                    Serverless, progressive web app (PWA) with React using a
+                    TDD technique
+                  </li>
+                  <li>React Native App Mobile App</li>
+                  <li>
+                    Collaboration & Documentation project using Angular w/
+                    TypeScript.
+                  </li>
+                </ul>
+                <br>
+                <h5>Theoretical achievements (A):</h5>
+                <ul class="circle">
+                  <li>
+                    A0 - HTML and CSS; Web Accessibility, CSS Grid & Flexbox,
+                    CSS Animations & Transitions, Responsive Web Design, Git &
+                    Version Control, Cross-browser Testing & Debugging, Web
+                    Hosting
+                  </li>
+                  <li>
+                    A1 - Basic to Advanced JavaScript, JavaScript Libraries
+                    and Frameworks
+                  </li>
+                  <li>
+                    A2 - Server-Side Programming & Node.js, Web Server
+                    Frameworks, Relational and Non-Relational Databases, Web
+                    Ethics & Data Security
+                  </li>
+                  <li>A3 - Client-Side Programming & React</li>
+                  <li>
+                    A4 - Testing in the Development Process, Data
+                    Visualization, Functional and Object-Oriented Programming,
+                    Test-Driven Development
+                  </li>
+                  <li>A5 - Native App Development & React Native</li>
+                  <li>
+                    A6 - Documentation, Handoffs & Collaborative Working
+                  </li>
+                  <li>A7 - Job Preparation.</li>
+                </ul>
+                <br>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Certification section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-certificate fa-fw"></i>Certification
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 panel">
+            <section class="certification">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/0fbb8ca8776e64c6425963def611a927a5fe1413434954dcf230cd92aaea3b64" target="_self">
+                    <b>
+                      NoSQL Essential Training
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    What is NoSQL?
+                  </li>
+                  <li>
+                    Differences Types of NoSQL Databases
+                  </li>
+                  <li>
+                    Pros and Cons of NoSQL
+                  </li>
+                  <li>
+                    Is NoSQL Right for You?
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/ddc7bab3879fd211f53ca727d112603ee13147873c741bc3f08f2295bb019420" target="_self">
+                    <b>
+                      Hands-On OpenAI API: Building a Real-World Solution
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Using the Audio API to Transcribe Audio
+                  </li>
+                  <li>
+                    Building the Logger Assistant with Assistant API
+                  </li>
+                  <li>
+                    Implementing a Retriever Augmented Generation (RAG) Process in the Assistant
+                  </li>
+                  <li>
+                    Creating the Logger GPT
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/7438b010bb42eb19aaf41f4199a5b6b76549f63a3ea191815bf88e66a3d53628" target="_self">
+                    <b>
+                      Streamlining Your Work with Microsoft Copilot
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Understand how chat AI works
+                  </li>
+                  <li>
+                    Chatting with Copilot
+                  </li>
+                  <li>
+                    Considerations with Chat AI
+                  </li>
+                  <li>
+                    Subscriptions Upgrades for Copilot
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/0a22d10ce4486a18348e01cd359e39f61f4f8d13cefc79c380301f8740c1d5c1" target="_self">
+                    <b>
+                      Building with Google Gemini Advanced and Ultra
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Google's AI family of the future
+                  </li>
+                  <li>
+                    Chatting with new Google Gemini
+                  </li>
+                  <li>
+                    Prompting with Google Gemini
+                  </li>
+                  <li>
+                    Building applications with Google Gemini
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/249fea46c1daaf84f50edc6b89ec139cfba7c1b3e67a434ee266a08778493bdc" target="_self">
+                    <b>
+                      Introduction to Google Gemini
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Review Google Gemini
+                  </li>
+                  <li>
+                    Understand Google AI Studio
+                  </li>
+                  <li>
+                    Review Gemini in GCP Vertex AI
+                  </li>
+                  <li>
+                    Use Vertex AI Model Garden
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/86fd3291a155117e24fc6f3ce3ecaa4107f7e4245654a01a81ea0486f9d1a3a5" target="_self">
+                    <b>
+                      Learning Next.js / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Basics about Next.js framework and its benefits
+                  </li>
+                  <li>
+                    Getting started with Next.js tools and features
+                  </li>
+                  <li>
+                    Pre-rendering and Data Fetching with Next.js
+                  </li>
+                  <li>
+                    Style your Next.js Application
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/477737aa26fdf271ebe9683985847f7eb1090de4a9308311d55d83e415af29a6" target="_self">
+                    <b>
+                      What is Copilot? Get Started with Microsoft's Everyday AI Companion / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Learning about Copilot accounts and subscriptions
+                  </li>
+                  <li>
+                    Using Copilot on the web, in Windows, and on the mobile app
+                  </li>
+                  <li>
+                    Using Copilot in Microsoft 365 applications
+                  </li>
+                  <li>
+                    Discovering other Copilot products
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/6de576f88a8b07a601e57b526d88d525bd923ee51f65eb89c9883c7dd38b6081" target="_self">
+                    <b>
+                      JavaScript: Best Practices for Data / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Declaring Variables
+                  </li>
+                  <li>
+                    Assigning Variables
+                  </li>
+                  <li>
+                    Type Casting
+                  </li>
+                  <li>
+                    Comparing Values
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/e1e7de5856ea5886173cd9c1c3134941edf4e1d5dee413fc4bdada4baeb9c92c" target="_self">
+                    <b>
+                      Amplify Your Critical Thinking with Generative AI / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Rooting Out Biases
+                  </li>
+                  <li>
+                    Critical Thinking Framework for Generative AI
+                  </li>
+                  <li>
+                    Using PIQPACC Critical Thinking Framework
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/6dcb3acccf7fc48a2370368aad7b9d96fafe0a5b1cf6c21423b6a85e38da24cc" target="_self">
+                    <b>
+                      Foundational JavaScript Security / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Foundational JavaScript Security
+                  </li>
+                  <li>
+                    Introduction to Ethical Hacking
+                  </li>
+                  <li>
+                    Security Reconnaissance
+                  </li>
+                  <li>
+                    Top 10 Security Threats
+                  </li>
+                  <li>
+                    Top 10 Security Threats Applied
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/c2cf332a2b6886fa3d110b04ea6606011dda22191accfb307ed0ae7244103d0c" target="_self">
+                    <b>
+                      JavaScript: Security Essentials / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Security Applied: Cross-Side Scripting (XSS)
+                  </li>
+                  <li>
+                    Security Applied: Cross-Side Request Forgery (CSRF)
+                  </li>
+                  <li>
+                    Security Applied: Sensitive Data
+                  </li>
+                  <li>
+                    Security Applied: Server-Side JavaScript Injection (SSJI)
+                  </li>
+                  <li>
+                    Security Applied: Obfuscation
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/8beba9433eefb5bf45805e2fcd28651e0b05394b23d14c9e123d9b62490e3280" target="_self">
+                    <b>
+                      OpenAI API: Building Assistants / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Building custom AI agents
+                  </li>
+                  <li>
+                    Creating a basic assistants in the OpenAI playground
+                  </li>
+                  <li>
+                    Creating assistants, threads, and runs through the API
+                  </li>
+                  <li>
+                    Assistant API endpoints
+                  </li>
+                  <li>
+                    Creating a basic assistant chat in Python and Node.js
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/6be99c7bafee0a6d8777bd3591136f06446127174c53c18c87a1dc80b8bb3642" target="_self">
+                    <b>
+                      Programming Foundations: Secure Coding / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Security and Risk Overview
+                  </li>
+                  <li>
+                    Web Client Server Interaction Code Issues
+                  </li>
+                  <li>
+                    Thick App and Client-Server Interaction Issues
+                  </li>
+                  <li>
+                    Crypto and Security Misuse Issues
+                  </li>
+                  <li>
+                    Security in the SDLC
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/MWBZY7TPAMJM" target="_self">
+                    <b>
+                      Principles of Secure Coding / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by University of California, Davis and
+                  offered by Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Secure Programming Philosophy
+                  </li>
+                  <li>
+                    Secure Programming Design Principles
+                  </li>
+                  <li>
+                    Robust Programming
+                  </li>
+                  <li>
+                    Methods of Robustness
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://www.linkedin.com/learning/certificates/973cf13200357a1f1d5594d4b1a81e68c87980f9f1edac98bf15daa1631997b9" target="_self">
+                    <b>
+                      Learning the OWASP Top 10 / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/LinkedIn+Germany+GmbH,+M%C3%BCnchen/HRB+192815">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    LinkedIn Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jan 2024 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized and
+                  offered by LinkedIn Learning.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Broken access control
+                  </li>
+                  <li>
+                    Cryptographic failures
+                  </li>
+                  <li>
+                    Injection
+                  </li>
+                  <li>
+                    Insecure design
+                  </li>
+                  <li>
+                    Security misconfiguration
+                  </li>
+                  <li>
+                    Vulnerable and outdated components
+                  </li>
+                  <li>
+                    Identification and authentication failures
+                  </li>
+                  <li>
+                    Software and data integrity failures
+                  </li>
+                  <li>
+                    Security logging and monitoring failures
+                  </li>
+                  <li>
+                    Server-side request forgery (SSRF)
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/VB64BDZDMX6D" target="_self">
+                    <b>
+                      ASP.NET Core Foundation / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jul 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by Board Infinity and
+                  offered by Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Gain a solid understanding of the ASP.Net Core
+                  </li>
+                  <li>
+                    Use .Net framework to build a variety of
+                    applications.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/VB64BDZDMX6D" target="_self">
+                    <b>
+                      .Net Full Stack Foundation / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jul 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by Board Infinity and
+                  offered by Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Gain a solid understanding of C# (C Sharp) programming,
+                    and the .Net Core
+                  </li>
+                  <li>
+                    Use C# and .Net framework to build a variety of
+                    applications.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/8NBZGZU5HYTC" target="_self">
+                    <b>
+                      Version Control / Certified Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Dec 2022 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by Meta and offered by
+                  Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>Version Control systems, Github, Git CLI</li>
+                  <li>Linux, Bash (Unix Shell) / Git Bush.</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/A2W4P2YKTZGM" target="_self">
+                    <b>Introduction to Back-End Development / Certified
+                      Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Sep 2022 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by Meta and offered by
+                  Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Back-End Web Development, Back-End Web Development Tools
+                  </li>
+                  <li>HTML and CSS, UI frameworks.</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <a href="https://coursera.org/verify/4634HYULBBVD" target="_self">
+                    <b>Introduction to Front-End Development / Certified
+                      Professional
+                      <br>
+                    </b>
+                  </a>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/Coursera+Germany+GmbH,+M%C3%BCnchen/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+225430+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Coursera Germany GmbH
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Sep 2022 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by Meta and offered by
+                  Coursera.
+                </h5>
+                <p>Acquired Skills:</p>
+                <ul class="circle">
+                  <li>
+                    Front-End Web Development, Front-End Web Development Tools
+                  </li>
+                  <li>
+                    HTML and CSS, Responsive Web Design, User Interface.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Full-Stack Web Development / Certified Professional
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/CareerFoundry+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+155933+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    CareerFoundry GmbH</a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2022 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by ZFU (Staatliche
+                  Zentralstelle für Fernunterricht) — the state body for
+                  distance learning in Germany, and ofered by CareerFoundry.
+                </h5>
+                <p>Acquired Skills:<sup>M1+M2</sup></p>
+                <ul class="circle">
+                  <li>
+                    <sup>M1</sup> HTML and CSS, Web Accessibility, CSS Grid
+                    and Flexbox, CSS Animations and Transitions, Responsive
+                    Web Design, Git and Version Control, Cross-browser Testing
+                    and Debugging, Web Hosting
+                  </li>
+                  <li>
+                    <sup>M2</sup> Basic to Advanced JavaScript, JavaScript
+                    Libraries and Frameworks, Web Server Frameworks, Node.js
+                    and Server-Side Programming, Relational and Non-Relational
+                    Databases, Data Visualization, Functional and
+                    Object-Oriented Programming, Web Ethics and Data Security,
+                    Test-Driven Development, Documentation, Handoffs, and
+                    Collaborative Working.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Full-Stack Immersion / Certified Professional
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/CareerFoundry+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+155933+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    CareerFoundry GmbH</a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Mar 2022 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by ZFU (Staatliche
+                  Zentralstelle für Fernunterricht) — the state body for
+                  distance learning in Germany, and ofered by CareerFoundry.
+                </h5>
+                <p>Acquired Skills:<sup>M2</sup></p>
+                <ul class="circle">
+                  <li>
+                    Basic to Advanced JavaScript, JavaScript Libraries and
+                    Frameworks, Web Server Frameworks, Node.js and Server-Side
+                    Programming, Relational and Non-Relational Databases
+                  </li>
+                  <li>
+                    Data Visualization, Functional and Object-Oriented
+                    Programming, Web Ethics and Data Security, Test-Driven
+                    Development, Documentation, Handoffs, and Collaborative
+                    Working.
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Intro to Frontend Development / Certified Professional
+                    <br>
+                  </b>
+                  <a target="_self" rel="external"
+                    href="https://www.northdata.com/CareerFoundry+GmbH,+Berlin/Amtsgericht+Charlottenburg+%28Berlin%29+HRB+155933+B">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    CareerFoundry GmbH</a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Feb 2021 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">No Expiration Date</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+                <h5>
+                  Non-credit certificate authorized by ZFU (Staatliche
+                  Zentralstelle für Fernunterricht) — the state body for
+                  distance learning in Germany, and ofered by CareerFoundry.
+                </h5>
+                <p>Acquired Skills:<sup>M1</sup></p>
+                <ul class="circle">
+                  <li>
+                    HTML and CSS, Web Accessibility, CSS Grid and Flexbox, CSS
+                    Animations and Transitions
+                  </li>
+                  <li>
+                    Responsive Web Design, Git and Version Control,
+                    Cross-browser Testing and Debugging, Web Hosting.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Courses section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-leanpub fa-fw"></i>Courses
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 panel">
+            <section class="education">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    C# and ASP.NET Certification
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Online courses
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jul 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Present</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>
+                    Javascript Certification
+                    <br>
+                  </b>
+                  <a target="_self" rel="external" href="#">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Online courses
+                  </a>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  Jul 2023 -
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Present</span>
+                  <i>
+                    <br>
+                    (E-Learning / Part-time & Weekends / Remote)
+                  </i>
+                </h4>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Sports section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-heartbeat fa-fw"></i>Sports
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 w3-margin-bottom panel">
+            <section class="hobbies">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Home Fitness</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa-heartbeat fa-fw"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">4-5 times per week</span>
+                </h4>
+                <p>
+                  Home fitness is the fastest and best way to be fit; I like
+                  the energy boost it gives me every time I practice it. I
+                  don't go to the fitness studio because I have some fitness
+                  equipment at home; plus, I can't get used to the heavy
+                  smells that some gyms have.
+                </p>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Cycling or jogging</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa-bicycle fa-fw"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">1-2 times per week</span>
+                </h4>
+                <p>
+                  I'm not too fond of bike trips shorter than 15 km; cycling
+                  on short distances is not worth practicing; for distances up
+                  to 15 km, the most suitable sport is jogging.
+                </p>
+              </div>
+            </section>
+            <br>
+          </div>
+          <!-- Sets the Hobbies section -->
+          <div class="w3-container w3-card w3-white w3-margin-top accordion">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="w3-margin-right w3-xxlarge icon fa fa-bookmark fa-fw"></i>Hobbies
+              <i class="w3-margin-right w3-xxlarge w3-right icon fa fa-angle-down fa-fw"></i>
+            </h2>
+          </div>
+          <div class="w3-container w3-card w3-white w3-padding-16 w3-margin-bottom panel">
+            <section class="hobbies">
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Ant-keeping</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa fa-leaf"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">2-3 times per week</span>
+                </h4>
+                <p>
+                  I find it fascinating how ants work practically 24 hours a
+                  day, non-stop; their only sleeping period is 8 minutes every
+                  12 hours. So, out of curiosity, I decided to take care of a
+                  colony of ants inside a small ant farm.
+                </p>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Reading Books</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa-book fa-fw"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Every day</span>
+                </h4>
+                <p>
+                  I primarily read personal development, science fiction, and
+                  art books. Reading for 60 minutes helps me develop my
+                  creativity and improve my mental health.
+                </p>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Meditation and prayers</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa-user fa-fw"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Every day</span>
+                </h4>
+                <p>
+                  I pray and meditate several times a day. Meditation helps me
+                  reduce my stress level and become more focused. At the same
+                  time, prayers represent for me the preservation and
+                  continuation of the traditions of my parents and relatives;
+                  plus, through my prayers, I feel closer to them even when I
+                  am far away.
+                </p>
+              </div>
+              <hr>
+              <div class="w3-container">
+                <h3 class="w3-opacity">
+                  <b>Watching Movies</b>
+                </h3>
+                <h4 class="w3-text-gray">
+                  <i class="w3-margin-right fa fa-solid fa-film fa-fw"></i>
+                  <span class="w3-tag w3-gray w3-text-black w3-round">Weekends</span>
+                </h4>
+                <p>
+                  I love to watch good movies at the cinema or at home. Also,
+                  I'm picky about movies. If a film's first 25 minutes aren't
+                  appealing, I won't watch it anymore because I don't like
+                  boring or meaningless films. Wasting my time with bad movies
+                  is pointless. The time invested in watching a film must be
+                  worth it.
+                </p>
+              </div>
+            </section>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- The End of the Grid layout -->
+    </div>
+    <!-- Inserts single line breaks -->
+    <br>
+  </main>
+  <!-- Sets the Footer section -->
+  <footer class="w3-center text-center bg-gray-900 text-white">
+    <div class="text-center p-4 py-4">
+      <a class="text-whitehite" href="#">© Copyright Nick Balan 2021 - 2024</a>
+    </div>
+    <div class="social-media">
+      <!-- Added the Github logo with a link to my GitHub Repository -->
+      <a href="https://github.com/nickbalan/" target="_self">
+        <img src="img/icon/github_logo_icon.svg" alt="Github logo" width="30" height="30">
+      </a>
+      <!-- Added the Linkedin logo with a link to my LikedIn profile -->
+      <a href="https://www.linkedin.com/in/nickbalan/" target="_self">
+        <img src="img/icon/linkedin_logo_icon.svg" alt="Linkedin logo" width="30" height="30">
+      </a>
+      <!-- Added the Instagram logo with a link to my Instagram profile -->
+      <a href="https://www.instagram.com/nickbalancom/" target="_self">
+        <img src="img/icon/instagram_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+      <!-- Added the Medium logo with a link to my Medium profile -->
+      <a href="https://medium.com/@nickbalan" target="_self">
+        <img src="img/icon/medium_logo_icon.svg" alt="Medium logo" width="30" height="30">
+      </a>
+      <!-- Added the Threads logo with a link to my Threads profile -->
+      <a href="https://threads.net/@nickbalancom/" target="_self">
+        <img src="img/icon/threads_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+    </div>
+  </footer>
+  <!-- Added the Scroll To Top Button functions -->
+  <script src="js/scrollBtn.js"></script>
+  <!-- Added the mobile Navbar functions -->
+  <script src="js/mobileNavbar.js"></script>
+  <!-- Added the Accordion functions -->
+  <script src="js/accordion.js"></script>
+  <!-- Added tota11y -->
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Sets the Charset Metadata -->
+  <meta charset="utf-8">
+  <!-- Sets the Viewport Metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sets the Content Metadata -->
+  <meta name="language" content="English">
+  <!-- Sets the Robot Metadata -->
+  <meta name="robots" content="index, follow">
+  <!-- Sets the Revision Metadata -->
+  <meta name="revised" content="January 1st, 2024, 2:00 pm">
+  <!-- Sets the Copyright Metadata -->
+  <meta name="copyright" content="© Copyright Nick Balan 2021 - 2024">
+  <!-- Sets the Mobile Metadata -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- Sets the title on the browser tab -->
+  <title>Blog</title>
+  <!-- Sets the Description Metadata -->
+  <meta name="description" content="Nick Balan's About Me page">
+  <!-- Sets the Author Metadata -->
+  <meta name="author" content="Nick Balan">
+  <!-- Sets the Open Graph Protocol (OGP) Metadate -->
+  <meta property="og:title" content="About Me">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="img/Livescreens/Portfolio_Website/v8/Portfolio_Website_About_Me_page_Livescreen.JPG">
+  <meta property="og:url" content="https://nickbalan.github.io/portfolio-website/">
+  <meta property="og:description" content="Nick Balan's About Me page">
+  <meta property="og:site_name" content="Nick Balan">
+  <!-- Adds the favicon on the browser tab -->
+  <link rel="icon" href="../img/favicon/favicon.ico">
+  <!-- CSS Reset. Link to external CND normalize.min.css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Link the custom CSS style sheets file -->
+  <link rel="stylesheet" href="../css/styles.production.css">
+  <link rel="stylesheet" href="../public/tailwind.css">
+  <!-- Link to Google fonts CND -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Benne&family=Oxygen&display=swap" rel="stylesheet">
+  <!-- Link to external CNDs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <!-- The Header with logo and the main navigation -->
+  <header>
+    <!-- Sets the main navigation container -->
+    <div class="navMenu">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex sm:justify-between">
+            <div class="flex space-x-7">
+              <!-- Added the Personal logo of Nick Balan -->
+              <div>
+                <a href="../index.html" class="flex items-center py-4 px-2">
+                  <img srcset="../img/logo/logo_48x48.ico 0.5x" src="../img/logo/logo_48x48.ico" class="logo"
+                    alt="Nick Balan's logo">
+                </a>
+              </div>
+              <div class="w3-hide-medium md:flex items-center space-x-4 main-navigation hidden">
+                <!-- Navigate to About Me page -->
+                <a href="../index.html" class="py-10 px-2 font-semibold transition duration-300">About Me</a>
+                <!-- Navigate to Blog page -->
+                <a href="blog.html" class="py-10 px-2 font-semibold border-b-4">Blog</a>
+                <!-- Navigate to My Portfolio page -->
+                <a href="portfolio.html" class="py-10 px-2 font-semibold transition duration-300">My Portfolio</a>
+                <!-- Navigate to Zoom Meeting page -->
+                <a href="zoom-meeting.html" class="py-10 px-2 font-semibold transition duration-300">Zoom Meeting</a>
+                <!-- Navigate to Contact Me page -->
+                <a href="contact.html" class="py-10 px-2 font-semibold transition duration-300">Contact Me</a>
+              </div>
+              <!-- Hides the Main Navbar on small screens and replaces it with a Sidebar -->
+              <div class="flex items-center py-5 px-5 w3-display-topright">
+                <div class="w3-bar w3-white w3-card" id="myNavbar">
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Sets the Responsive Mobile Sidebar -->
+      <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-large"
+        style="display: none; right: 0" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-large w3-medium w3-padding-16">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <!-- Navigate to About Me page -->
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+        <!-- Navigate to Blog page -->
+        <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">
+          Blog
+        </a>
+        <!-- Navigate to My Portfolio page -->
+        <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">My Portfolio</a>
+        <!-- Navigate to Zoom Meeting page -->
+        <a href="zoom-meeting.html" onclick="w3_close()" class="w3-bar-item w3-button">Zoom Meeting</a>
+        <!-- Navigate to Contact Me page -->
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Added the Scroll To Top Button -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top" type="button">
+      <span class="arrowUp"></span>
+      <b><br>Top</b>
+    </button>
+    <!-- The Page Container -->
+    <div class="blog-content">
+      <div class="blog-grid">
+        <div class="left-column blog-grid-item">
+          <div class="card">
+            <div class="left-section-header">
+              <h1 id="section-part-1">
+                Don't ever give up on your dreams
+              </h1>
+              <h2>
+                #Part One
+              </h2>
+              <h3>
+                Mixed origins - no child can choose the place and date of own birth
+              </h3>
+
+              <h4>
+                <i>
+                  /* First draft: Mo, Feb 23, 2023 // Updated: Th, Nov 09,
+                  2023 */ <br>
+                  /* Author: Nick Balan // Category: Motivation */
+                </i>
+              </h4>
+              <hr>
+            </div>
+            <p><br>Hi everyone,</p>
+            <p>
+              <br>
+              I'm Nick Balan. I was born and raised in the capital city of Rep. Moldova - Chișinău. Also, in the same
+              city, I
+              completed my
+              master's degree and then, right after graduation, moved to Romania for two years. After that, I moved to
+              Germany, where
+              I have lived for over six years.
+            </p>
+            <p>
+              <br>
+              My parents were born in the USSR, but my grandparents were born in Greater Romania. "How is this
+              possible?" you might
+              ask.
+            </p>
+            <p>
+              <br>
+              According to history, in 1940, the Soviet Union (USSR) issued an ultimatum to Greater Romania (currently
+              Romania)
+              requesting the cession of Bessarabia (the current Republic of Moldova) and Northern Bukovina. Thus, the
+              region of
+              Bessarabia (the present Republic of Moldova) and Northern Bukovina was annexed to the USSR, remaining part
+              of it for
+              half a century until 1991, when the Republic of Moldova declared its independence from the USSR.
+            </p>
+            <p>
+              <br>
+              That being said, when I was born in Chisinau, this city was part of the USSR at the time, and therefore, I
+              was initially
+              a citizen of the USSR, but this country dissolved a few years after I was born. Thus, in 1991, the
+              Chisinau parliament
+              declared its independence, the Romanian language was declared the official state language, and thus
+              Moldova became
+              independent.
+            </p>
+            <p>
+              <br>
+              Then, after completing my master's degree in Chisinau, I
+              regained my Romanian citizenship, the legal premise resulting
+              from my grandparents being Romanian citizens. So I am a citizen
+              of both Moldova and Romania at the same time, which is confirmed
+              by both my identity documents and my genealogical roots.
+            </p>
+            <p>
+              <br>
+              So, as a baby and as a result of historical events, I automatically became one of the first citizens of
+              Moldova. It
+              should also be mentioned here that, in Moldova, I went to kindergarten, high school, and university, all
+              taught in
+              Romanian.
+            </p>
+            <p>
+              <br>
+              Then, after completing my master's degree in Chisinau, I regained my Romanian citizenship, the legal
+              premise resulting
+              from my grandparents being Romanian citizens. So, I am a citizen of both Moldova and Romania at the same
+              time, which is
+              confirmed by both my identity documents and my genealogical roots.
+            </p>
+            <p>
+              <br>
+              I hope this brief historical summary explains my mixed origins in some way or another.
+            </p>
+            <p>
+              <br>
+              If you are interested in the history of Moldova and its
+              relationship with Romania and the European Union, I would
+              recommend reading the following bibliography:
+              <a href="https://en.wikipedia.org/wiki/History_of_Moldova" target="_self">
+                1. History of Moldova;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Stephen_the_Great" target="_self">
+                2. Stephen the Great;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/History_of_Romania" target="_self">
+                3. History of Romania;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Great_Union" target="_self">
+                4. Great Union;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Great_National_Assembly_of_Alba_Iulia" target="_self">
+                5. Great National Assembly of Alba Iulia;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Greater_Romania#World_War_II_losses" target="_self">
+                6. Greater Romania: World War II losses;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Romania#History" target="_self">
+                7. Romania: History;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Moldova#World_War_II_and_Soviet_era" target="_self">
+                8. Moldova: World War II and Soviet era;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Independence_Day_of_the_Republic_of_Moldova" target="_self">
+                9. Independence Day of the Republic of Moldova;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Moldova#History" target="_self">
+                10. Moldova: History;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Moldova%E2%80%93Romania_relations" target="_self">
+                11. Moldova–Romania relations;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Moldova%E2%80%93European_Union_relations" target="_self">
+                12. Moldova–European Union relations;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Moldova%E2%80%93European_Union_Association_Agreement"
+                target="_self">
+                13. Moldova–European Union Association Agreement;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Accession_of_Moldova_to_the_European_Union" target="_self">
+                14. Accession of Moldova to the European Union;
+              </a>
+              <a href="https://www.dw.com/en/moldova-eu-membership-negotiations-and-russian-propaganda/a-65404577"
+                target="_self">
+                15. Moldova-EU negotiations and Russian propaganda;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/press/press-releases/2023/04/28/republic-of-moldova-eu-adopts-framework-for-targeted-sanctions-to-counter-actions-destabilising-the-country/"
+                target="_self">
+                16. Republic of Moldova: EU adopts a new sanctions framework
+                to target actions aimed at destabilising the country;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/meetings/international-ministerial-meetings/2023/02/07/"
+                target="_self">
+                17. EU-Republic of Moldova Association Council;
+              </a>
+              <a href="https://energy.ec.europa.eu/news/eu-moldova-energy-dialogue-reaffirms-close-cooperation-2023-05-23_en"
+                target="_self">
+                18. EU-Moldova Energy Dialogue reaffirms close cooperation;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/policies/eastern-partnership/moldova/" target="_self">
+                19. EU relations with the Republic of Moldova;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/2nd_European_Political_Community_Summit" target="_self">
+                20. 2nd European Political Community Summit;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/meetings/international-summit/2023/06/01/" target="_self">
+                21. Meeting of the European Political Community at Mimi Castle
+                in Bulboaca, Moldova;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/European_Union" target="_self">
+                22. European Union;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Potential_enlargement_of_the_European_Union" target="_self">
+                23. Potential enlargement of the European Union;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Enlargement_of_the_European_Union" target="_self">
+                24. Enlargement of the European Union;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/History_of_the_European_Union" target="_self">
+                25. History of the European Union;
+              </a>
+              <a href="https://neighbourhood-enlargement.ec.europa.eu/news/global-gateway-forum-eu-announces-eu12-million-railway-lines-republic-moldova-2023-10-25_en"
+                target="_self">
+                26. Global Gateway Forum: EU announces €12 million for railway lines in the Republic of Moldova;
+              </a>
+              <a href="https://neighbourhood-enlargement.ec.europa.eu/news/commission-adopts-2023-enlargement-package-recommends-open-negotiations-ukraine-and-moldova-grant-2023-11-08_en"
+                target="_self">
+                27. Commission adopts 2023 Enlargement package, recommends to open negotiations with Ukraine and
+                Moldova, to grant candidate
+                status to Georgia and to open accession negotiations with BiH, once the necessary degree of compliance
+                is achieved;
+              </a>
+              <a href="https://www.dw.com/en/eu-approves-ukraine-and-moldova-accession-talks/live-67717211"
+                target="_self">
+                28. EU approves Ukraine and Moldova accession talks;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/policies/enlargement/moldova/"
+                target="_self">
+                29. EU enlargement policy - Moldova;
+              </a>
+               <a href="https://neighbourhood-enlargement.ec.europa.eu/european-neighbourhood-policy/countries-region/moldova_en"
+                target="_self">
+                30. Moldova - Membership status: candidate country.
+              </a>
+            </p>
+          </div>
+          <div class="">
+            <div class="left-section-header">
+              <hr>
+              <h2 id="section-part-2">
+                #Part Two
+              </h2>
+              <h3>
+                Moldova - my country of origin, though not my country of destination
+              </h3>
+              <h4>
+                <i>
+                  /* First draft: Mo, July 17, 2023 // Updated: Mo, Nov 13,
+                  2023 */
+                  <br>
+                  /* Author: Nick Balan // Category: Motivation */
+                </i>
+              </h4>
+              <hr>
+            </div>
+            <p>
+              <br>
+              Moldova is the country where I was born, where I grew up, where I finished my master's degree. It's where
+              most of my
+              relatives, childhood friends, and former master's classmates are.
+            </p>
+            <p>
+              <br>
+              Moldova is the place of my childhood and student life, the place that I love and hate simultaneously, in a
+              ratio of
+              50/50. Moldova is where I had many happy moments but more unhappy moments. I can say that I know so much
+              about what it's
+              like to live in a country that hasn't woken up from the dream of the Soviet empire and that it potentially
+              would take me
+              more than a lifetime to write novels on this topic. That's why I will happily skip this dramatic part of
+              the story and
+              tell you just the positive side of it.
+            </p>
+            <p>
+              <br>
+              You won't believe that the most beautiful moments of my life in Moldova were things that would seem
+              trivial to some of
+              you. However, they were the only happy moments and are foundation stones for me: 1. All the happy moments
+              with my
+              family, relatives, and close friends. 2. When I had the opportunity to study at the university with
+              extraordinary
+              lecturers, PhDs in the field, and amazing colleagues; 3. When I had the chance to participate in the
+              TEMPUS student
+              exchange program at the Hochschule für Technik Stuttgart (2012); 4. When I happily completed my master's
+              degree in
+              Geoinformatics (2013), 5. When I finally regained Romanian citizenship (2014);
+            </p>
+            <p>
+              <br>
+              These were the most remarkable moments of my life in Moldova. I will always be grateful to the
+              extraordinary people from
+              Chișinău with whom I interacted throughout this period. Many more beautiful moments in my life followed
+              just after I
+              left Moldova, but I will tell you about them on another occasion.
+            </p>
+            <p>
+              <br>
+              Thus, after 2014, I decided to leave my parental home and find a purpose in the world, so I moved to
+              Romania for two
+              years and then to Germany, where I have lived since then until now. I do not intend to return to Moldova
+              because every
+              travel to Chisinau, even for three days, makes me feel unhappy by remembering all the drama I lived there.
+              Also, my
+              professional and personal goals are no longer directly related to my country of origin — more details
+              about this topic
+              in subsequent posts.
+            </p>
+            <p>
+              <br>
+              If you are interested in the TEMPUS and ERASMUS programs, I
+              would recommend reading the following bibliography:
+              <a href="https://int.sumdu.edu.ua/en/international/862" target="_self">
+                1. What is Tempus Program?
+              </a>
+              <a href="https://erasmusplus.org.az/page/tempus-iv-8" target="_self">
+                2. What is Tempus?
+              </a>
+              <a href="https://en.wikipedia.org/wiki/TEMPUS" target="_self">
+                3. TEMPUS wiki page;
+              </a>
+              <a href="https://cordis.europa.eu/article/id/31-transeuropean-mobility-for-university-studies-tempus"
+                target="_self">
+                4. Trans-European mobility for university studies (TEMPUS);
+              </a>
+              <a href="https://ec.europa.eu/commission/presscorner/detail/en/IP_08_728" target="_self">
+                5. The Tempus Programme: modernising higher education in the
+                EU's neighbouring countries;
+              </a>
+              <a href="https://www.upm.es/internacional/Researchers/staff/ResearchersMobility/OtherMobilityPrograms/Tempus%20Program"
+                target="_self">
+                6. Tempus Program;
+              </a>
+              <a href="https://www.eaie.org/blog/erasmus-tempus.html" target="_self">
+                7. From Tempus to Erasmus+: enhancing cooperation
+                opportunities in Uzbekistan;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Erasmus_Programme" target="_self">
+                8. Erasmus Programme wiki page;
+              </a>
+              <a href="https://erasmus-plus.ec.europa.eu/" target="_self">
+                9. Erasmus+ official website;
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Erasmus%2B" target="_self">
+                10. Erasmus+ wiki page;
+              </a>
+              <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters"
+                target="_self">
+                11. Erasmus Mundus Joint Masters;
+              </a>
+              <a href="https://www.esn.org/erasmus" target="_self">
+                12. Erasmus Student Network;
+              </a>
+              <a href="https://erasmus-plus.ec.europa.eu/contacts" target="_self">
+                13. Erasmus+ Contacts;
+              </a>
+              <a href="https://www.hft-stuttgart.com/" target="_self">
+                14. Hochschule für Technik Stuttgart - Official website;
+              </a>
+              <a href="https://www.hft-stuttgart.de/international" target="_self">
+                15. HFT Stuttgart - International Office.
+              </a>
+              <a href="https://erasmus-plus.ec.europa.eu/resources-and-tools/factsheets-statistics-evaluations/programme-and-country-factsheets/country-factsheets-2021/erasmus-in-romania-in-2021"
+                target="_self">
+                16. Erasmus+ in Romania in 2021;
+              </a>
+            </p>
+          </div>
+          <div class="card">
+            <div class="left-section-header">
+              <hr>
+              <h2 id="section-part-3">
+                #Part Three
+              </h2>
+              <h3>
+                Romania - my grandparents' country of origin, and yet not my country of destination
+              </h3>
+              <h4>
+                <i>
+                  /* First draft: Th, Aug 31, 2023 // Updated: Tu, Nov 14, 2023 */
+                  <br>
+                  /* Author: Nick Balan // Category: Motivation */
+                </i>
+              </h4>
+              <hr>
+            </div>
+            <p>
+              <br>
+              Romania is the country that I consider the mother country of my homeland - Rep. Moldova. My grandparents
+              were
+              born in
+              Romania, so I am also Romanian, genetically speaking. Also, the region of Bassarabia, today known as Rep.
+              Moldova, was
+              forcibly separated and annexed to the USSR by a war ultimatum.
+            </p>
+            <p>
+              <br>
+              Thus, from my subjective point of view, Moldova and Romania should be diplomatically united within the
+              European Union
+              (UE). Significantly, the Romanian language is the state language of both countries, and both countries
+              have many common
+              Romanian traditions.
+            </p>
+            <p>
+              <br>
+              Although Romania is not a role model EU country for other European countries, it could be the best role
+              model for
+              Moldova's EU integration. If Moldova would reach at least the level of Romania's EU integration, it would
+              be
+              extraordinary, but there is still a long way to go.
+            </p>
+            <p>
+              <br>
+              Unfortunately, Moldova kept getting lost on its UE path, taking one step forward and one step back. Thus,
+              for three
+              decades of independence from the USSR, Moldova remained in the same place, pacing and moving in circles
+              around its
+              stagnation. Only now, citizens in Moldova still need to decide whether they want to join the EU or non
+              existing USSR.
+              Some of them still seem to like the USSR of the past, even though the USSR doesn't exist anymore.
+            </p>
+            <p>
+              <br>
+              Also, from my purely subjective point of view, Romania and Moldova would do well to take inspiration from
+              Germany and
+              look for a diplomatic solution for reunification within the EU. Especially now, with the war in Ukraine,
+              this would be
+              the best possible solution for both countries' economic and social development. Plus, from a historical
+              point of view,
+              they have always represented only one country, a country unified by the Romanian language and tradition.
+            </p>
+            <p>
+              <br>
+              You may ask now why I don't consider Romania my country of destination; it's simple - I am waiting
+              patiently for the
+              reunification of Romania and Moldova within the EU, and after that, if necessary, I will rethink my
+              country of destination.
+              However, such an
+              event would take years or even decades.
+            </p>
+            <p>
+              <br>
+              By the way, Germany also did a reunification 30 years ago, which only strengthened it. Imagine, by
+              aberration, how the
+              EU would have been now if Germany had not reunified in 1990. Would those two German countries have been
+              separated as
+              strongly as the current reunified Germany is? I'm sure not; social division only leads to decline and
+              degradation.
+            </p>
+            <p>
+              <br>
+              With all my heart, I wish to see the reunification of Romania with Moldova within the EU. Suppose current
+              generations
+              will not get a chance to witness a reunification. In that case, I hope that future generations will be
+              able to
+              accomplish what our current generations may not be able to accomplish.
+            </p>
+            <p>
+              <br>
+              If you are interested to learn more about unification of Moldova and Romania within EU, I
+              would recommend reading the following bibliography:
+              <a href="https://www.euractiv.com/section/politics/news/no-shortcuts-to-eu-accession-austria-tells-moldova-amid-fears-of-russian-coup/"
+                target="_self">
+                1. ‘No shortcuts’ to EU accession, Austria tells Moldova amid fears of Russian coup;
+              </a>
+              <a href="https://radiomoldova.md/p/9103/klaus-iohannis-at-the-meeting-with-charles-michel-the-republic-of-moldova-is-the-target-of-threats-and-hybrid-actions"
+                target="_self">
+                2. Klaus Iohannis, at the meeting with Charles Michel: The Republic of Moldova is the target of threats
+                and hybrid actions;
+              </a>
+              <a href="https://moldova1.md/p/6783/situation-in-moldova-discussed-by-klaus-iohannis-and-charles-michel--it-needs-the-full-support-of-the-european-union-"
+                target="_self">
+                3. Situation in Moldova discussed by Klaus Iohannis and Charles Michel: "It needs the full support of
+                the European Union"
+                actions;
+              </a>
+              <a href="https://cepa.org/article/romanian-by-any-other-name/" target="_self">
+                4. Romanian by Any Other Name;
+              </a>
+              <a href="https://www.rferl.org/a/romania-moldova-scholz-sandu/32347600.html" target="_self">
+                5. Germany's Scholz Underscores Support For Romania, Moldova During Bucharest Visit;
+              </a>
+              <a href="https://cepa.org/article/romania-gets-moldova-and-the-eu-doesnt/" target="_self">
+                6. Romania Gets Moldova (and the EU Doesn’t);
+              </a>
+              <a href="https://eur-lex.europa.eu/EN/legal-content/summary/association-agreement-with-moldova.html"
+                target="_self">
+                7. Association agreement with Moldova;
+              </a>
+              <a href="https://neighbourhood-enlargement.ec.europa.eu/news/eu-signs-grant-agreements-transport-infrastructure-better-connect-moldova-eu-2023-10-26_en"
+                target="_self">
+                8. EU signs grant agreements for transport infrastructure to better connect Moldova with EU.
+              </a>
+            </p>
+          </div>
+          <div class="card">
+            <div class="left-section-header">
+              <hr>
+              <h2 id="section-part-4">
+                #Part Four
+              </h2>
+              <h3>
+                Germany - is not my country of origin; however, I consider it my country of destination
+              </h3>
+              <h4>
+                <i>
+                  /* First draft: Tu, Oct 3, 2023 // Updated: Th, Nov 16, 2023 */
+                  <br>
+                  /* Author: Nick Balan // Category: Motivation */
+                </i>
+              </h4>
+              <hr>
+            </div>
+            <p>
+              <br>
+              Germany is the country that inspired me and continues to inspire me ever since I visited it for the first
+              time in 2012
+              as part of a student exchange at Stuttgart Technology University of Applied Sciences (HFT
+              Stuttgart). This
+              exchange of students lasted only three months, the most beautiful months of my life up to that point.
+            </p>
+            <p>
+              <br>
+              Also, in 2012, I was impressed by the German educational, social, and economic systems and how the German
+              state creates
+              conditions for society to develop and prosper nationally and within the European Union (EU). The German
+              academic,
+              economic, social, and legal systems are well established and enable German society to explore its
+              potential to the
+              maximum possible extent.
+            </p>
+            <p>
+              <br>
+              However, I want to be understood correctly: the German system is not perfect but very close to perfection.
+              This world
+              has no ideal system, and any system has advantages and disadvantages. Thus, I will highlight the
+              advantages and
+              disadvantages of the German, Romanian, and Moldovan systems in future articles.
+            </p>
+            <p>
+              <br>
+              At the same time, after six years of living in Germany, I am fortunate to have the opportunity to be part
+              of German and
+              EU society. Although I realize I will never be considered a German, it doesn't bother me at all; I know
+              who I am and
+              where I come from, and I have no reason to hide my unfair background. The past is past and can not be
+              changed, so I'm
+              working on improving my present and future. It is much more important for me to have the opportunity to be
+              part of and
+              contribute to a German and EU society. On the other hand, Germany is also considered one of the role model
+              countries for any EU nation.
+              <br>
+            </p>
+            <p>
+              <br>
+              At the moment, Germany is the place where I want to develop myself professionally and personally and
+              contribute as much as
+              possible to both German and European society. Although my relatives and friends from Moldova and Romania
+              find it strange
+              that I don't want to relocate to my country of origin, I don't consider it abnormal.
+            </p>
+            <p>
+              <br>
+              If you are interested to learn more about relationship between Germany and Moldova, I
+              would recommend reading the following bibliography:
+              <a href="https://en.wikipedia.org/wiki/Germany%E2%80%93Moldova_relations" target="_self">
+                1. Germany–Moldova relations wiki page;
+              </a>
+              <a href="https://gov.md/en/content/germany-increase-support-moldova-development-process" target="_self">
+                2. Germany to increase support for Moldova in development process;
+              </a>
+              <a href="https://www.mf.gov.md/en/content/german-moldovan-government-negotiations-development-cooperation-held-chi%C5%9Fin%C4%83u"
+                target="_self">
+                3. German-Moldovan Government Negotiations on Development Cooperation held in Chişinău;
+              </a>
+              <a href="https://neighbourhood-enlargement.ec.europa.eu/news/commission-pay-eu725-million-financial-support-moldova-end-october-2023-2023-10-25_en"
+                target="_self">
+                4. Commission to pay €72.5 million in financial support to Moldova by the end of October 2023;
+              </a>
+              <a href="https://www.theguardian.com/world/2023/nov/07/eu-expected-to-start-process-of-ukraine-and-moldova-becoming-member-states"
+                target="_self">
+                5. EU expected to start process of Ukraine and Moldova becoming member states;
+              </a>
+              <a href="https://www.theguardian.com/world/2023/nov/08/european-commission-endorses-membership-talks-with-ukraine-and-moldova"
+                target="_self">
+                6. European Commission backs talks on Ukraine and Moldova EU membership;
+              </a>
+              <a href="https://neighbourhood-enlargement.ec.europa.eu/european-neighbourhood-policy/countries-region/moldova_en#eu-solidarity-with-moldova--most-recent-initiatives"
+                target="_self">
+                7. EU Solidarity with Moldova – most recent initiatives;
+              </a>
+              <a href="https://www.consilium.europa.eu/en/policies/eastern-partnership/moldova/" target="_self">
+                8. EU relations with the Republic of Moldova;
+              </a>
+              <a href="https://www.epc.eu/en/publications/Moldovas-European-future-A-call-to-open-accession-talks~544e08"
+                target="_self">
+                9. Moldova's European future: A call to open accession talks.
+              </a>
+              <a href="https://www.eesc.europa.eu/en/agenda/our-events/events/meeting-eu-moldova-domestic-advisory-group-dec-2023"
+                target="_self">
+                10. Meeting of the EU-Moldova Domestic Advisory Group - Dec 2023.
+              </a>
+            </p>
+          </div>
+
+        </div>
+        <div class="right-column blog-grid-item">
+          <div class="card">
+            <div class="right-section-header">
+              <h3>Don't ever give up on your dreams</h3>
+              <hr>
+              <a href="#section-part-1">
+                <h4>#Part One</h4>
+                <h5>Mixed origins - no child can choose the place and date of own birth</h5>
+              </a>
+              <hr>
+              <a href="#section-part-2">
+                <h4>#Part Two</h4>
+                <h5>
+                  Moldova - my country of origin, though not my country of destination
+                </h5>
+              </a>
+              <hr>
+              <a href="#section-part-3">
+                <h4>#Part Three</h4>
+                <h5>Romania - my grandparents' country of origin, and yet not my country of destination </h5>
+              </a>
+              <hr>
+              <a href="#section-part-4">
+                <h4>#Part Four</h4>
+                <h5>Germany - is not my country of origin; however, I consider it my country of destination</h5>
+              </a>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inserts single line breaks -->
+    <br>
+  </main>
+  <!-- Sets the Footer section -->
+  <footer class="w3-center text-center bg-gray-900 text-white">
+    <div class="text-center p-4 py-4">
+      <a class="text-whitehite" href="#">© Copyright Nick Balan 2021 - 2024</a>
+    </div>
+    <div class="social-media">
+      <!-- Added the Github logo with a link to my GitHub Repository -->
+      <a href="https://github.com/nickbalan/" target="_self">
+        <img src="../img/icon/github_logo_icon.svg" alt="Github logo" width="30" height="30">
+      </a>
+      <!-- Added the Linkedin logo with a link to my LikedIn profile -->
+      <a href="https://www.linkedin.com/in/nickbalan/" target="_self">
+        <img src="../img/icon/linkedin_logo_icon.svg" alt="Linkedin logo" width="30" height="30">
+      </a>
+      <!-- Added the Instagram logo with a link to my Instagram profile -->
+      <a href="https://www.instagram.com/nickbalancom/" target="_self">
+        <img src="../img/icon/instagram_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+      <!-- Added the Medium logo with a link to my Medium profile -->
+      <a href="https://medium.com/@nickbalan" target="_self">
+        <img src="../img/icon/medium_logo_icon.svg" alt="Medium logo" width="30" height="30">
+      </a>
+      <!-- Added the Threads logo with a link to my Threads profile -->
+      <a href="https://threads.net/@nickbalancom/" target="_self">
+        <img src="../img/icon/threads_logo_icon.svg" alt="Instagram logo" width="30" height="30">
+      </a>
+    </div>
+  </footer>
+  <!-- Added the Scroll To Top Button functions -->
+  <script src="../js/scrollBtn.js"></script>
+  <!-- Added the mobile Navbar functions -->
+  <script src="../js/mobileNavbar.js"></script>
+  <!-- Added the Accordion functions -->
+  <script src="../js/accordion.js"></script>
+  <!-- Added tota11y -->
+  <script src="../js/tota11y.min.js"></script>
+</body>
+
+</html>
