@@ -342,6 +342,11 @@ footer {
     width: 85%;
     height: 18px;
   }
+  /* Sets Percentage of 85% for skills bars styles */
+  .percentage-80 {
+    width: 80%;
+    height: 18px;
+  }
 }
 
 /* Sets responsive Media Queries for tablet screens */
